@@ -1,64 +1,60 @@
 #include <unordered_map>
 #include <typeindex>
 #include <memory>
-#include <typeinfo>
 
 namespace IoC {
 
-class DiItem {
-  std::type_info const* type_;
-  std::shared_ptr<void> item_;
+struct DiItem {
+  std::type_info const* type;
+  std::shared_ptr<void> value;
 
- public:
-  DiItem() : type_(&typeid(nullptr)) {}
-  DiItem(std::nullptr_t) : DiItem() {}
-
+  DiItem() : type(&typeid(nullptr)) {}
   template<class T>
-  DiItem(std::shared_ptr<T> item) : type_(&typeid(T)), item_(item) {}
-
-  template<class T>
-  std::shared_ptr<T> get() {
-    return typeid(T) == *type_ ? std::static_pointer_cast<T>(item_) : nullptr;
-  }
+  DiItem(std::shared_ptr<T> value) : type(&typeid(T)), value(value) {}
 };
 
 class Container {
-  using FactoryFn = std::function<DiItem(Container& resolver)>;
-  typedef std::unordered_map<std::type_index, FactoryFn> ItemsMapType;
-  ItemsMapType items_;
+  using FactoryFn = std::function<DiItem()>;
+  typedef std::unordered_map<std::type_index, FactoryFn> ObjectMap;
+  ObjectMap items_;
 
  public:
   template<class T>
   std::shared_ptr<T> Resolve() {
     auto it = items_.find(typeid(T));
-    return it == items_.end() ? nullptr : it->second(*this).get<T>();
+    if (it == items_.end()) return nullptr;
+
+    DiItem item = it->second();
+    if (typeid(T) != *item.type) return nullptr;
+    return std::static_pointer_cast<T>(item.value);
   }
 
   template<class T, class I, class ...Args>
   FactoryFn CreateFactory() {
-    return [=](Container& resolver) mutable {
-      std::shared_ptr<I> i = std::make_shared<T>(resolver.Resolve<Args>()...);
+    return [=]() {
+      std::shared_ptr<I> i = std::make_shared<T>(Resolve<Args>()...);
       return DiItem(i);
     };
   }
 
   template<class T, class I, class ...Args>
   void RegisterType() {
-    items_.erase(std::type_index(typeid(I)));
-    items_.insert(make_pair(std::type_index(typeid(I)), CreateFactory<T, I, Args...>()));
+    std::type_index type = std::type_index(typeid(I));
+    items_.erase(type);
+    items_.insert(make_pair(type, CreateFactory<T, I, Args...>()));
   }
 
   template<class T, class I, class ...Args>
   void RegisterInstance() {
     items_.erase(std::type_index(typeid(I)));
-    auto is_created = false;
-    DiItem singleton;
-    auto singleton_factory = [=](Container& resolver) mutable {
+    auto factory = [=]() {
+      static DiItem singleton;
+      static bool is_created = false;
       if (is_created) return singleton;
       is_created = true;
-      return singleton = CreateFactory<T, I, Args...>()(resolver);
+      return singleton = CreateFactory<T, I, Args...>()();
     };
-    items_.insert(make_pair(std::type_index(typeid(I)), singleton_factory));
+    items_.insert(make_pair(std::type_index(typeid(I)), factory));
   }
 
   static Container& Get() {

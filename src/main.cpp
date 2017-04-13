@@ -37,10 +37,23 @@ class D : public C {
 
 };
 
+class E {
+  int x_ = 0;
+
+ public:
+  E() {}
+
+  void Call() {
+    std::cout << "x: " << x_++ << std::endl;
+  }
+
+};
+
 class ContainerBootstrapper {
  public:
   static void Bootstrap() {
     static IoC::Container& container = IoC::Container::Get();
+    container.RegisterInstance<E, E>();
     container.RegisterInstance<B, C, A>();
     container.RegisterType<A, A>();
   }
@@ -65,6 +78,11 @@ int main () {
   d->CallA();
   b->CallA();
   c->CallA();
+
+  std::shared_ptr<E> e = container.Resolve<E>();
+  e->Call();
+  e->Call();
+  e->Call();
 
   return 0;
 }

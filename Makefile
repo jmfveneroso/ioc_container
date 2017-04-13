@@ -44,44 +44,42 @@ BUILD_DIR=build
 # Executables
 # ------------------------------
 
-_DEPS = ioc_container.hpp
+_DEPS = bootstrapper.hpp neuron_trainer.hpp neural_network.hpp perceptron_trainer.hpp activation_function.hpp ioc_container.hpp 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-# _OBJ = injector.o crawler.o fetcher.o scheduler.o storage.o logger.o url_database.o url_priority_list.o
-# OBJ = $(patsubst %,$(BUILD_DIR)/%,$(_OBJ))
-OBJ = 
+_OBJ = perceptron_trainer.o neural_net.o
+OBJ = $(patsubst %,$(BUILD_DIR)/%,$(_OBJ))
 
 $(BUILD_DIR)/%.o: src/%.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CPP_FLAGS) -I$(IDIR) $(INC)
 
-$(BUILD_DIR)/main: build/main.o $(OBJ)
+$(BUILD_DIR)/main: $(BUILD_DIR)/main.o $(OBJ)
 	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS)
 
 # Tests.
 
-# _TESTS = url_database_test url_priority_list_test scheduler_test
-# TESTS = $(patsubst %,$(BUILD_DIR)/test/%,$(_TESTS))
-# 
-# $(BUILD_DIR)/test/%.o: test/%.cpp $(DEPS)
-# 	$(CC) -c -o $@ $< $(CPP_FLAGS) -I$(IDIR) $(INC)
-# 
-# $(BUILD_DIR)/test/%: $(BUILD_DIR)/test/%.o $(OBJ)
-# 	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS)
+_TESTS = perceptron_test
+TESTS = $(patsubst %,$(BUILD_DIR)/test/%,$(_TESTS))
+
+$(BUILD_DIR)/test/%.o: test/%.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CPP_FLAGS) -I$(IDIR) $(INC)
+
+$(BUILD_DIR)/test/%: $(BUILD_DIR)/test/%.o $(OBJ)
+	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS)
 # 
 
 # all: $(BUILD_DIR)/lib/ioc_container/libioccontainer.a $(BUILD_DIR)/main 
-all: $(BUILD_DIR)/main 
-# all: $(BUILD_DIR)/main $(BUILD_DIR)/thread_test $(TESTS)
+all: $(BUILD_DIR)/main $(TESTS)
 
-# 
-# .PHONY: test
-# 
-# test:
-# 	@for i in $(TESTS); do \
-#           $$i; \
-#           if [ $$? -eq 0 ]; then \
-#             echo "$$i (PASSED)"; else echo "$$i (FAILED)"; fi; \
-#         done;               
+
+.PHONY: test
+
+test:
+	@for i in $(TESTS); do \
+          $$i; \
+          if [ $$? -eq 0 ]; then \
+            echo "$$i (PASSED)"; else echo "$$i (FAILED)"; fi; \
+        done;               
 
 # Tasks.
 
