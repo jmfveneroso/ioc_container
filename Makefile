@@ -44,10 +44,10 @@ BUILD_DIR=build
 # Executables
 # ------------------------------
 
-_DEPS = bootstrapper.hpp neuron_trainer.hpp neural_network.hpp perceptron_trainer.hpp activation_function.hpp ioc_container.hpp 
+_DEPS = bootstrapper.hpp neuron_trainer.hpp neural_network.hpp perceptron_trainer.hpp backpropagation_trainer.hpp ioc_container.hpp 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = perceptron_trainer.o neural_net.o
+_OBJ = perceptron_trainer.o backpropagation_trainer.o neural_net.o
 OBJ = $(patsubst %,$(BUILD_DIR)/%,$(_OBJ))
 
 $(BUILD_DIR)/%.o: src/%.cpp $(DEPS)
@@ -58,7 +58,7 @@ $(BUILD_DIR)/main: $(BUILD_DIR)/main.o $(OBJ)
 
 # Tests.
 
-_TESTS = perceptron_test
+_TESTS = perceptron_test backpropagation_test
 TESTS = $(patsubst %,$(BUILD_DIR)/test/%,$(_TESTS))
 
 $(BUILD_DIR)/test/%.o: test/%.cpp $(DEPS)

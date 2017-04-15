@@ -15,15 +15,20 @@ void PerceptronTrainer::Clear() {
   training_cases_ = std::vector<TrainingCase>();
 }
 
+double PerceptronTrainer::GetResult(std::vector<double> inputs) {
+  return (neural_net_->Calculate(inputs) > 0.5) ? 1 : 0;
+}
+
 void PerceptronTrainer::Train() {
   double min_achieved_error = 0;
   int error_reduction_counter = 0;
 
   double error = 1;
   while (error > min_error_) { 
+    error = 0;
     for (size_t i = 0; i < training_cases_.size(); ++i) {
-      int& expected_result = training_cases_[i].result;
-      int result = neural_net_->Calculate(training_cases_[i].inputs);
+      double& expected_result = training_cases_[i].result;
+      double result = GetResult(training_cases_[i].inputs);
 
       if (result == expected_result) continue;
     

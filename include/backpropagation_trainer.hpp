@@ -1,18 +1,23 @@
-#ifndef _PERCEPTRON_TRAINER_HPP_
-#define _PERCEPTRON_TRAINER_HPP_
+#ifndef _BACKPROPAGATION_TRAINER_HPP_
+#define _BACKPROPAGATION_TRAINER_HPP_
 
 #include "neuron_trainer.hpp"
 
 namespace NeuralNetwork {
 
-class PerceptronTrainer : public INeuronTrainer {
+class BackpropagationTrainer : public INeuronTrainer {
   std::shared_ptr<INeuralNetwork> neural_net_;
   std::vector<TrainingCase> training_cases_;
   double learning_rate_;
   double min_error_;
+  double momentum_ = 0.0001;
+
+  void Init();
+  void Backpropagate(TrainingCase&);
+  void UpdateWeights();
 
  public:
-  PerceptronTrainer(std::shared_ptr<INeuralNetwork>);
+  BackpropagationTrainer(std::shared_ptr<INeuralNetwork>);
   void LoadTrainingCase(TrainingCase);
   // void void LoadTrainingDataFromFile(const char[]);
   void Clear();

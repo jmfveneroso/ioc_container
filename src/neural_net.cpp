@@ -1,33 +1,40 @@
 #include "neural_network.hpp"
 #include <iostream>
+#include <math.h>
 
 namespace NeuralNetwork {
 
-NeuralNet::NeuralNet(std::shared_ptr<IActivationFunction> activation_fn) 
-  : activation_fn_(activation_fn) {
-}
+NeuralNet::NeuralNet() {}
 
 void NeuralNet::Init() {
-  size_t last_layer_size = cfg_.input_layer.size();
+  size_t last_layer_size = cfg_.input_layer.size() - 1;
   for (size_t i = 0; i < cfg_.hidden_layers.size(); ++i) {
     size_t layer_size = cfg_.hidden_layers[i].size();
     for (size_t j = 0; j < layer_size; ++j)
-      cfg_.hidden_layers[i][j].weights.resize(last_layer_size);
+      cfg_.hidden_layers[i][j].weights.resize(last_layer_size + 1);
 
     last_layer_size = layer_size;
   }
 
   for (size_t i = 0; i < cfg_.output_layer.size(); ++i)
-    cfg_.output_layer[i].weights.resize(last_layer_size);
+    cfg_.output_layer[i].weights.resize(last_layer_size + 1);
 }
 
-void NeuralNet::FeedForward(Layer& current, Layer& next) {
+double NeuralNet::ActivationFunction(const double& x) {
+  return 1 / (1 + exp(-x));
+}
+
+void NeuralNet::FeedForward(Layer& current, Layer& next, bool is_input) {
   for (size_t i = 0; i < next.size(); ++i) {
-    next[i].result = 0;
+    next[i].result = next[i].weights[0] * 1; // Bias.
     for (size_t j = 0; j < current.size(); ++j) {
-      next[i].result += next[i].weights[j] * current[j].result;
+      if (is_input) {
+        next[i].result += next[i].weights[j + 1] * current[j + 1].result;
+      } else {  
+        next[i].result += next[i].weights[j + 1] * current[j].result;
+      }
     }
-    next[i].result = activation_fn_->GetResult(next[i].result);
+    next[i].result = ActivationFunction(next[i].result);
   }
 }
 
@@ -36,7 +43,7 @@ void NeuralNet::LoadConfiguration(Configuration& config) {
   Init();
 }
 
-int NeuralNet::Calculate(std::vector<double> inputs) {
+double NeuralNet::Calculate(std::vector<double> inputs) {
   if (inputs.size() != cfg_.input_layer.size())
     throw new std::runtime_error("Input vector has the wrong size.");
 
@@ -45,17 +52,19 @@ int NeuralNet::Calculate(std::vector<double> inputs) {
     cfg_.input_layer[i].result = inputs[i]; 
 
   // Start feeding the hidden layers.
-  Layer& current_layer = cfg_.input_layer;
+  bool is_input = true;
+  Layer current_layer = cfg_.input_layer;
   for (size_t i = 0; i < cfg_.hidden_layers.size(); ++i) {
-    FeedForward(current_layer, cfg_.hidden_layers[i]);
+    FeedForward(current_layer, cfg_.hidden_layers[i], is_input);
+    is_input = false;
     current_layer = cfg_.hidden_layers[i];
   }
 
   // Feed the output layer.
-  FeedForward(current_layer, cfg_.output_layer);
+  FeedForward(current_layer, cfg_.output_layer, is_input);
 
   if (cfg_.output_layer.size() == 1) {
-    return (cfg_.output_layer[0].result > cfg_.threshold) ? 1 : 0;
+    return cfg_.output_layer[0].result;
   }
 
   return 0;
