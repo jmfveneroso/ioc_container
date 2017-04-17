@@ -58,4 +58,4 @@ void PerceptronTrainer::Train() {
   }
 }
 
-}; // End of namespace.
+} // End of namespace.

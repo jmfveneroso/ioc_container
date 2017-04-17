@@ -24,6 +24,6 @@ class INeuronTrainer {
   virtual void set_learning_rate(double min_error) = 0;
 };
 
-}; // End of namespace.
+} // End of namespace.
 
 #endif

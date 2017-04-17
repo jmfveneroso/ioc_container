@@ -58,7 +58,7 @@ $(BUILD_DIR)/main: $(BUILD_DIR)/main.o $(OBJ)
 
 # Tests.
 
-_TESTS = perceptron_test backpropagation_test
+_TESTS = backpropagation_test # perceptron_test 
 TESTS = $(patsubst %,$(BUILD_DIR)/test/%,$(_TESTS))
 
 $(BUILD_DIR)/test/%.o: test/%.cpp $(DEPS)

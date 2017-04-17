@@ -1,6 +1,7 @@
 #ifndef _PERCEPTRON_TRAINER_HPP_
 #define _PERCEPTRON_TRAINER_HPP_
 
+#include <memory>
 #include "neuron_trainer.hpp"
 
 namespace NeuralNetwork {
@@ -23,6 +24,6 @@ class PerceptronTrainer : public INeuronTrainer {
   void set_learning_rate(double learning_rate) { learning_rate_ = learning_rate; } 
 };
 
-}; // End of namespace.
+} // End of namespace.
 
 #endif

@@ -109,6 +109,7 @@ void BackpropagationTrainer::Train() {
   double error = 1;
   while (error > min_error_) { 
     error = 0;
+    std::cout << neural_net_->ToString() << std::endl;
     // Clear weight derivatives.
     Init();
 
@@ -124,4 +125,4 @@ void BackpropagationTrainer::Train() {
   }
 }
 
-}; // End of namespace.
+} // End of namespace.

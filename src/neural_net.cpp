@@ -70,4 +70,4 @@ double NeuralNet::Calculate(std::vector<double> inputs) {
   return 0;
 }
 
-}; // End of namespace.
+} // End of namespace.
