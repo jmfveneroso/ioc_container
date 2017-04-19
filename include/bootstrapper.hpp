@@ -2,8 +2,7 @@
 #define _BOOTSTRAPPER_HPP_
 
 #include "ioc_container.hpp"
-#include "perceptron_trainer.hpp"
-#include "backpropagation_trainer.hpp"
+#include "neural_network.hpp"
 
 using namespace NeuralNetwork;
 
@@ -13,8 +12,7 @@ class Bootstrapper {
  public:
   static void Bootstrap() {
     static IoC::Container& container = IoC::Container::Get();
-    container.RegisterInstance<NeuralNet, INeuralNetwork>();
-    container.RegisterInstance<PerceptronTrainer, INeuronTrainer, INeuralNetwork>();
+    container.RegisterInstance<NeuralNet, NeuralNet>();
   }
 };
 

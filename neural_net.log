@@ -1,0 +1,8620 @@
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 0
+
+    Neuron 1
+      weights: 
+      result: 0
+
+    Neuron 1
+      weights: 
+      result: 0
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.1, derivative: 0
+        1 value: -0.2, derivative: 0
+        2 value: 0.1, derivative: 0
+      result: 0
+
+    Neuron 4
+      weights: 
+        0 value: 0.1, derivative: 0
+        1 value: -0.1, derivative: 0
+        2 value: 0.3, derivative: 0
+      result: 0
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.2, derivative: 0
+        1 value: 0.2, derivative: 0
+        2 value: 0.3, derivative: 0
+      result: 0
+
+
+1 error: 0.274566
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.100833, derivative: -0.00329012
+        1 value: -0.199938, derivative: -0.000329012
+        2 value: 0.10075, derivative: -0.00296111
+      result: 0.542774
+
+    Neuron 4
+      weights: 
+        0 value: 0.101213, derivative: -0.00481328
+        1 value: -0.0998897, derivative: -0.000481328
+        2 value: 0.301113, derivative: -0.00433195
+      result: 0.589579
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.21659, derivative: -0.0662789
+        1 value: 0.209007, derivative: -0.0359495
+        2 value: 0.30979, derivative: -0.039041
+      result: 0.625434
+
+
+2 error: 0.268271
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.102499, derivative: -0.00662644
+        1 value: -0.199792, derivative: -0.000662644
+        2 value: 0.102251, derivative: -0.00596379
+      result: 0.543526
+
+    Neuron 4
+      weights: 
+        0 value: 0.103632, derivative: -0.00963492
+        1 value: -0.0996588, derivative: -0.000963492
+        2 value: 0.303311, derivative: -0.00867143
+      result: 0.590648
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.232692, derivative: -0.0643215
+        1 value: 0.217756, derivative: -0.034912
+        2 value: 0.319302, derivative: -0.0379226
+      result: 0.631729
+
+
+3 error: 0.262129
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.105009, derivative: -0.00999836
+        1 value: -0.199562, derivative: -0.000999836
+        2 value: 0.104511, derivative: -0.00899853
+      result: 0.544659
+
+    Neuron 4
+      weights: 
+        0 value: 0.107256, derivative: -0.0144533
+        1 value: -0.0993074, derivative: -0.00144533
+        2 value: 0.306593, derivative: -0.0130079
+      result: 0.592246
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.248318, derivative: -0.0624125
+        1 value: 0.226259, derivative: -0.0339228
+        2 value: 0.32855, derivative: -0.0368638
+      result: 0.637871
+
+
+4 error: 0.25613
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.108369, derivative: -0.013396
+        1 value: -0.199247, derivative: -0.0013396
+        2 value: 0.107536, derivative: -0.0120564
+      result: 0.546175
+
+    Neuron 4
+      weights: 
+        0 value: 0.112081, derivative: -0.0192574
+        1 value: -0.0988359, derivative: -0.00192574
+        2 value: 0.310957, derivative: -0.0173316
+      result: 0.594369
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.26348, derivative: -0.0605497
+        1 value: 0.234526, derivative: -0.0329789
+        2 value: 0.337548, derivative: -0.0358603
+      result: 0.64387
+
+
+5 error: 0.250262
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.112582, derivative: -0.0168101
+        1 value: -0.198847, derivative: -0.00168101
+        2 value: 0.111329, derivative: -0.0151291
+      result: 0.548074
+
+    Neuron 4
+      weights: 
+        0 value: 0.118101, derivative: -0.024037
+        1 value: -0.0982449, derivative: -0.0024037
+        2 value: 0.316396, derivative: -0.0216333
+      result: 0.597013
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.278189, derivative: -0.058731
+        1 value: 0.242569, derivative: -0.0320774
+        2 value: 0.346308, derivative: -0.0349079
+      result: 0.649738
+
+
+6 error: 0.244517
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.117651, derivative: -0.020232
+        1 value: -0.198361, derivative: -0.0020232
+        2 value: 0.115892, derivative: -0.0182088
+      result: 0.550358
+
+    Neuron 4
+      weights: 
+        0 value: 0.125309, derivative: -0.0287823
+        1 value: -0.0975351, derivative: -0.00287823
+        2 value: 0.322904, derivative: -0.0259041
+      result: 0.600169
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.292456, derivative: -0.0569544
+        1 value: 0.250397, derivative: -0.0312152
+        2 value: 0.354844, derivative: -0.0340025
+      result: 0.655483
+
+
+7 error: 0.238884
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.123576, derivative: -0.0236536
+        1 value: -0.197789, derivative: -0.00236536
+        2 value: 0.121226, derivative: -0.0212882
+      result: 0.553025
+
+    Neuron 4
+      weights: 
+        0 value: 0.133692, derivative: -0.0334841
+        1 value: -0.0967078, derivative: -0.00334841
+        2 value: 0.33047, derivative: -0.0301357
+      result: 0.603829
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.30629, derivative: -0.055218
+        1 value: 0.258019, derivative: -0.0303897
+        2 value: 0.363164, derivative: -0.0331401
+      result: 0.661116
+
+
+8 error: 0.233358
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.130355, derivative: -0.0270671
+        1 value: -0.197133, derivative: -0.00270671
+        2 value: 0.127328, derivative: -0.0243604
+      result: 0.556072
+
+    Neuron 4
+      weights: 
+        0 value: 0.143239, derivative: -0.0381337
+        1 value: -0.0957641, derivative: -0.00381337
+        2 value: 0.339083, derivative: -0.0343204
+      result: 0.607982
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.3197, derivative: -0.0535201
+        1 value: 0.265445, derivative: -0.0295979
+        2 value: 0.37128, derivative: -0.032317
+      result: 0.666642
+
+
+9 error: 0.22793
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.137985, derivative: -0.0304652
+        1 value: -0.196391, derivative: -0.00304652
+        2 value: 0.134195, derivative: -0.0274187
+      result: 0.559497
+
+    Neuron 4
+      weights: 
+        0 value: 0.153934, derivative: -0.0427228
+        1 value: -0.0947056, derivative: -0.00427228
+        2 value: 0.34873, derivative: -0.0384505
+      result: 0.612616
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.332697, derivative: -0.0518591
+        1 value: 0.272681, derivative: -0.0288374
+        2 value: 0.379199, derivative: -0.0315294
+      result: 0.67207
+
+
+10 error: 0.222594
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.146459, derivative: -0.0338412
+        1 value: -0.195564, derivative: -0.00338412
+        2 value: 0.141823, derivative: -0.0304571
+      result: 0.563294
+
+    Neuron 4
+      weights: 
+        0 value: 0.16576, derivative: -0.0472434
+        1 value: -0.093534, derivative: -0.00472434
+        2 value: 0.359394, derivative: -0.042519
+      result: 0.617715
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.345289, derivative: -0.0502338
+        1 value: 0.279734, derivative: -0.0281057
+        2 value: 0.386931, derivative: -0.030774
+      result: 0.677406
+
+
+11 error: 0.217347
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.155771, derivative: -0.0371884
+        1 value: -0.194654, derivative: -0.00371884
+        2 value: 0.150205, derivative: -0.0334696
+      result: 0.567459
+
+    Neuron 4
+      weights: 
+        0 value: 0.178699, derivative: -0.0516879
+        1 value: -0.0922512, derivative: -0.00516879
+        2 value: 0.37106, derivative: -0.0465191
+      result: 0.623265
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.357484, derivative: -0.0486429
+        1 value: 0.286612, derivative: -0.0274003
+        2 value: 0.394481, derivative: -0.0300475
+      result: 0.682653
+
+
+12 error: 0.212183
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.165911, derivative: -0.0405009
+        1 value: -0.193661, derivative: -0.00405009
+        2 value: 0.159332, derivative: -0.0364508
+      result: 0.571983
+
+    Neuron 4
+      weights: 
+        0 value: 0.192729, derivative: -0.0560493
+        1 value: -0.0908592, derivative: -0.00560493
+        2 value: 0.383708, derivative: -0.0504444
+      result: 0.629245
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.369291, derivative: -0.0470856
+        1 value: 0.293321, derivative: -0.0267191
+        2 value: 0.401857, derivative: -0.0293468
+      result: 0.687817
+
+
+13 error: 0.207099
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.176871, derivative: -0.0437726
+        1 value: -0.192586, derivative: -0.00437726
+        2 value: 0.169197, derivative: -0.0393953
+      result: 0.576858
+
+    Neuron 4
+      weights: 
+        0 value: 0.207829, derivative: -0.0603207
+        1 value: -0.0893602, derivative: -0.00603207
+        2 value: 0.397319, derivative: -0.0542886
+      result: 0.635638
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.380718, derivative: -0.045561
+        1 value: 0.299865, derivative: -0.0260601
+        2 value: 0.409065, derivative: -0.028669
+      result: 0.692901
+
+
+14 error: 0.202093
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.188638, derivative: -0.0469982
+        1 value: -0.19143, derivative: -0.00469982
+        2 value: 0.179789, derivative: -0.0422984
+      result: 0.582077
+
+    Neuron 4
+      weights: 
+        0 value: 0.223973, derivative: -0.0644958
+        1 value: -0.0877568, derivative: -0.00644958
+        2 value: 0.41187, derivative: -0.0580462
+      result: 0.642419
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.391774, derivative: -0.0440686
+        1 value: 0.30625, derivative: -0.0254213
+        2 value: 0.416109, derivative: -0.0280116
+      result: 0.697907
+
+
+15 error: 0.197162
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.2012, derivative: -0.0501725
+        1 value: -0.190195, derivative: -0.00501725
+        2 value: 0.191095, derivative: -0.0451552
+      result: 0.587628
+
+    Neuron 4
+      weights: 
+        0 value: 0.241138, derivative: -0.0685685
+        1 value: -0.0860513, derivative: -0.00685685
+        2 value: 0.427339, derivative: -0.0617117
+      result: 0.649567
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.402465, derivative: -0.0426078
+        1 value: 0.312481, derivative: -0.024801
+        2 value: 0.422993, derivative: -0.0273721
+      result: 0.702838
+
+
+16 error: 0.192305
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.214543, derivative: -0.0532905
+        1 value: -0.188882, derivative: -0.00532905
+        2 value: 0.203105, derivative: -0.0479615
+      result: 0.593499
+
+    Neuron 4
+      weights: 
+        0 value: 0.259295, derivative: -0.0725334
+        1 value: -0.0842466, derivative: -0.00725334
+        2 value: 0.443702, derivative: -0.0652801
+      result: 0.657056
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.4128, derivative: -0.0411786
+        1 value: 0.318562, derivative: -0.0241977
+        2 value: 0.429723, derivative: -0.0267482
+      result: 0.707695
+
+
+17 error: 0.18752
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.228652, derivative: -0.0563479
+        1 value: -0.187492, derivative: -0.00563479
+        2 value: 0.215803, derivative: -0.0507131
+      result: 0.599678
+
+    Neuron 4
+      weights: 
+        0 value: 0.278418, derivative: -0.0763854
+        1 value: -0.0823454, derivative: -0.00763854
+        2 value: 0.460933, derivative: -0.0687469
+      result: 0.664859
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.422786, derivative: -0.0397806
+        1 value: 0.324496, derivative: -0.0236098
+        2 value: 0.4363, derivative: -0.0261381
+      result: 0.71248
+
+
+18 error: 0.182809
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.24351, derivative: -0.0593404
+        1 value: -0.186027, derivative: -0.00593404
+        2 value: 0.229177, derivative: -0.0534063
+      result: 0.606152
+
+    Neuron 4
+      weights: 
+        0 value: 0.298475, derivative: -0.0801199
+        1 value: -0.0803506, derivative: -0.00801199
+        2 value: 0.479006, derivative: -0.0721079
+      result: 0.672947
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.432432, derivative: -0.038414
+        1 value: 0.330288, derivative: -0.0230361
+        2 value: 0.442729, derivative: -0.0255399
+      result: 0.717191
+
+
+19 error: 0.178171
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.2591, derivative: -0.062264
+        1 value: -0.184489, derivative: -0.0062264
+        2 value: 0.243209, derivative: -0.0560376
+      result: 0.612905
+
+    Neuron 4
+      weights: 
+        0 value: 0.319438, derivative: -0.0837329
+        1 value: -0.0782653, derivative: -0.00837329
+        2 value: 0.497894, derivative: -0.0753596
+      result: 0.681292
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.441745, derivative: -0.0370789
+        1 value: 0.33594, derivative: -0.0224754
+        2 value: 0.449011, derivative: -0.0249521
+      result: 0.721829
+
+
+20 error: 0.173607
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.275405, derivative: -0.0651154
+        1 value: -0.18288, derivative: -0.00651154
+        2 value: 0.257884, derivative: -0.0586039
+      result: 0.619921
+
+    Neuron 4
+      weights: 
+        0 value: 0.341276, derivative: -0.0872208
+        1 value: -0.0760926, derivative: -0.00872208
+        2 value: 0.517568, derivative: -0.0784987
+      result: 0.689863
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.450733, derivative: -0.0357753
+        1 value: 0.341455, derivative: -0.0219269
+        2 value: 0.455149, derivative: -0.0243735
+      result: 0.726393
+
+
+21 error: 0.169118
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.292405, derivative: -0.0678913
+        1 value: -0.181201, derivative: -0.00678913
+        2 value: 0.273186, derivative: -0.0611022
+      result: 0.627183
+
+    Neuron 4
+      weights: 
+        0 value: 0.363955, derivative: -0.0905808
+        1 value: -0.0738357, derivative: -0.00905808
+        2 value: 0.538001, derivative: -0.0815227
+      result: 0.698628
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.459404, derivative: -0.0345037
+        1 value: 0.346837, derivative: -0.0213896
+        2 value: 0.461146, derivative: -0.0238028
+      result: 0.730882
+
+
+22 error: 0.164705
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.310082, derivative: -0.070589
+        1 value: -0.179454, derivative: -0.0070589
+        2 value: 0.289095, derivative: -0.0635301
+      result: 0.634674
+
+    Neuron 4
+      weights: 
+        0 value: 0.387444, derivative: -0.0938105
+        1 value: -0.0714979, derivative: -0.00938105
+        2 value: 0.559162, derivative: -0.0844295
+      result: 0.707555
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.467766, derivative: -0.0332644
+        1 value: 0.352087, derivative: -0.0208629
+        2 value: 0.467001, derivative: -0.0232394
+      result: 0.735295
+
+
+23 error: 0.16037
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.328414, derivative: -0.0732061
+        1 value: -0.177642, derivative: -0.00732061
+        2 value: 0.305596, derivative: -0.0658855
+      result: 0.642375
+
+    Neuron 4
+      weights: 
+        0 value: 0.41171, derivative: -0.0969083
+        1 value: -0.0690823, derivative: -0.00969083
+        2 value: 0.581022, derivative: -0.0872175
+      result: 0.716613
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.475827, derivative: -0.0320576
+        1 value: 0.357209, derivative: -0.0203461
+        2 value: 0.472719, derivative: -0.0226825
+      result: 0.73963
+
+
+24 error: 0.156115
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.347382, derivative: -0.0757405
+        1 value: -0.175766, derivative: -0.00757405
+        2 value: 0.322668, derivative: -0.0681664
+      result: 0.650266
+
+    Neuron 4
+      weights: 
+        0 value: 0.436719, derivative: -0.0998731
+        1 value: -0.0665924, derivative: -0.00998731
+        2 value: 0.603552, derivative: -0.0898858
+      result: 0.725768
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.483595, derivative: -0.0308837
+        1 value: 0.362204, derivative: -0.0198389
+        2 value: 0.478299, derivative: -0.0221317
+      result: 0.743885
+
+
+25 error: 0.151942
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.366964, derivative: -0.0781905
+        1 value: -0.173829, derivative: -0.00781905
+        2 value: 0.340293, derivative: -0.0703714
+      result: 0.658326
+
+    Neuron 4
+      weights: 
+        0 value: 0.462439, derivative: -0.102705
+        1 value: -0.0640314, derivative: -0.0102705
+        2 value: 0.626721, derivative: -0.0924341
+      result: 0.734989
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.49108, derivative: -0.0297431
+        1 value: 0.367076, derivative: -0.0193409
+        2 value: 0.483743, derivative: -0.0215866
+      result: 0.748058
+
+
+26 error: 0.147853
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.38714, derivative: -0.0805549
+        1 value: -0.171833, derivative: -0.00805549
+        2 value: 0.358452, derivative: -0.0724994
+      result: 0.666537
+
+    Neuron 4
+      weights: 
+        0 value: 0.488836, derivative: -0.105403
+        1 value: -0.0614028, derivative: -0.0105403
+        2 value: 0.650499, derivative: -0.0948625
+      result: 0.744244
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.498288, derivative: -0.0286361
+        1 value: 0.371825, derivative: -0.0188519
+        2 value: 0.489054, derivative: -0.0210472
+      result: 0.752147
+
+
+27 error: 0.143849
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.407887, derivative: -0.0828328
+        1 value: -0.169779, derivative: -0.00828328
+        2 value: 0.377125, derivative: -0.0745495
+      result: 0.674876
+
+    Neuron 4
+      weights: 
+        0 value: 0.515877, derivative: -0.107969
+        1 value: -0.0587097, derivative: -0.0107969
+        2 value: 0.674857, derivative: -0.0971717
+      result: 0.753502
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.505228, derivative: -0.0275629
+        1 value: 0.376455, derivative: -0.0183717
+        2 value: 0.494231, derivative: -0.0205135
+      result: 0.756151
+
+
+28 error: 0.139933
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.429183, derivative: -0.0850237
+        1 value: -0.16767, derivative: -0.00850237
+        2 value: 0.396293, derivative: -0.0765213
+      result: 0.683322
+
+    Neuron 4
+      weights: 
+        0 value: 0.543529, derivative: -0.110403
+        1 value: -0.0559555, derivative: -0.0110403
+        2 value: 0.699765, derivative: -0.099363
+      result: 0.762733
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.51191, derivative: -0.0265238
+        1 value: 0.380968, derivative: -0.0179003
+        2 value: 0.499277, derivative: -0.0199857
+      result: 0.760067
+
+
+29 error: 0.136106
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.451008, derivative: -0.0871274
+        1 value: -0.165509, derivative: -0.00871274
+        2 value: 0.415936, derivative: -0.0784147
+      result: 0.691854
+
+    Neuron 4
+      weights: 
+        0 value: 0.571761, derivative: -0.112709
+        1 value: -0.0531433, derivative: -0.0112709
+        2 value: 0.725195, derivative: -0.101438
+      result: 0.771909
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.518341, derivative: -0.0255188
+        1 value: 0.385366, derivative: -0.0174376
+        2 value: 0.504193, derivative: -0.0194641
+      result: 0.763894
+
+
+30 error: 0.13237
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.473339, derivative: -0.0891442
+        1 value: -0.163297, derivative: -0.00891442
+        2 value: 0.436035, derivative: -0.0802298
+      result: 0.70045
+
+    Neuron 4
+      weights: 
+        0 value: 0.60054, derivative: -0.114888
+        1 value: -0.0502765, derivative: -0.0114888
+        2 value: 0.751117, derivative: -0.103399
+      result: 0.781002
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.52453, derivative: -0.0245481
+        1 value: 0.38965, derivative: -0.0169837
+        2 value: 0.50898, derivative: -0.0189489
+      result: 0.76763
+
+
+31 error: 0.128727
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.496155, derivative: -0.0910746
+        1 value: -0.161036, derivative: -0.00910746
+        2 value: 0.456571, derivative: -0.0819671
+      result: 0.709089
+
+    Neuron 4
+      weights: 
+        0 value: 0.629836, derivative: -0.116944
+        1 value: -0.0473579, derivative: -0.0116944
+        2 value: 0.777505, derivative: -0.105249
+      result: 0.789988
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.530485, derivative: -0.0236115
+        1 value: 0.393824, derivative: -0.0165387
+        2 value: 0.513641, derivative: -0.0184406
+      result: 0.771273
+
+
+32 error: 0.125178
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.519435, derivative: -0.0929195
+        1 value: -0.15873, derivative: -0.00929195
+        2 value: 0.477523, derivative: -0.0836275
+      result: 0.717751
+
+    Neuron 4
+      weights: 
+        0 value: 0.659619, derivative: -0.118879
+        1 value: -0.0443907, derivative: -0.0118879
+        2 value: 0.80433, derivative: -0.106991
+      result: 0.798843
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.536215, derivative: -0.0227089
+        1 value: 0.397889, derivative: -0.0161027
+        2 value: 0.518178, derivative: -0.0179398
+      result: 0.774822
+
+
+33 error: 0.121723
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.543157, derivative: -0.0946799
+        1 value: -0.156378, derivative: -0.00946799
+        2 value: 0.498874, derivative: -0.0852119
+      result: 0.726414
+
+    Neuron 4
+      weights: 
+        0 value: 0.689859, derivative: -0.120697
+        1 value: -0.0413777, derivative: -0.0120697
+        2 value: 0.831567, derivative: -0.108628
+      result: 0.807544
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.541729, derivative: -0.0218401
+        1 value: 0.401847, derivative: -0.0156758
+        2 value: 0.522591, derivative: -0.0174468
+      result: 0.778277
+
+
+34 error: 0.118364
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.5673, derivative: -0.0963574
+        1 value: -0.153985, derivative: -0.00963574
+        2 value: 0.520604, derivative: -0.0867216
+      result: 0.735059
+
+    Neuron 4
+      weights: 
+        0 value: 0.720529, derivative: -0.122403
+        1 value: -0.0383217, derivative: -0.0122403
+        2 value: 0.859191, derivative: -0.110163
+      result: 0.816074
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.547034, derivative: -0.0210048
+        1 value: 0.405702, derivative: -0.0152582
+        2 value: 0.526884, derivative: -0.0169623
+      result: 0.781636
+
+
+35 error: 0.115101
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.591846, derivative: -0.0979536
+        1 value: -0.151552, derivative: -0.00979536
+        2 value: 0.542696, derivative: -0.0881582
+      result: 0.743667
+
+    Neuron 4
+      weights: 
+        0 value: 0.751601, derivative: -0.124001
+        1 value: -0.0352255, derivative: -0.0124001
+        2 value: 0.887178, derivative: -0.111601
+      result: 0.824413
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.552139, derivative: -0.0202025
+        1 value: 0.409455, derivative: -0.01485
+        2 value: 0.531058, derivative: -0.0164867
+      result: 0.784899
+
+
+36 error: 0.111933
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.616772, derivative: -0.0994703
+        1 value: -0.14908, derivative: -0.00994703
+        2 value: 0.565131, derivative: -0.0895233
+      result: 0.752219
+
+    Neuron 4
+      weights: 
+        0 value: 0.78305, derivative: -0.125495
+        1 value: -0.0320917, derivative: -0.0125495
+        2 value: 0.915503, derivative: -0.112946
+      result: 0.832548
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.557053, derivative: -0.0194327
+        1 value: 0.413109, derivative: -0.0144515
+        2 value: 0.535117, derivative: -0.0160206
+      result: 0.788067
+
+
+37 error: 0.108862
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.642061, derivative: -0.10091
+        1 value: -0.146572, derivative: -0.010091
+        2 value: 0.587892, derivative: -0.0908188
+      result: 0.760698
+
+    Neuron 4
+      weights: 
+        0 value: 0.814851, derivative: -0.12689
+        1 value: -0.0289226, derivative: -0.012689
+        2 value: 0.944144, derivative: -0.114201
+      result: 0.840465
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.561782, derivative: -0.0186948
+        1 value: 0.416666, derivative: -0.0140626
+        2 value: 0.539061, derivative: -0.0155643
+      result: 0.791138
+
+
+38 error: 0.105885
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.667694, derivative: -0.102274
+        1 value: -0.14403, derivative: -0.0102274
+        2 value: 0.610963, derivative: -0.0920468
+      result: 0.769086
+
+    Neuron 4
+      weights: 
+        0 value: 0.84698, derivative: -0.12819
+        1 value: -0.0257208, derivative: -0.012819
+        2 value: 0.973082, derivative: -0.115371
+      result: 0.848152
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.566336, derivative: -0.0179881
+        1 value: 0.420129, derivative: -0.0136835
+        2 value: 0.542895, derivative: -0.0151184
+      result: 0.794115
+
+
+39 error: 0.103004
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.693652, derivative: -0.103566
+        1 value: -0.141455, derivative: -0.0103566
+        2 value: 0.634326, derivative: -0.0932093
+      result: 0.777369
+
+    Neuron 4
+      weights: 
+        0 value: 0.879415, derivative: -0.1294
+        1 value: -0.0224883, derivative: -0.01294
+        2 value: 1.00229, derivative: -0.11646
+      result: 0.855602
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.57072, derivative: -0.0173119
+        1 value: 0.423499, derivative: -0.0133143
+        2 value: 0.54662, derivative: -0.0146831
+      result: 0.796996
+
+
+40 error: 0.100216
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.719919, derivative: -0.104787
+        1 value: -0.13885, derivative: -0.0104787
+        2 value: 0.657967, derivative: -0.0943086
+      result: 0.785533
+
+    Neuron 4
+      weights: 
+        0 value: 0.912134, derivative: -0.130526
+        1 value: -0.0192274, derivative: -0.0130526
+        2 value: 1.03176, derivative: -0.117473
+      result: 0.862806
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.574944, derivative: -0.0166654
+        1 value: 0.42678, derivative: -0.0129551
+        2 value: 0.550239, derivative: -0.0142589
+      result: 0.799784
+
+
+41 error: 0.0975212
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.746476, derivative: -0.105941
+        1 value: -0.136215, derivative: -0.0105941
+        2 value: 0.681869, derivative: -0.095347
+      result: 0.793563
+
+    Neuron 4
+      weights: 
+        0 value: 0.945118, derivative: -0.131571
+        1 value: -0.0159401, derivative: -0.0131571
+        2 value: 1.06147, derivative: -0.118414
+      result: 0.869761
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.579013, derivative: -0.0160476
+        1 value: 0.429974, derivative: -0.0126059
+        2 value: 0.553756, derivative: -0.013846
+      result: 0.802479
+
+
+42 error: 0.0949173
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.773308, derivative: -0.10703
+        1 value: -0.133553, derivative: -0.010703
+        2 value: 0.706019, derivative: -0.096327
+      result: 0.801448
+
+    Neuron 4
+      weights: 
+        0 value: 0.978348, derivative: -0.132541
+        1 value: -0.0126282, derivative: -0.0132541
+        2 value: 1.0914, derivative: -0.119287
+      result: 0.876462
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.582935, derivative: -0.0154577
+        1 value: 0.433084, derivative: -0.0122667
+        2 value: 0.557172, derivative: -0.0134445
+      result: 0.805083
+
+
+43 error: 0.092403
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.800399, derivative: -0.108056
+        1 value: -0.130865, derivative: -0.0108056
+        2 value: 0.730403, derivative: -0.0972508
+      result: 0.809178
+
+    Neuron 4
+      weights: 
+        0 value: 1.01181, derivative: -0.133439
+        1 value: -0.00929345, derivative: -0.0133439
+        2 value: 1.12153, derivative: -0.120095
+      result: 0.882907
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.586717, derivative: -0.0148948
+        1 value: 0.436112, derivative: -0.0119374
+        2 value: 0.560492, derivative: -0.0130548
+      result: 0.807597
+
+
+44 error: 0.0899765
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.827735, derivative: -0.109023
+        1 value: -0.128152, derivative: -0.0109023
+        2 value: 0.755006, derivative: -0.098121
+      result: 0.816742
+
+    Neuron 4
+      weights: 
+        0 value: 1.04547, derivative: -0.134271
+        1 value: -0.0059376, derivative: -0.0134271
+        2 value: 1.15185, derivative: -0.120844
+      result: 0.889097
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.590365, derivative: -0.0143579
+        1 value: 0.43906, derivative: -0.0116181
+        2 value: 0.563717, derivative: -0.0126767
+      result: 0.810023
+
+
+45 error: 0.087636
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.855301, derivative: -0.109933
+        1 value: -0.125417, derivative: -0.0109933
+        2 value: 0.779816, derivative: -0.0989399
+      result: 0.824132
+
+    Neuron 4
+      weights: 
+        0 value: 1.07934, derivative: -0.135041
+        1 value: -0.00256217, derivative: -0.0135041
+        2 value: 1.18235, derivative: -0.121537
+      result: 0.895032
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.593886, derivative: -0.0138461
+        1 value: 0.441931, derivative: -0.0113087
+        2 value: 0.566851, derivative: -0.0123105
+      result: 0.812364
+
+
+46 error: 0.0853793
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.883084, derivative: -0.110789
+        1 value: -0.12266, derivative: -0.0110789
+        2 value: 0.804822, derivative: -0.09971
+      result: 0.831341
+
+    Neuron 4
+      weights: 
+        0 value: 1.11339, derivative: -0.135752
+        1 value: 0.00083138, derivative: -0.0135752
+        2 value: 1.21301, derivative: -0.122177
+      result: 0.900714
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.597285, derivative: -0.0133582
+        1 value: 0.444727, derivative: -0.0110089
+        2 value: 0.569897, derivative: -0.011956
+      result: 0.814621
+
+
+47 error: 0.0832043
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.911071, derivative: -0.111593
+        1 value: -0.119882, derivative: -0.0111593
+        2 value: 0.830011, derivative: -0.100434
+      result: 0.838362
+
+    Neuron 4
+      weights: 
+        0 value: 1.1476, derivative: -0.136409
+        1 value: 0.0042417, derivative: -0.0136409
+        2 value: 1.24383, derivative: -0.122768
+      result: 0.906147
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.600568, derivative: -0.0128935
+        1 value: 0.447452, derivative: -0.0107188
+        2 value: 0.572857, derivative: -0.0116133
+      result: 0.816796
+
+
+48 error: 0.0811088
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.939249, derivative: -0.112348
+        1 value: -0.117085, derivative: -0.0112348
+        2 value: 0.855372, derivative: -0.101113
+      result: 0.845192
+
+    Neuron 4
+      weights: 
+        0 value: 1.18197, derivative: -0.137016
+        1 value: 0.00766752, derivative: -0.0137016
+        2 value: 1.27478, derivative: -0.123314
+      result: 0.911334
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.603741, derivative: -0.0124507
+        1 value: 0.450106, derivative: -0.0104382
+        2 value: 0.575735, derivative: -0.0112822
+      result: 0.818891
+
+
+49 error: 0.0790904
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.967607, derivative: -0.113056
+        1 value: -0.114271, derivative: -0.0113056
+        2 value: 0.880895, derivative: -0.101751
+      result: 0.851825
+
+    Neuron 4
+      weights: 
+        0 value: 1.21648, derivative: -0.137576
+        1 value: 0.0111077, derivative: -0.0137576
+        2 value: 1.30586, derivative: -0.123818
+      result: 0.916282
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.606808, derivative: -0.0120291
+        1 value: 0.452693, derivative: -0.0101669
+        2 value: 0.578533, derivative: -0.0109625
+      result: 0.82091
+
+
+50 error: 0.0771467
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 0.996134, derivative: -0.113721
+        1 value: -0.111439, derivative: -0.0113721
+        2 value: 0.90657, derivative: -0.102349
+      result: 0.858259
+
+    Neuron 4
+      weights: 
+        0 value: 1.25112, derivative: -0.138092
+        1 value: 0.0145611, derivative: -0.0138092
+        2 value: 1.33706, derivative: -0.124282
+      result: 0.920995
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.609776, derivative: -0.0116276
+        1 value: 0.455214, derivative: -0.0099047
+        2 value: 0.581254, derivative: -0.0106542
+      result: 0.822853
+
+
+51 error: 0.0752754
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.02482, derivative: -0.114343
+        1 value: -0.108592, derivative: -0.0114343
+        2 value: 0.932388, derivative: -0.102909
+      result: 0.864492
+
+    Neuron 4
+      weights: 
+        0 value: 1.28589, derivative: -0.138567
+        1 value: 0.0180267, derivative: -0.0138567
+        2 value: 1.36838, derivative: -0.12471
+      result: 0.925479
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.612648, derivative: -0.0112453
+        1 value: 0.457672, derivative: -0.00965142
+        2 value: 0.583902, derivative: -0.0103569
+      result: 0.824725
+
+
+52 error: 0.0734739
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.05365, derivative: -0.114927
+        1 value: -0.105729, derivative: -0.0114927
+        2 value: 0.95834, derivative: -0.103434
+      result: 0.870522
+
+    Neuron 4
+      weights: 
+        0 value: 1.32077, derivative: -0.139005
+        1 value: 0.0215036, derivative: -0.0139005
+        2 value: 1.39979, derivative: -0.125105
+      result: 0.929742
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.61543, derivative: -0.0108813
+        1 value: 0.46007, derivative: -0.00940684
+        2 value: 0.586478, derivative: -0.0100705
+      result: 0.826526
+
+
+53 error: 0.07174
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.08263, derivative: -0.115473
+        1 value: -0.102853, derivative: -0.0115473
+        2 value: 0.984417, derivative: -0.103926
+      result: 0.876351
+
+    Neuron 4
+      weights: 
+        0 value: 1.35576, derivative: -0.139409
+        1 value: 0.024991, derivative: -0.0139409
+        2 value: 1.4313, derivative: -0.125468
+      result: 0.93379
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.618125, derivative: -0.0105347
+        1 value: 0.462409, derivative: -0.00917073
+        2 value: 0.588985, derivative: -0.0097946
+      result: 0.82826
+
+
+54 error: 0.070071
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.11173, derivative: -0.115984
+        1 value: -0.0999639, derivative: -0.0115984
+        2 value: 1.01061, derivative: -0.104386
+      result: 0.881977
+
+    Neuron 4
+      weights: 
+        0 value: 1.39084, derivative: -0.139781
+        1 value: 0.028488, derivative: -0.0139781
+        2 value: 1.46289, derivative: -0.125802
+      result: 0.937631
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.620738, derivative: -0.0102047
+        1 value: 0.464691, derivative: -0.00894288
+        2 value: 0.591426, derivative: -0.00952903
+      result: 0.829929
+
+
+55 error: 0.0684647
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.14096, derivative: -0.116463
+        1 value: -0.0970623, derivative: -0.0116463
+        2 value: 1.03692, derivative: -0.104816
+      result: 0.887402
+
+    Neuron 4
+      weights: 
+        0 value: 1.42601, derivative: -0.140123
+        1 value: 0.0319939, derivative: -0.0140123
+        2 value: 1.49456, derivative: -0.12611
+      result: 0.941272
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.623273, derivative: -0.00989031
+        1 value: 0.466918, derivative: -0.00872302
+        2 value: 0.593804, derivative: -0.00927346
+      result: 0.831535
+
+
+56 error: 0.0669186
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.1703, derivative: -0.11691
+        1 value: -0.0941493, derivative: -0.011691
+        2 value: 1.06333, derivative: -0.105219
+      result: 0.892629
+
+    Neuron 4
+      weights: 
+        0 value: 1.46126, derivative: -0.140437
+        1 value: 0.0355081, derivative: -0.0140437
+        2 value: 1.52631, derivative: -0.126394
+      result: 0.944721
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.625733, derivative: -0.00959083
+        1 value: 0.469092, derivative: -0.00851093
+        2 value: 0.59612, derivative: -0.00902758
+      result: 0.833081
+
+
+57 error: 0.0654304
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.19975, derivative: -0.117329
+        1 value: -0.0912255, derivative: -0.0117329
+        2 value: 1.08983, derivative: -0.105596
+      result: 0.897659
+
+    Neuron 4
+      weights: 
+        0 value: 1.49659, derivative: -0.140727
+        1 value: 0.0390298, derivative: -0.0140727
+        2 value: 1.55813, derivative: -0.126654
+      result: 0.947985
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.628122, derivative: -0.00930549
+        1 value: 0.471216, derivative: -0.00830635
+        2 value: 0.598377, derivative: -0.00879109
+      result: 0.83457
+
+
+58 error: 0.0639978
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.2293, derivative: -0.11772
+        1 value: -0.0882916, derivative: -0.011772
+        2 value: 1.11643, derivative: -0.105948
+      result: 0.902495
+
+    Neuron 4
+      weights: 
+        0 value: 1.53198, derivative: -0.140994
+        1 value: 0.0425586, derivative: -0.0140994
+        2 value: 1.59001, derivative: -0.126894
+      result: 0.951072
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.630443, derivative: -0.00903354
+        1 value: 0.47329, derivative: -0.00810903
+        2 value: 0.600578, derivative: -0.00856366
+      result: 0.836002
+
+
+59 error: 0.0626186
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.25894, derivative: -0.118085
+        1 value: -0.0853483, derivative: -0.0118085
+        2 value: 1.14311, derivative: -0.106277
+      result: 0.90714
+
+    Neuron 4
+      weights: 
+        0 value: 1.56745, derivative: -0.141239
+        1 value: 0.0460938, derivative: -0.0141239
+        2 value: 1.62194, derivative: -0.127115
+      result: 0.953991
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.6327, derivative: -0.00877427
+        1 value: 0.475317, derivative: -0.00791873
+        2 value: 0.602724, derivative: -0.00834496
+      result: 0.837381
+
+
+60 error: 0.0612905
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.28868, derivative: -0.118426
+        1 value: -0.0823962, derivative: -0.0118426
+        2 value: 1.16987, derivative: -0.106584
+      result: 0.911599
+
+    Neuron 4
+      weights: 
+        0 value: 1.60297, derivative: -0.141464
+        1 value: 0.049635, derivative: -0.0141464
+        2 value: 1.65394, derivative: -0.127318
+      result: 0.956747
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.634895, derivative: -0.00852701
+        1 value: 0.477298, derivative: -0.00773519
+        2 value: 0.604818, derivative: -0.00813469
+      result: 0.83871
+
+
+61 error: 0.0600113
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.31849, derivative: -0.118745
+        1 value: -0.0794358, derivative: -0.0118745
+        2 value: 1.1967, derivative: -0.106871
+      result: 0.915875
+
+    Neuron 4
+      weights: 
+        0 value: 1.63855, derivative: -0.141672
+        1 value: 0.0531818, derivative: -0.0141672
+        2 value: 1.68598, derivative: -0.127505
+      result: 0.95935
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.637031, derivative: -0.00829112
+        1 value: 0.479236, derivative: -0.00755818
+        2 value: 0.606862, derivative: -0.0079325
+      result: 0.839989
+
+
+62 error: 0.0587791
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.34838, derivative: -0.119043
+        1 value: -0.0764676, derivative: -0.0119043
+        2 value: 1.22361, derivative: -0.107139
+      result: 0.919973
+
+    Neuron 4
+      weights: 
+        0 value: 1.67418, derivative: -0.141863
+        1 value: 0.0567337, derivative: -0.0141863
+        2 value: 1.71807, derivative: -0.127677
+      result: 0.961805
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.639111, derivative: -0.00806598
+        1 value: 0.481131, derivative: -0.00738744
+        2 value: 0.608857, derivative: -0.0077381
+      result: 0.841221
+
+
+63 error: 0.0575918
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.37835, derivative: -0.119321
+        1 value: -0.0734923, derivative: -0.0119321
+        2 value: 1.25058, derivative: -0.107389
+      result: 0.923897
+
+    Neuron 4
+      weights: 
+        0 value: 1.70985, derivative: -0.142038
+        1 value: 0.0602903, derivative: -0.0142038
+        2 value: 1.7502, derivative: -0.127835
+      result: 0.964121
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.641138, derivative: -0.00785103
+        1 value: 0.482984, derivative: -0.00722274
+        2 value: 0.610806, derivative: -0.00755116
+      result: 0.842408
+
+
+64 error: 0.0564475
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.40838, derivative: -0.119581
+        1 value: -0.0705101, derivative: -0.0119581
+        2 value: 1.27761, derivative: -0.107623
+      result: 0.927653
+
+    Neuron 4
+      weights: 
+        0 value: 1.74558, derivative: -0.1422
+        1 value: 0.0638513, derivative: -0.01422
+        2 value: 1.78237, derivative: -0.12798
+      result: 0.966304
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.643113, derivative: -0.0076457
+        1 value: 0.484799, derivative: -0.00706384
+        2 value: 0.61271, derivative: -0.00737138
+      result: 0.843552
+
+
+65 error: 0.0553443
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.43848, derivative: -0.119823
+        1 value: -0.0675215, derivative: -0.0119823
+        2 value: 1.3047, derivative: -0.107841
+      result: 0.931244
+
+    Neuron 4
+      weights: 
+        0 value: 1.78134, derivative: -0.142349
+        1 value: 0.0674164, derivative: -0.0142349
+        2 value: 1.81457, derivative: -0.128114
+      result: 0.96836
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.64504, derivative: -0.00744947
+        1 value: 0.486575, derivative: -0.00691052
+        2 value: 0.614571, derivative: -0.00719845
+      result: 0.844656
+
+
+66 error: 0.0542803
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.46863, derivative: -0.12005
+        1 value: -0.0645271, derivative: -0.012005
+        2 value: 1.33184, derivative: -0.108045
+      result: 0.934676
+
+    Neuron 4
+      weights: 
+        0 value: 1.81714, derivative: -0.142485
+        1 value: 0.0709853, derivative: -0.0142485
+        2 value: 1.84681, derivative: -0.128237
+      result: 0.970297
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.64692, derivative: -0.00726185
+        1 value: 0.488314, derivative: -0.00676256
+        2 value: 0.61639, derivative: -0.00703209
+      result: 0.84572
+
+
+67 error: 0.0532539
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.49885, derivative: -0.120261
+        1 value: -0.061527, derivative: -0.0120261
+        2 value: 1.35903, derivative: -0.108235
+      result: 0.937954
+
+    Neuron 4
+      weights: 
+        0 value: 1.85297, derivative: -0.142611
+        1 value: 0.0745577, derivative: -0.0142611
+        2 value: 1.87909, derivative: -0.12835
+      result: 0.972121
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.648755, derivative: -0.00708238
+        1 value: 0.490018, derivative: -0.00661973
+        2 value: 0.61817, derivative: -0.00687201
+      result: 0.846746
+
+
+68 error: 0.0522633
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.52911, derivative: -0.120458
+        1 value: -0.0585217, derivative: -0.0120458
+        2 value: 1.38627, derivative: -0.108412
+      result: 0.941083
+
+    Neuron 4
+      weights: 
+        0 value: 1.88884, derivative: -0.142727
+        1 value: 0.0781333, derivative: -0.0142727
+        2 value: 1.91139, derivative: -0.128454
+      result: 0.973837
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.650548, derivative: -0.0069106
+        1 value: 0.491687, derivative: -0.00648183
+        2 value: 0.619911, derivative: -0.00671794
+      result: 0.847737
+
+
+69 error: 0.0513071
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.55942, derivative: -0.120642
+        1 value: -0.0555115, derivative: -0.0120642
+        2 value: 1.41355, derivative: -0.108578
+      result: 0.944068
+
+    Neuron 4
+      weights: 
+        0 value: 1.92474, derivative: -0.142834
+        1 value: 0.081712, derivative: -0.0142834
+        2 value: 1.94372, derivative: -0.12855
+      result: 0.975452
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.652299, derivative: -0.00674611
+        1 value: 0.493324, derivative: -0.00634865
+        2 value: 0.621615, derivative: -0.00656961
+      result: 0.848693
+
+
+70 error: 0.0503835
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.58978, derivative: -0.120813
+        1 value: -0.0524967, derivative: -0.0120813
+        2 value: 1.44088, derivative: -0.108732
+      result: 0.946915
+
+    Neuron 4
+      weights: 
+        0 value: 1.96066, derivative: -0.142932
+        1 value: 0.0852934, derivative: -0.0142932
+        2 value: 1.97607, derivative: -0.128638
+      result: 0.97697
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.654012, derivative: -0.0065885
+        1 value: 0.494928, derivative: -0.00622
+        2 value: 0.623284, derivative: -0.00642677
+      result: 0.849617
+
+
+71 error: 0.0494912
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.62019, derivative: -0.120974
+        1 value: -0.0494776, derivative: -0.0120974
+        2 value: 1.46824, derivative: -0.108876
+      result: 0.949629
+
+    Neuron 4
+      weights: 
+        0 value: 1.99661, derivative: -0.143022
+        1 value: 0.0888775, derivative: -0.0143022
+        2 value: 2.00845, derivative: -0.12872
+      result: 0.978397
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.655686, derivative: -0.00643741
+        1 value: 0.496501, derivative: -0.00609568
+        2 value: 0.624919, derivative: -0.00628916
+      result: 0.850509
+
+
+72 error: 0.0486287
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.65063, derivative: -0.121123
+        1 value: -0.0464545, derivative: -0.0121123
+        2 value: 1.49564, derivative: -0.109011
+      result: 0.952214
+
+    Neuron 4
+      weights: 
+        0 value: 2.03259, derivative: -0.143105
+        1 value: 0.092464, derivative: -0.0143105
+        2 value: 2.04085, derivative: -0.128794
+      result: 0.979739
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.657325, derivative: -0.00629248
+        1 value: 0.498045, derivative: -0.00597552
+        2 value: 0.626521, derivative: -0.00615655
+      result: 0.851371
+
+
+73 error: 0.0477947
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.68111, derivative: -0.121262
+        1 value: -0.0434276, derivative: -0.0121262
+        2 value: 1.52307, derivative: -0.109136
+      result: 0.954676
+
+    Neuron 4
+      weights: 
+        0 value: 2.06859, derivative: -0.143182
+        1 value: 0.0960528, derivative: -0.0143182
+        2 value: 2.07327, derivative: -0.128863
+      result: 0.981
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.658929, derivative: -0.00615339
+        1 value: 0.499559, derivative: -0.00585934
+        2 value: 0.62809, derivative: -0.00602872
+      result: 0.852205
+
+
+74 error: 0.0469879
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.71163, derivative: -0.121393
+        1 value: -0.0403971, derivative: -0.0121393
+        2 value: 1.55054, derivative: -0.109253
+      result: 0.957019
+
+    Neuron 4
+      weights: 
+        0 value: 2.10461, derivative: -0.143252
+        1 value: 0.0996437, derivative: -0.0143252
+        2 value: 2.10571, derivative: -0.128927
+      result: 0.982184
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.6605, derivative: -0.00601981
+        1 value: 0.501046, derivative: -0.00574697
+        2 value: 0.62963, derivative: -0.00590544
+      result: 0.853012
+
+
+75 error: 0.0462071
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.74218, derivative: -0.121514
+        1 value: -0.0373633, derivative: -0.0121514
+        2 value: 1.57803, derivative: -0.109363
+      result: 0.959249
+
+    Neuron 4
+      weights: 
+        0 value: 2.14065, derivative: -0.143317
+        1 value: 0.103237, derivative: -0.0143317
+        2 value: 2.13816, derivative: -0.128985
+      result: 0.983297
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.662039, derivative: -0.00589146
+        1 value: 0.502506, derivative: -0.00563824
+        2 value: 0.631139, derivative: -0.0057865
+      result: 0.853793
+
+
+76 error: 0.0454511
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.77276, derivative: -0.121627
+        1 value: -0.0343264, derivative: -0.0121627
+        2 value: 1.60556, derivative: -0.109465
+      result: 0.96137
+
+    Neuron 4
+      weights: 
+        0 value: 2.1767, derivative: -0.143377
+        1 value: 0.106831, derivative: -0.0143377
+        2 value: 2.17064, derivative: -0.129039
+      result: 0.984342
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.663547, derivative: -0.00576806
+        1 value: 0.503939, derivative: -0.00553301
+        2 value: 0.63262, derivative: -0.00567172
+      result: 0.854549
+
+
+77 error: 0.0447188
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.80337, derivative: -0.121733
+        1 value: -0.0312865, derivative: -0.0121733
+        2 value: 1.63311, derivative: -0.10956
+      result: 0.963386
+
+    Neuron 4
+      weights: 
+        0 value: 2.21278, derivative: -0.143432
+        1 value: 0.110428, derivative: -0.0143432
+        2 value: 2.20313, derivative: -0.129089
+      result: 0.985322
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.665026, derivative: -0.00564935
+        1 value: 0.505347, derivative: -0.00543112
+        2 value: 0.634074, derivative: -0.00556089
+      result: 0.855281
+
+
+78 error: 0.0440091
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.83401, derivative: -0.121832
+        1 value: -0.0282438, derivative: -0.0121832
+        2 value: 1.66068, derivative: -0.109648
+      result: 0.965303
+
+    Neuron 4
+      weights: 
+        0 value: 2.24887, derivative: -0.143483
+        1 value: 0.114026, derivative: -0.0143483
+        2 value: 2.23563, derivative: -0.129134
+      result: 0.986243
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.666476, derivative: -0.00553508
+        1 value: 0.506731, derivative: -0.00533242
+        2 value: 0.635501, derivative: -0.00545384
+      result: 0.855991
+
+
+79 error: 0.043321
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.86467, derivative: -0.121924
+        1 value: -0.0251985, derivative: -0.0121924
+        2 value: 1.68828, derivative: -0.109731
+      result: 0.967125
+
+    Neuron 4
+      weights: 
+        0 value: 2.28498, derivative: -0.143529
+        1 value: 0.117626, derivative: -0.0143529
+        2 value: 2.26815, derivative: -0.129176
+      result: 0.987107
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.667899, derivative: -0.00542502
+        1 value: 0.508091, derivative: -0.00523679
+        2 value: 0.636902, derivative: -0.00535039
+      result: 0.856679
+
+
+80 error: 0.0426535
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.89536, derivative: -0.12201
+        1 value: -0.0221508, derivative: -0.012201
+        2 value: 1.7159, derivative: -0.109809
+      result: 0.968855
+
+    Neuron 4
+      weights: 
+        0 value: 2.3211, derivative: -0.143572
+        1 value: 0.121227, derivative: -0.0143572
+        2 value: 2.30068, derivative: -0.129215
+      result: 0.987917
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.669296, derivative: -0.00531896
+        1 value: 0.509428, derivative: -0.0051441
+        2 value: 0.638278, derivative: -0.00525038
+      result: 0.857346
+
+
+81 error: 0.0420058
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.92607, derivative: -0.12209
+        1 value: -0.0191008, derivative: -0.012209
+        2 value: 1.74354, derivative: -0.109881
+      result: 0.970498
+
+    Neuron 4
+      weights: 
+        0 value: 2.35724, derivative: -0.143612
+        1 value: 0.124829, derivative: -0.0143612
+        2 value: 2.33322, derivative: -0.129251
+      result: 0.988678
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.670667, derivative: -0.00521668
+        1 value: 0.510742, derivative: -0.0050542
+        2 value: 0.63963, derivative: -0.00515365
+      result: 0.857994
+
+
+82 error: 0.0413769
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.9568, derivative: -0.122165
+        1 value: -0.0160486, derivative: -0.0122165
+        2 value: 1.77121, derivative: -0.109948
+      result: 0.972058
+
+    Neuron 4
+      weights: 
+        0 value: 2.39338, derivative: -0.143649
+        1 value: 0.128433, derivative: -0.0143649
+        2 value: 2.36577, derivative: -0.129284
+      result: 0.989391
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.672013, derivative: -0.00511799
+        1 value: 0.512035, derivative: -0.004967
+        2 value: 0.640959, derivative: -0.00506005
+      result: 0.858623
+
+
+83 error: 0.040766
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 1.98756, derivative: -0.122235
+        1 value: -0.0129943, derivative: -0.0122235
+        2 value: 1.79889, derivative: -0.110011
+      result: 0.973539
+
+    Neuron 4
+      weights: 
+        0 value: 2.42954, derivative: -0.143683
+        1 value: 0.132038, derivative: -0.0143683
+        2 value: 2.39834, derivative: -0.129314
+      result: 0.990061
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.673336, derivative: -0.00502272
+        1 value: 0.513307, derivative: -0.00488238
+        2 value: 0.642266, derivative: -0.00496944
+      result: 0.859234
+
+
+84 error: 0.0401723
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.01833, derivative: -0.1223
+        1 value: -0.00993814, derivative: -0.01223
+        2 value: 1.82658, derivative: -0.11007
+      result: 0.974944
+
+    Neuron 4
+      weights: 
+        0 value: 2.46572, derivative: -0.143714
+        1 value: 0.135644, derivative: -0.0143714
+        2 value: 2.43092, derivative: -0.129342
+      result: 0.990688
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.674636, derivative: -0.00493069
+        1 value: 0.514558, derivative: -0.00480022
+        2 value: 0.64355, derivative: -0.00488168
+      result: 0.859828
+
+
+85 error: 0.0395951
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.04912, derivative: -0.122361
+        1 value: -0.00688011, derivative: -0.0122361
+        2 value: 1.8543, derivative: -0.110125
+      result: 0.976277
+
+    Neuron 4
+      weights: 
+        0 value: 2.5019, derivative: -0.143743
+        1 value: 0.139251, derivative: -0.0143743
+        2 value: 2.4635, derivative: -0.129368
+      result: 0.991277
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.675914, derivative: -0.00484173
+        1 value: 0.51579, derivative: -0.00472042
+        2 value: 0.644814, derivative: -0.00479665
+      result: 0.860405
+
+
+86 error: 0.0390337
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.07993, derivative: -0.122417
+        1 value: -0.00382037, derivative: -0.0122417
+        2 value: 1.88203, derivative: -0.110176
+      result: 0.977542
+
+    Neuron 4
+      weights: 
+        0 value: 2.53809, derivative: -0.143769
+        1 value: 0.142859, derivative: -0.0143769
+        2 value: 2.49609, derivative: -0.129392
+      result: 0.991828
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.677171, derivative: -0.00475571
+        1 value: 0.517002, derivative: -0.00464289
+        2 value: 0.646057, derivative: -0.00471422
+      result: 0.860966
+
+
+87 error: 0.0384873
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.11076, derivative: -0.12247
+        1 value: -0.000758989, derivative: -0.012247
+        2 value: 1.90977, derivative: -0.110223
+      result: 0.978741
+
+    Neuron 4
+      weights: 
+        0 value: 2.57429, derivative: -0.143793
+        1 value: 0.146468, derivative: -0.0143793
+        2 value: 2.5287, derivative: -0.129414
+      result: 0.992345
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.678406, derivative: -0.00467246
+        1 value: 0.518196, derivative: -0.00456753
+        2 value: 0.64728, derivative: -0.00463428
+      result: 0.861513
+
+
+88 error: 0.0379554
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.1416, derivative: -0.12252
+        1 value: 0.00230393, derivative: -0.012252
+        2 value: 1.93753, derivative: -0.110268
+      result: 0.979878
+
+    Neuron 4
+      weights: 
+        0 value: 2.6105, derivative: -0.143816
+        1 value: 0.150078, derivative: -0.0143816
+        2 value: 2.56131, derivative: -0.129434
+      result: 0.99283
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.679622, derivative: -0.00459187
+        1 value: 0.519371, derivative: -0.00449425
+        2 value: 0.648484, derivative: -0.00455672
+      result: 0.862045
+
+
+89 error: 0.0374372
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.17246, derivative: -0.122566
+        1 value: 0.00536832, derivative: -0.0122566
+        2 value: 1.9653, derivative: -0.11031
+      result: 0.980956
+
+    Neuron 4
+      weights: 
+        0 value: 2.64672, derivative: -0.143837
+        1 value: 0.153689, derivative: -0.0143837
+        2 value: 2.59393, derivative: -0.129453
+      result: 0.993285
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.680819, derivative: -0.00451379
+        1 value: 0.520529, derivative: -0.00442296
+        2 value: 0.649669, derivative: -0.00448143
+      result: 0.862563
+
+
+90 error: 0.0369323
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.20333, derivative: -0.122609
+        1 value: 0.00843409, derivative: -0.0122609
+        2 value: 1.99308, derivative: -0.110348
+      result: 0.981977
+
+    Neuron 4
+      weights: 
+        0 value: 2.68295, derivative: -0.143856
+        1 value: 0.157301, derivative: -0.0143856
+        2 value: 2.62656, derivative: -0.129471
+      result: 0.993711
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.681996, derivative: -0.00443811
+        1 value: 0.521669, derivative: -0.00435359
+        2 value: 0.650836, derivative: -0.00440831
+      result: 0.863068
+
+
+91 error: 0.0364401
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.23421, derivative: -0.12265
+        1 value: 0.0115012, derivative: -0.012265
+        2 value: 2.02088, derivative: -0.110385
+      result: 0.982946
+
+    Neuron 4
+      weights: 
+        0 value: 2.71919, derivative: -0.143874
+        1 value: 0.160913, derivative: -0.0143874
+        2 value: 2.65919, derivative: -0.129486
+      result: 0.99411
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.683156, derivative: -0.00436473
+        1 value: 0.522793, derivative: -0.00428606
+        2 value: 0.651986, derivative: -0.00433728
+      result: 0.86356
+
+
+92 error: 0.03596
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.2651, derivative: -0.122687
+        1 value: 0.0145695, derivative: -0.0122687
+        2 value: 2.04869, derivative: -0.110419
+      result: 0.983863
+
+    Neuron 4
+      weights: 
+        0 value: 2.75543, derivative: -0.14389
+        1 value: 0.164527, derivative: -0.014389
+        2 value: 2.69183, derivative: -0.129501
+      result: 0.994484
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.684297, derivative: -0.00429352
+        1 value: 0.5239, derivative: -0.0042203
+        2 value: 0.653118, derivative: -0.00426823
+      result: 0.86404
+
+
+93 error: 0.0354915
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.29601, derivative: -0.122722
+        1 value: 0.017639, derivative: -0.0122722
+        2 value: 2.0765, derivative: -0.11045
+      result: 0.984732
+
+    Neuron 4
+      weights: 
+        0 value: 2.79169, derivative: -0.143905
+        1 value: 0.168141, derivative: -0.0143905
+        2 value: 2.72448, derivative: -0.129515
+      result: 0.994834
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.685422, derivative: -0.00422439
+        1 value: 0.524992, derivative: -0.00415622
+        2 value: 0.654233, derivative: -0.00420109
+      result: 0.864508
+
+
+94 error: 0.0350343
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.32693, derivative: -0.122755
+        1 value: 0.0207097, derivative: -0.0122755
+        2 value: 2.10433, derivative: -0.11048
+      result: 0.985556
+
+    Neuron 4
+      weights: 
+        0 value: 2.82794, derivative: -0.143919
+        1 value: 0.171756, derivative: -0.0143919
+        2 value: 2.75713, derivative: -0.129527
+      result: 0.995163
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.68653, derivative: -0.00415725
+        1 value: 0.526068, derivative: -0.00409378
+        2 value: 0.655333, derivative: -0.00413577
+      result: 0.864966
+
+
+95 error: 0.0345877
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.35786, derivative: -0.122786
+        1 value: 0.0237814, derivative: -0.0122786
+        2 value: 2.13217, derivative: -0.110507
+      result: 0.986335
+
+    Neuron 4
+      weights: 
+        0 value: 2.86421, derivative: -0.143932
+        1 value: 0.175371, derivative: -0.0143932
+        2 value: 2.78979, derivative: -0.129539
+      result: 0.99547
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.687621, derivative: -0.004092
+        1 value: 0.527129, derivative: -0.0040329
+        2 value: 0.656416, derivative: -0.00407221
+      result: 0.865412
+
+
+96 error: 0.0341515
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.3888, derivative: -0.122814
+        1 value: 0.0268541, derivative: -0.0122814
+        2 value: 2.16001, derivative: -0.110533
+      result: 0.987074
+
+    Neuron 4
+      weights: 
+        0 value: 2.90048, derivative: -0.143944
+        1 value: 0.178987, derivative: -0.0143944
+        2 value: 2.82246, derivative: -0.12955
+      result: 0.995759
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.688697, derivative: -0.00402856
+        1 value: 0.528175, derivative: -0.00397352
+        2 value: 0.657485, derivative: -0.00401032
+      result: 0.865849
+
+
+97 error: 0.0337251
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.41975, derivative: -0.122841
+        1 value: 0.0299278, derivative: -0.0122841
+        2 value: 2.18787, derivative: -0.110557
+      result: 0.987773
+
+    Neuron 4
+      weights: 
+        0 value: 2.93676, derivative: -0.143955
+        1 value: 0.182604, derivative: -0.0143955
+        2 value: 2.85513, derivative: -0.12956
+      result: 0.996029
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.689758, derivative: -0.00396686
+        1 value: 0.529206, derivative: -0.00391558
+        2 value: 0.658538, derivative: -0.00395003
+      result: 0.866275
+
+
+98 error: 0.0333082
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.4507, derivative: -0.122866
+        1 value: 0.0330025, derivative: -0.0122866
+        2 value: 2.21573, derivative: -0.11058
+      result: 0.988435
+
+    Neuron 4
+      weights: 
+        0 value: 2.97305, derivative: -0.143965
+        1 value: 0.186221, derivative: -0.0143965
+        2 value: 2.88781, derivative: -0.129569
+      result: 0.996281
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.690803, derivative: -0.00390681
+        1 value: 0.530224, derivative: -0.00385904
+        2 value: 0.659577, derivative: -0.00389129
+      result: 0.866692
+
+
+99 error: 0.0329005
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.48167, derivative: -0.122889
+        1 value: 0.036078, derivative: -0.0122889
+        2 value: 2.2436, derivative: -0.110601
+      result: 0.989062
+
+    Neuron 4
+      weights: 
+        0 value: 3.00934, derivative: -0.143975
+        1 value: 0.189839, derivative: -0.0143975
+        2 value: 2.92049, derivative: -0.129577
+      result: 0.996518
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.691835, derivative: -0.00384834
+        1 value: 0.531228, derivative: -0.00380383
+        2 value: 0.660601, derivative: -0.00383403
+      result: 0.8671
+
+
+100 error: 0.0325015
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.51265, derivative: -0.122911
+        1 value: 0.0391544, derivative: -0.0122911
+        2 value: 2.27148, derivative: -0.11062
+      result: 0.989655
+
+    Neuron 4
+      weights: 
+        0 value: 3.04563, derivative: -0.143984
+        1 value: 0.193458, derivative: -0.0143984
+        2 value: 2.95318, derivative: -0.129585
+      result: 0.99674
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.692852, derivative: -0.00379138
+        1 value: 0.532219, derivative: -0.00374991
+        2 value: 0.661612, derivative: -0.00377818
+      result: 0.867498
+
+
+101 error: 0.032111
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.54363, derivative: -0.122932
+        1 value: 0.0422316, derivative: -0.0122932
+        2 value: 2.29937, derivative: -0.110638
+      result: 0.990217
+
+    Neuron 4
+      weights: 
+        0 value: 3.08194, derivative: -0.143992
+        1 value: 0.197077, derivative: -0.0143992
+        2 value: 2.98588, derivative: -0.129592
+      result: 0.996948
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.693855, derivative: -0.00373588
+        1 value: 0.533196, derivative: -0.00369724
+        2 value: 0.662609, derivative: -0.0037237
+      result: 0.867889
+
+
+102 error: 0.0317286
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.57462, derivative: -0.122951
+        1 value: 0.0453096, derivative: -0.0122951
+        2 value: 2.32726, derivative: -0.110656
+      result: 0.990749
+
+    Neuron 4
+      weights: 
+        0 value: 3.11825, derivative: -0.143999
+        1 value: 0.200697, derivative: -0.0143999
+        2 value: 3.01857, derivative: -0.129599
+      result: 0.997143
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.694845, derivative: -0.00368177
+        1 value: 0.534161, derivative: -0.00364575
+        2 value: 0.663593, derivative: -0.00367054
+      result: 0.868271
+
+
+103 error: 0.031354
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.60562, derivative: -0.122968
+        1 value: 0.0483884, derivative: -0.0122968
+        2 value: 2.35517, derivative: -0.110672
+      result: 0.991252
+
+    Neuron 4
+      weights: 
+        0 value: 3.15456, derivative: -0.144006
+        1 value: 0.204317, derivative: -0.0144006
+        2 value: 3.05128, derivative: -0.129605
+      result: 0.997325
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.695821, derivative: -0.003629
+        1 value: 0.535113, derivative: -0.00359542
+        2 value: 0.664564, derivative: -0.00361863
+      result: 0.868646
+
+
+104 error: 0.030987
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.63663, derivative: -0.122985
+        1 value: 0.0514678, derivative: -0.0122985
+        2 value: 2.38307, derivative: -0.110687
+      result: 0.991728
+
+    Neuron 4
+      weights: 
+        0 value: 3.19088, derivative: -0.144012
+        1 value: 0.207938, derivative: -0.0144012
+        2 value: 3.08398, derivative: -0.129611
+      result: 0.997496
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.696785, derivative: -0.0035775
+        1 value: 0.536053, derivative: -0.00354621
+        2 value: 0.665522, derivative: -0.00356793
+      result: 0.869013
+
+
+105 error: 0.0306273
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.66764, derivative: -0.123001
+        1 value: 0.054548, derivative: -0.0123001
+        2 value: 2.41099, derivative: -0.1107
+      result: 0.992178
+
+    Neuron 4
+      weights: 
+        0 value: 3.2272, derivative: -0.144018
+        1 value: 0.211559, derivative: -0.0144018
+        2 value: 3.1167, derivative: -0.129616
+      result: 0.997656
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.697737, derivative: -0.00352724
+        1 value: 0.536981, derivative: -0.00349806
+        2 value: 0.666468, derivative: -0.0035184
+      result: 0.869373
+
+
+106 error: 0.0302745
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.69867, derivative: -0.123015
+        1 value: 0.0576288, derivative: -0.0123015
+        2 value: 2.43891, derivative: -0.110714
+      result: 0.992604
+
+    Neuron 4
+      weights: 
+        0 value: 3.26353, derivative: -0.144023
+        1 value: 0.215181, derivative: -0.0144023
+        2 value: 3.14941, derivative: -0.129621
+      result: 0.997805
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.698676, derivative: -0.00347815
+        1 value: 0.537898, derivative: -0.00345094
+        2 value: 0.667402, derivative: -0.00347
+      result: 0.869725
+
+
+107 error: 0.0299286
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.72969, derivative: -0.123029
+        1 value: 0.0607103, derivative: -0.0123029
+        2 value: 2.46683, derivative: -0.110726
+      result: 0.993008
+
+    Neuron 4
+      weights: 
+        0 value: 3.29986, derivative: -0.144028
+        1 value: 0.218803, derivative: -0.0144028
+        2 value: 3.18214, derivative: -0.129626
+      result: 0.997945
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.699604, derivative: -0.0034302
+        1 value: 0.538803, derivative: -0.00340483
+        2 value: 0.668325, derivative: -0.00342267
+      result: 0.870071
+
+
+108 error: 0.0295891
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.76073, derivative: -0.123041
+        1 value: 0.0637924, derivative: -0.0123041
+        2 value: 2.49476, derivative: -0.110737
+      result: 0.993389
+
+    Neuron 4
+      weights: 
+        0 value: 3.3362, derivative: -0.144033
+        1 value: 0.222426, derivative: -0.0144033
+        2 value: 3.21486, derivative: -0.12963
+      result: 0.998077
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.700519, derivative: -0.00338334
+        1 value: 0.539697, derivative: -0.00335968
+        2 value: 0.669236, derivative: -0.00337639
+      result: 0.870411
+
+
+109 error: 0.0292559
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.79176, derivative: -0.123053
+        1 value: 0.0668751, derivative: -0.0123053
+        2 value: 2.5227, derivative: -0.110748
+      result: 0.99375
+
+    Neuron 4
+      weights: 
+        0 value: 3.37254, derivative: -0.144037
+        1 value: 0.226049, derivative: -0.0144037
+        2 value: 3.24759, derivative: -0.129634
+      result: 0.9982
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.701424, derivative: -0.00333753
+        1 value: 0.540579, derivative: -0.00331546
+        2 value: 0.670135, derivative: -0.00333111
+      result: 0.870744
+
+
+110 error: 0.0289289
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.82281, derivative: -0.123064
+        1 value: 0.0699584, derivative: -0.0123064
+        2 value: 2.55064, derivative: -0.110758
+      result: 0.994091
+
+    Neuron 4
+      weights: 
+        0 value: 3.40889, derivative: -0.144041
+        1 value: 0.229673, derivative: -0.0144041
+        2 value: 3.28032, derivative: -0.129637
+      result: 0.998315
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.702317, derivative: -0.00329272
+        1 value: 0.541452, derivative: -0.00327214
+        2 value: 0.671024, derivative: -0.0032868
+      result: 0.871071
+
+
+111 error: 0.0286077
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.85386, derivative: -0.123074
+        1 value: 0.0730422, derivative: -0.0123074
+        2 value: 2.57859, derivative: -0.110767
+      result: 0.994414
+
+    Neuron 4
+      weights: 
+        0 value: 3.44524, derivative: -0.144045
+        1 value: 0.233297, derivative: -0.0144045
+        2 value: 3.31306, derivative: -0.129641
+      result: 0.998422
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.7032, derivative: -0.00324889
+        1 value: 0.542313, derivative: -0.0032297
+        2 value: 0.671902, derivative: -0.00324342
+      result: 0.871392
+
+
+112 error: 0.0282922
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.88492, derivative: -0.123084
+        1 value: 0.0761266, derivative: -0.0123084
+        2 value: 2.60654, derivative: -0.110776
+      result: 0.994719
+
+    Neuron 4
+      weights: 
+        0 value: 3.4816, derivative: -0.144048
+        1 value: 0.236921, derivative: -0.0144048
+        2 value: 3.34581, derivative: -0.129644
+      result: 0.998523
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.704071, derivative: -0.003206
+        1 value: 0.543164, derivative: -0.00318809
+        2 value: 0.67277, derivative: -0.00320094
+      result: 0.871708
+
+
+113 error: 0.0279822
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.91598, derivative: -0.123093
+        1 value: 0.0792116, derivative: -0.0123093
+        2 value: 2.63449, derivative: -0.110784
+      result: 0.995008
+
+    Neuron 4
+      weights: 
+        0 value: 3.51796, derivative: -0.144052
+        1 value: 0.240546, derivative: -0.0144052
+        2 value: 3.37855, derivative: -0.129646
+      result: 0.998618
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.704933, derivative: -0.00316401
+        1 value: 0.544005, derivative: -0.0031473
+        2 value: 0.673627, derivative: -0.00315934
+      result: 0.872018
+
+
+114 error: 0.0276776
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.94705, derivative: -0.123102
+        1 value: 0.082297, derivative: -0.0123102
+        2 value: 2.66246, derivative: -0.110791
+      result: 0.995281
+
+    Neuron 4
+      weights: 
+        0 value: 3.55433, derivative: -0.144054
+        1 value: 0.244172, derivative: -0.0144054
+        2 value: 3.4113, derivative: -0.129649
+      result: 0.998706
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.705784, derivative: -0.0031229
+        1 value: 0.544837, derivative: -0.00310731
+        2 value: 0.674474, derivative: -0.00311858
+      result: 0.872322
+
+
+115 error: 0.0273781
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 2.97812, derivative: -0.123109
+        1 value: 0.085383, derivative: -0.0123109
+        2 value: 2.69042, derivative: -0.110799
+      result: 0.99554
+
+    Neuron 4
+      weights: 
+        0 value: 3.5907, derivative: -0.144057
+        1 value: 0.247797, derivative: -0.0144057
+        2 value: 3.44406, derivative: -0.129651
+      result: 0.998789
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.706625, derivative: -0.00308262
+        1 value: 0.545658, derivative: -0.00306807
+        2 value: 0.675311, derivative: -0.00307863
+      result: 0.872622
+
+
+116 error: 0.0270836
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.0092, derivative: -0.123117
+        1 value: 0.0884695, derivative: -0.0123117
+        2 value: 2.71839, derivative: -0.110805
+      result: 0.995784
+
+    Neuron 4
+      weights: 
+        0 value: 3.62707, derivative: -0.14406
+        1 value: 0.251424, derivative: -0.014406
+        2 value: 3.47681, derivative: -0.129654
+      result: 0.998867
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.707457, derivative: -0.00304315
+        1 value: 0.54647, derivative: -0.00302958
+        2 value: 0.676138, derivative: -0.00303947
+      result: 0.872916
+
+
+117 error: 0.0267939
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.04028, derivative: -0.123124
+        1 value: 0.0915564, derivative: -0.0123124
+        2 value: 2.74637, derivative: -0.110811
+      result: 0.996015
+
+    Neuron 4
+      weights: 
+        0 value: 3.66345, derivative: -0.144062
+        1 value: 0.25505, derivative: -0.0144062
+        2 value: 3.50958, derivative: -0.129656
+      result: 0.998939
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.708279, derivative: -0.00300447
+        1 value: 0.547273, derivative: -0.00299181
+        2 value: 0.676956, derivative: -0.00300107
+      result: 0.873206
+
+
+118 error: 0.026509
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.07136, derivative: -0.12313
+        1 value: 0.0946438, derivative: -0.012313
+        2 value: 2.77435, derivative: -0.110817
+      result: 0.996233
+
+    Neuron 4
+      weights: 
+        0 value: 3.69983, derivative: -0.144064
+        1 value: 0.258677, derivative: -0.0144064
+        2 value: 3.54234, derivative: -0.129658
+      result: 0.999007
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.709091, derivative: -0.00296655
+        1 value: 0.548066, derivative: -0.00295473
+        2 value: 0.677765, derivative: -0.00296341
+      result: 0.873491
+
+
+119 error: 0.0262286
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.10245, derivative: -0.123136
+        1 value: 0.0977317, derivative: -0.0123136
+        2 value: 2.80233, derivative: -0.110823
+      result: 0.99644
+
+    Neuron 4
+      weights: 
+        0 value: 3.73622, derivative: -0.144066
+        1 value: 0.262305, derivative: -0.0144066
+        2 value: 3.57511, derivative: -0.129659
+      result: 0.999071
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.709894, derivative: -0.00292936
+        1 value: 0.548851, derivative: -0.00291833
+        2 value: 0.678564, derivative: -0.00292645
+      result: 0.873771
+
+
+120 error: 0.0259526
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.13355, derivative: -0.123142
+        1 value: 0.10082, derivative: -0.0123142
+        2 value: 2.83032, derivative: -0.110828
+      result: 0.996635
+
+    Neuron 4
+      weights: 
+        0 value: 3.77261, derivative: -0.144068
+        1 value: 0.265933, derivative: -0.0144068
+        2 value: 3.60788, derivative: -0.129661
+      result: 0.99913
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.710689, derivative: -0.00289288
+        1 value: 0.549626, derivative: -0.00288258
+        2 value: 0.679354, derivative: -0.00289019
+      result: 0.874047
+
+
+121 error: 0.025681
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.16465, derivative: -0.123147
+        1 value: 0.103909, derivative: -0.0123147
+        2 value: 2.85831, derivative: -0.110832
+      result: 0.996819
+
+    Neuron 4
+      weights: 
+        0 value: 3.809, derivative: -0.14407
+        1 value: 0.269561, derivative: -0.014407
+        2 value: 3.64066, derivative: -0.129663
+      result: 0.999186
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.711474, derivative: -0.00285709
+        1 value: 0.550393, derivative: -0.00284748
+        2 value: 0.680136, derivative: -0.00285461
+      result: 0.874319
+
+
+122 error: 0.0254135
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.19576, derivative: -0.123152
+        1 value: 0.106998, derivative: -0.0123152
+        2 value: 2.8863, derivative: -0.110837
+      result: 0.996994
+
+    Neuron 4
+      weights: 
+        0 value: 3.8454, derivative: -0.144071
+        1 value: 0.27319, derivative: -0.0144071
+        2 value: 3.67344, derivative: -0.129664
+      result: 0.999238
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.712251, derivative: -0.00282196
+        1 value: 0.551151, derivative: -0.00281299
+        2 value: 0.680909, derivative: -0.00281966
+      result: 0.874587
+
+
+123 error: 0.0251501
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.22686, derivative: -0.123157
+        1 value: 0.110088, derivative: -0.0123157
+        2 value: 2.9143, derivative: -0.110841
+      result: 0.997159
+
+    Neuron 4
+      weights: 
+        0 value: 3.8818, derivative: -0.144073
+        1 value: 0.276819, derivative: -0.0144073
+        2 value: 3.70622, derivative: -0.129665
+      result: 0.999287
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.713019, derivative: -0.00278748
+        1 value: 0.551901, derivative: -0.0027791
+        2 value: 0.681673, derivative: -0.00278535
+      result: 0.87485
+
+
+124 error: 0.0248906
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.25798, derivative: -0.123161
+        1 value: 0.113178, derivative: -0.0123161
+        2 value: 2.9423, derivative: -0.110845
+      result: 0.997315
+
+    Neuron 4
+      weights: 
+        0 value: 3.91821, derivative: -0.144074
+        1 value: 0.280449, derivative: -0.0144074
+        2 value: 3.73901, derivative: -0.129666
+      result: 0.999333
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.713778, derivative: -0.00275362
+        1 value: 0.552643, derivative: -0.00274579
+        2 value: 0.682429, derivative: -0.00275165
+      result: 0.875109
+
+
+125 error: 0.0246349
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.28909, derivative: -0.123165
+        1 value: 0.116268, derivative: -0.0123165
+        2 value: 2.97031, derivative: -0.110848
+      result: 0.997462
+
+    Neuron 4
+      weights: 
+        0 value: 3.95462, derivative: -0.144075
+        1 value: 0.284079, derivative: -0.0144075
+        2 value: 3.7718, derivative: -0.129668
+      result: 0.999375
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.71453, derivative: -0.00272036
+        1 value: 0.553376, derivative: -0.00271306
+        2 value: 0.683177, derivative: -0.00271855
+      result: 0.875365
+
+
+126 error: 0.024383
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.32022, derivative: -0.123169
+        1 value: 0.119359, derivative: -0.0123169
+        2 value: 2.99832, derivative: -0.110852
+      result: 0.997602
+
+    Neuron 4
+      weights: 
+        0 value: 3.99104, derivative: -0.144076
+        1 value: 0.287709, derivative: -0.0144076
+        2 value: 3.80459, derivative: -0.129669
+      result: 0.999415
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.715273, derivative: -0.00268769
+        1 value: 0.554102, derivative: -0.00268087
+        2 value: 0.683917, derivative: -0.00268601
+      result: 0.875617
+
+
+127 error: 0.0241347
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.35134, derivative: -0.123172
+        1 value: 0.12245, derivative: -0.0123172
+        2 value: 3.02633, derivative: -0.110855
+      result: 0.997734
+
+    Neuron 4
+      weights: 
+        0 value: 4.02745, derivative: -0.144077
+        1 value: 0.29134, derivative: -0.0144077
+        2 value: 3.83739, derivative: -0.12967
+      result: 0.999453
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.716009, derivative: -0.0026556
+        1 value: 0.55482, derivative: -0.00264923
+        2 value: 0.684649, derivative: -0.00265404
+      result: 0.875865
+
+
+128 error: 0.0238899
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.38247, derivative: -0.123176
+        1 value: 0.125542, derivative: -0.0123176
+        2 value: 3.05435, derivative: -0.110858
+      result: 0.997858
+
+    Neuron 4
+      weights: 
+        0 value: 4.06388, derivative: -0.144078
+        1 value: 0.294971, derivative: -0.0144078
+        2 value: 3.87019, derivative: -0.12967
+      result: 0.999488
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.716736, derivative: -0.00262405
+        1 value: 0.55553, derivative: -0.0026181
+        2 value: 0.685373, derivative: -0.00262262
+      result: 0.87611
+
+
+129 error: 0.0236486
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.4136, derivative: -0.123179
+        1 value: 0.128634, derivative: -0.0123179
+        2 value: 3.08237, derivative: -0.110861
+      result: 0.997976
+
+    Neuron 4
+      weights: 
+        0 value: 4.1003, derivative: -0.144079
+        1 value: 0.298602, derivative: -0.0144079
+        2 value: 3.903, derivative: -0.129671
+      result: 0.999521
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.717456, derivative: -0.00259304
+        1 value: 0.556232, derivative: -0.00258749
+        2 value: 0.68609, derivative: -0.00259172
+      result: 0.876351
+
+
+130 error: 0.0234107
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.44474, derivative: -0.123181
+        1 value: 0.131726, derivative: -0.0123181
+        2 value: 3.1104, derivative: -0.110863
+      result: 0.998087
+
+    Neuron 4
+      weights: 
+        0 value: 4.13673, derivative: -0.14408
+        1 value: 0.302234, derivative: -0.014408
+        2 value: 3.93581, derivative: -0.129672
+      result: 0.999552
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.718169, derivative: -0.00256256
+        1 value: 0.556927, derivative: -0.00255737
+        2 value: 0.686799, derivative: -0.00256133
+      result: 0.876589
+
+
+131 error: 0.023176
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.47588, derivative: -0.123184
+        1 value: 0.134819, derivative: -0.0123184
+        2 value: 3.13842, derivative: -0.110866
+      result: 0.998192
+
+    Neuron 4
+      weights: 
+        0 value: 4.17317, derivative: -0.144081
+        1 value: 0.305866, derivative: -0.0144081
+        2 value: 3.96862, derivative: -0.129673
+      result: 0.99958
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.718874, derivative: -0.00253258
+        1 value: 0.557615, derivative: -0.00252774
+        2 value: 0.6875, derivative: -0.00253145
+      result: 0.876824
+
+
+132 error: 0.0229446
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.50702, derivative: -0.123187
+        1 value: 0.137912, derivative: -0.0123187
+        2 value: 3.16645, derivative: -0.110868
+      result: 0.998292
+
+    Neuron 4
+      weights: 
+        0 value: 4.2096, derivative: -0.144082
+        1 value: 0.309499, derivative: -0.0144082
+        2 value: 4.00143, derivative: -0.129673
+      result: 0.999607
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.719571, derivative: -0.0025031
+        1 value: 0.558295, derivative: -0.00249857
+        2 value: 0.688194, derivative: -0.00250205
+      result: 0.877055
+
+
+133 error: 0.0227162
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.53817, derivative: -0.123189
+        1 value: 0.141006, derivative: -0.0123189
+        2 value: 3.19449, derivative: -0.11087
+      result: 0.998386
+
+    Neuron 4
+      weights: 
+        0 value: 4.24605, derivative: -0.144082
+        1 value: 0.313132, derivative: -0.0144082
+        2 value: 4.03425, derivative: -0.129674
+      result: 0.999632
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.720262, derivative: -0.0024741
+        1 value: 0.558968, derivative: -0.00246987
+        2 value: 0.688881, derivative: -0.00247312
+      result: 0.877284
+
+
+134 error: 0.0224909
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.56932, derivative: -0.123191
+        1 value: 0.1441, derivative: -0.0123191
+        2 value: 3.22253, derivative: -0.110872
+      result: 0.998475
+
+    Neuron 4
+      weights: 
+        0 value: 4.28249, derivative: -0.144083
+        1 value: 0.316765, derivative: -0.0144083
+        2 value: 4.06707, derivative: -0.129675
+      result: 0.999656
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.720945, derivative: -0.00244556
+        1 value: 0.559635, derivative: -0.00244161
+        2 value: 0.689561, derivative: -0.00244466
+      result: 0.877509
+
+
+135 error: 0.0222686
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.60048, derivative: -0.123193
+        1 value: 0.147194, derivative: -0.0123193
+        2 value: 3.25057, derivative: -0.110874
+      result: 0.998559
+
+    Neuron 4
+      weights: 
+        0 value: 4.31894, derivative: -0.144083
+        1 value: 0.320399, derivative: -0.0144083
+        2 value: 4.0999, derivative: -0.129675
+      result: 0.999678
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.721622, derivative: -0.00241748
+        1 value: 0.560294, derivative: -0.00241379
+        2 value: 0.690235, derivative: -0.00241665
+      result: 0.877731
+
+
+136 error: 0.0220492
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.63164, derivative: -0.123195
+        1 value: 0.150288, derivative: -0.0123195
+        2 value: 3.27861, derivative: -0.110876
+      result: 0.998638
+
+    Neuron 4
+      weights: 
+        0 value: 4.35539, derivative: -0.144084
+        1 value: 0.324033, derivative: -0.0144084
+        2 value: 4.13273, derivative: -0.129676
+      result: 0.999699
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.722291, derivative: -0.00238984
+        1 value: 0.560947, derivative: -0.0023864
+        2 value: 0.690901, derivative: -0.00238907
+      result: 0.877951
+
+
+137 error: 0.0218326
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.6628, derivative: -0.123197
+        1 value: 0.153383, derivative: -0.0123197
+        2 value: 3.30666, derivative: -0.110877
+      result: 0.998713
+
+    Neuron 4
+      weights: 
+        0 value: 4.39185, derivative: -0.144084
+        1 value: 0.327668, derivative: -0.0144084
+        2 value: 4.16556, derivative: -0.129676
+      result: 0.999718
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.722954, derivative: -0.00236264
+        1 value: 0.561593, derivative: -0.00235942
+        2 value: 0.69156, derivative: -0.00236193
+      result: 0.878167
+
+
+138 error: 0.0216188
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.69397, derivative: -0.123199
+        1 value: 0.156479, derivative: -0.0123199
+        2 value: 3.33471, derivative: -0.110879
+      result: 0.998784
+
+    Neuron 4
+      weights: 
+        0 value: 4.42831, derivative: -0.144085
+        1 value: 0.331303, derivative: -0.0144085
+        2 value: 4.1984, derivative: -0.129676
+      result: 0.999736
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.72361, derivative: -0.00233586
+        1 value: 0.562232, derivative: -0.00233285
+        2 value: 0.692213, derivative: -0.0023352
+      result: 0.878381
+
+
+139 error: 0.0214077
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.72514, derivative: -0.1232
+        1 value: 0.159574, derivative: -0.01232
+        2 value: 3.36276, derivative: -0.11088
+      result: 0.998851
+
+    Neuron 4
+      weights: 
+        0 value: 4.46477, derivative: -0.144085
+        1 value: 0.334938, derivative: -0.0144085
+        2 value: 4.23124, derivative: -0.129677
+      result: 0.999753
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.72426, derivative: -0.00230948
+        1 value: 0.562865, derivative: -0.00230667
+        2 value: 0.69286, derivative: -0.00230887
+      result: 0.878592
+
+
+140 error: 0.0211992
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.75631, derivative: -0.123202
+        1 value: 0.16267, derivative: -0.0123202
+        2 value: 3.39082, derivative: -0.110882
+      result: 0.998914
+
+    Neuron 4
+      weights: 
+        0 value: 4.50124, derivative: -0.144086
+        1 value: 0.338573, derivative: -0.0144086
+        2 value: 4.26408, derivative: -0.129677
+      result: 0.999769
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.724903, derivative: -0.00228351
+        1 value: 0.563491, derivative: -0.00228089
+        2 value: 0.6935, derivative: -0.00228295
+      result: 0.878801
+
+
+141 error: 0.0209934
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.78748, derivative: -0.123203
+        1 value: 0.165767, derivative: -0.0123203
+        2 value: 3.41888, derivative: -0.110883
+      result: 0.998974
+
+    Neuron 4
+      weights: 
+        0 value: 4.53771, derivative: -0.144086
+        1 value: 0.342209, derivative: -0.0144086
+        2 value: 4.29692, derivative: -0.129677
+      result: 0.999784
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.72554, derivative: -0.00225793
+        1 value: 0.564112, derivative: -0.00225548
+        2 value: 0.694134, derivative: -0.00225741
+      result: 0.879007
+
+
+142 error: 0.0207901
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.81866, derivative: -0.123204
+        1 value: 0.168863, derivative: -0.0123204
+        2 value: 3.44694, derivative: -0.110884
+      result: 0.999031
+
+    Neuron 4
+      weights: 
+        0 value: 4.57419, derivative: -0.144086
+        1 value: 0.345846, derivative: -0.0144086
+        2 value: 4.32977, derivative: -0.129678
+      result: 0.999798
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.726171, derivative: -0.00223273
+        1 value: 0.564726, derivative: -0.00223044
+        2 value: 0.694761, derivative: -0.00223225
+      result: 0.87921
+
+
+143 error: 0.0205892
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.84985, derivative: -0.123206
+        1 value: 0.17196, derivative: -0.0123206
+        2 value: 3.47501, derivative: -0.110885
+      result: 0.999084
+
+    Neuron 4
+      weights: 
+        0 value: 4.61067, derivative: -0.144087
+        1 value: 0.349483, derivative: -0.0144087
+        2 value: 4.36263, derivative: -0.129678
+      result: 0.999811
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.726796, derivative: -0.0022079
+        1 value: 0.565333, derivative: -0.00220576
+        2 value: 0.695382, derivative: -0.00220745
+      result: 0.879411
+
+
+144 error: 0.0203908
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.88103, derivative: -0.123207
+        1 value: 0.175058, derivative: -0.0123207
+        2 value: 3.50308, derivative: -0.110886
+      result: 0.999134
+
+    Neuron 4
+      weights: 
+        0 value: 4.64715, derivative: -0.144087
+        1 value: 0.35312, derivative: -0.0144087
+        2 value: 4.39548, derivative: -0.129678
+      result: 0.999823
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.727414, derivative: -0.00218344
+        1 value: 0.565935, derivative: -0.00218144
+        2 value: 0.695998, derivative: -0.00218302
+      result: 0.879609
+
+
+145 error: 0.0201948
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.91222, derivative: -0.123208
+        1 value: 0.178155, derivative: -0.0123208
+        2 value: 3.53115, derivative: -0.110887
+      result: 0.999182
+
+    Neuron 4
+      weights: 
+        0 value: 4.68364, derivative: -0.144087
+        1 value: 0.356757, derivative: -0.0144087
+        2 value: 4.42834, derivative: -0.129679
+      result: 0.999834
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.728027, derivative: -0.00215933
+        1 value: 0.566531, derivative: -0.00215746
+        2 value: 0.696607, derivative: -0.00215895
+      result: 0.879805
+
+
+146 error: 0.0200012
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.94342, derivative: -0.123209
+        1 value: 0.181253, derivative: -0.0123209
+        2 value: 3.55922, derivative: -0.110888
+      result: 0.999227
+
+    Neuron 4
+      weights: 
+        0 value: 4.72013, derivative: -0.144088
+        1 value: 0.360395, derivative: -0.0144088
+        2 value: 4.4612, derivative: -0.129679
+      result: 0.999845
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.728633, derivative: -0.00213557
+        1 value: 0.567121, derivative: -0.00213382
+        2 value: 0.69721, derivative: -0.00213521
+      result: 0.879999
+
+
+147 error: 0.0198098
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 3.97461, derivative: -0.12321
+        1 value: 0.184352, derivative: -0.012321
+        2 value: 3.5873, derivative: -0.110889
+      result: 0.99927
+
+    Neuron 4
+      weights: 
+        0 value: 4.75662, derivative: -0.144088
+        1 value: 0.364033, derivative: -0.0144088
+        2 value: 4.49407, derivative: -0.129679
+      result: 0.999855
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.729234, derivative: -0.00211214
+        1 value: 0.567706, derivative: -0.00211051
+        2 value: 0.697808, derivative: -0.00211181
+      result: 0.88019
+
+
+148 error: 0.0196207
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.00581, derivative: -0.123211
+        1 value: 0.187451, derivative: -0.0123211
+        2 value: 3.61538, derivative: -0.11089
+      result: 0.99931
+
+    Neuron 4
+      weights: 
+        0 value: 4.79312, derivative: -0.144088
+        1 value: 0.367672, derivative: -0.0144088
+        2 value: 4.52694, derivative: -0.129679
+      result: 0.999864
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.72983, derivative: -0.00208905
+        1 value: 0.568284, derivative: -0.00208753
+        2 value: 0.6984, derivative: -0.00208875
+      result: 0.880379
+
+
+149 error: 0.0194337
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.03702, derivative: -0.123211
+        1 value: 0.19055, derivative: -0.0123211
+        2 value: 3.64347, derivative: -0.11089
+      result: 0.999348
+
+    Neuron 4
+      weights: 
+        0 value: 4.82962, derivative: -0.144088
+        1 value: 0.371311, derivative: -0.0144088
+        2 value: 4.55981, derivative: -0.129679
+      result: 0.999873
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.730419, derivative: -0.00206628
+        1 value: 0.568857, derivative: -0.00206486
+        2 value: 0.698986, derivative: -0.002066
+      result: 0.880566
+
+
+150 error: 0.019249
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.06822, derivative: -0.123212
+        1 value: 0.193649, derivative: -0.0123212
+        2 value: 3.67155, derivative: -0.110891
+      result: 0.999384
+
+    Neuron 4
+      weights: 
+        0 value: 4.86613, derivative: -0.144088
+        1 value: 0.37495, derivative: -0.0144088
+        2 value: 4.59269, derivative: -0.12968
+      result: 0.999881
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.731003, derivative: -0.00204383
+        1 value: 0.569425, derivative: -0.0020425
+        2 value: 0.699567, derivative: -0.00204357
+      result: 0.880751
+
+
+151 error: 0.0190663
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.09944, derivative: -0.123213
+        1 value: 0.196749, derivative: -0.0123213
+        2 value: 3.69964, derivative: -0.110892
+      result: 0.999418
+
+    Neuron 4
+      weights: 
+        0 value: 4.90263, derivative: -0.144089
+        1 value: 0.37859, derivative: -0.0144089
+        2 value: 4.62557, derivative: -0.12968
+      result: 0.999889
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.731582, derivative: -0.00202169
+        1 value: 0.569987, derivative: -0.00202045
+        2 value: 0.700143, derivative: -0.00202145
+      result: 0.880934
+
+
+152 error: 0.0188857
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.13065, derivative: -0.123214
+        1 value: 0.199849, derivative: -0.0123214
+        2 value: 3.72774, derivative: -0.110892
+      result: 0.99945
+
+    Neuron 4
+      weights: 
+        0 value: 4.93915, derivative: -0.144089
+        1 value: 0.38223, derivative: -0.0144089
+        2 value: 4.65845, derivative: -0.12968
+      result: 0.999896
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.732155, derivative: -0.00199986
+        1 value: 0.570544, derivative: -0.00199869
+        2 value: 0.700712, derivative: -0.00199963
+      result: 0.881114
+
+
+153 error: 0.0187072
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.16186, derivative: -0.123214
+        1 value: 0.202949, derivative: -0.0123214
+        2 value: 3.75583, derivative: -0.110893
+      result: 0.999481
+
+    Neuron 4
+      weights: 
+        0 value: 4.97566, derivative: -0.144089
+        1 value: 0.38587, derivative: -0.0144089
+        2 value: 4.69133, derivative: -0.12968
+      result: 0.999903
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.732723, derivative: -0.00197832
+        1 value: 0.571095, derivative: -0.00197723
+        2 value: 0.701277, derivative: -0.00197811
+      result: 0.881293
+
+
+154 error: 0.0185307
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.19308, derivative: -0.123215
+        1 value: 0.20605, derivative: -0.0123215
+        2 value: 3.78393, derivative: -0.110893
+      result: 0.999509
+
+    Neuron 4
+      weights: 
+        0 value: 5.01218, derivative: -0.144089
+        1 value: 0.389511, derivative: -0.0144089
+        2 value: 4.72422, derivative: -0.12968
+      result: 0.999909
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.733285, derivative: -0.00195707
+        1 value: 0.571641, derivative: -0.00195605
+        2 value: 0.701836, derivative: -0.00195688
+      result: 0.881469
+
+
+155 error: 0.0183561
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.22431, derivative: -0.123215
+        1 value: 0.209151, derivative: -0.0123215
+        2 value: 3.81203, derivative: -0.110894
+      result: 0.999536
+
+    Neuron 4
+      weights: 
+        0 value: 5.04871, derivative: -0.144089
+        1 value: 0.393152, derivative: -0.0144089
+        2 value: 4.75712, derivative: -0.12968
+      result: 0.999915
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.733842, derivative: -0.00193611
+        1 value: 0.572182, derivative: -0.00193516
+        2 value: 0.702391, derivative: -0.00193593
+      result: 0.881644
+
+
+156 error: 0.0181835
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.25553, derivative: -0.123216
+        1 value: 0.212252, derivative: -0.0123216
+        2 value: 3.84014, derivative: -0.110894
+      result: 0.999562
+
+    Neuron 4
+      weights: 
+        0 value: 5.08523, derivative: -0.144089
+        1 value: 0.396794, derivative: -0.0144089
+        2 value: 4.79001, derivative: -0.12968
+      result: 0.99992
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.734395, derivative: -0.00191542
+        1 value: 0.572718, derivative: -0.00191454
+        2 value: 0.70294, derivative: -0.00191526
+      result: 0.881816
+
+
+157 error: 0.0180128
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.28676, derivative: -0.123216
+        1 value: 0.215354, derivative: -0.0123216
+        2 value: 3.86825, derivative: -0.110895
+      result: 0.999586
+
+    Neuron 4
+      weights: 
+        0 value: 5.12176, derivative: -0.144089
+        1 value: 0.400436, derivative: -0.0144089
+        2 value: 4.82291, derivative: -0.12968
+      result: 0.999925
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.734942, derivative: -0.00189502
+        1 value: 0.573249, derivative: -0.00189419
+        2 value: 0.703484, derivative: -0.00189486
+      result: 0.881987
+
+
+158 error: 0.0178439
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.318, derivative: -0.123217
+        1 value: 0.218456, derivative: -0.0123217
+        2 value: 3.89636, derivative: -0.110895
+      result: 0.999609
+
+    Neuron 4
+      weights: 
+        0 value: 5.1583, derivative: -0.144089
+        1 value: 0.404078, derivative: -0.0144089
+        2 value: 4.85581, derivative: -0.12968
+      result: 0.99993
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.735484, derivative: -0.00187487
+        1 value: 0.573775, derivative: -0.0018741
+        2 value: 0.704023, derivative: -0.00187473
+      result: 0.882156
+
+
+159 error: 0.0176769
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.34923, derivative: -0.123217
+        1 value: 0.221558, derivative: -0.0123217
+        2 value: 3.92447, derivative: -0.110895
+      result: 0.999631
+
+    Neuron 4
+      weights: 
+        0 value: 5.19484, derivative: -0.144089
+        1 value: 0.407721, derivative: -0.0144089
+        2 value: 4.88872, derivative: -0.129681
+      result: 0.999935
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.736021, derivative: -0.001855
+        1 value: 0.574296, derivative: -0.00185427
+        2 value: 0.704557, derivative: -0.00185487
+      result: 0.882323
+
+
+160 error: 0.0175117
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.38047, derivative: -0.123218
+        1 value: 0.22466, derivative: -0.0123218
+        2 value: 3.95259, derivative: -0.110896
+      result: 0.999651
+
+    Neuron 4
+      weights: 
+        0 value: 5.23138, derivative: -0.14409
+        1 value: 0.411364, derivative: -0.014409
+        2 value: 4.92163, derivative: -0.129681
+      result: 0.999939
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.736554, derivative: -0.00183537
+        1 value: 0.574812, derivative: -0.0018347
+        2 value: 0.705086, derivative: -0.00183525
+      result: 0.882488
+
+
+161 error: 0.0173482
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.41171, derivative: -0.123218
+        1 value: 0.227763, derivative: -0.0123218
+        2 value: 3.98071, derivative: -0.110896
+      result: 0.99967
+
+    Neuron 4
+      weights: 
+        0 value: 5.26792, derivative: -0.14409
+        1 value: 0.415007, derivative: -0.014409
+        2 value: 4.95454, derivative: -0.129681
+      result: 0.999943
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.737081, derivative: -0.00181601
+        1 value: 0.575323, derivative: -0.00181537
+        2 value: 0.705611, derivative: -0.0018159
+      result: 0.882652
+
+
+162 error: 0.0171865
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.44296, derivative: -0.123218
+        1 value: 0.230867, derivative: -0.0123218
+        2 value: 4.00883, derivative: -0.110896
+      result: 0.999689
+
+    Neuron 4
+      weights: 
+        0 value: 5.30447, derivative: -0.14409
+        1 value: 0.418651, derivative: -0.014409
+        2 value: 4.98746, derivative: -0.129681
+      result: 0.999946
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.737604, derivative: -0.00179689
+        1 value: 0.57583, derivative: -0.00179629
+        2 value: 0.70613, derivative: -0.00179678
+      result: 0.882813
+
+
+163 error: 0.0170265
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.47421, derivative: -0.123219
+        1 value: 0.23397, derivative: -0.0123219
+        2 value: 4.03695, derivative: -0.110897
+      result: 0.999706
+
+    Neuron 4
+      weights: 
+        0 value: 5.34103, derivative: -0.14409
+        1 value: 0.422295, derivative: -0.014409
+        2 value: 5.02038, derivative: -0.129681
+      result: 0.99995
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.738123, derivative: -0.00177801
+        1 value: 0.576332, derivative: -0.00177746
+        2 value: 0.706645, derivative: -0.00177791
+      result: 0.882973
+
+
+164 error: 0.0168682
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.50546, derivative: -0.123219
+        1 value: 0.237074, derivative: -0.0123219
+        2 value: 4.06508, derivative: -0.110897
+      result: 0.999722
+
+    Neuron 4
+      weights: 
+        0 value: 5.37758, derivative: -0.14409
+        1 value: 0.42594, derivative: -0.014409
+        2 value: 5.0533, derivative: -0.129681
+      result: 0.999953
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.738636, derivative: -0.00175937
+        1 value: 0.576829, derivative: -0.00175885
+        2 value: 0.707156, derivative: -0.00175928
+      result: 0.883132
+
+
+165 error: 0.0167115
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.53672, derivative: -0.123219
+        1 value: 0.240178, derivative: -0.0123219
+        2 value: 4.09321, derivative: -0.110897
+      result: 0.999737
+
+    Neuron 4
+      weights: 
+        0 value: 5.41414, derivative: -0.14409
+        1 value: 0.429584, derivative: -0.014409
+        2 value: 5.08622, derivative: -0.129681
+      result: 0.999956
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.739145, derivative: -0.00174097
+        1 value: 0.577322, derivative: -0.00174048
+        2 value: 0.707662, derivative: -0.00174088
+      result: 0.883288
+
+
+166 error: 0.0165565
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.56798, derivative: -0.123219
+        1 value: 0.243283, derivative: -0.0123219
+        2 value: 4.12135, derivative: -0.110897
+      result: 0.999752
+
+    Neuron 4
+      weights: 
+        0 value: 5.45071, derivative: -0.14409
+        1 value: 0.43323, derivative: -0.014409
+        2 value: 5.11915, derivative: -0.129681
+      result: 0.999959
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.73965, derivative: -0.00172279
+        1 value: 0.57781, derivative: -0.00172234
+        2 value: 0.708163, derivative: -0.00172272
+      result: 0.883443
+
+
+167 error: 0.0164031
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.59924, derivative: -0.12322
+        1 value: 0.246387, derivative: -0.012322
+        2 value: 4.14948, derivative: -0.110898
+      result: 0.999766
+
+    Neuron 4
+      weights: 
+        0 value: 5.48728, derivative: -0.14409
+        1 value: 0.436875, derivative: -0.014409
+        2 value: 5.15208, derivative: -0.129681
+      result: 0.999962
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.74015, derivative: -0.00170484
+        1 value: 0.578294, derivative: -0.00170442
+        2 value: 0.70866, derivative: -0.00170477
+      result: 0.883597
+
+
+168 error: 0.0162513
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.6305, derivative: -0.12322
+        1 value: 0.249493, derivative: -0.012322
+        2 value: 4.17762, derivative: -0.110898
+      result: 0.999779
+
+    Neuron 4
+      weights: 
+        0 value: 5.52385, derivative: -0.14409
+        1 value: 0.440521, derivative: -0.014409
+        2 value: 5.18502, derivative: -0.129681
+      result: 0.999964
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.740646, derivative: -0.00168712
+        1 value: 0.578773, derivative: -0.00168672
+        2 value: 0.709153, derivative: -0.00168705
+      result: 0.883749
+
+
+169 error: 0.016101
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.66177, derivative: -0.12322
+        1 value: 0.252598, derivative: -0.012322
+        2 value: 4.20576, derivative: -0.110898
+      result: 0.999791
+
+    Neuron 4
+      weights: 
+        0 value: 5.56042, derivative: -0.14409
+        1 value: 0.444167, derivative: -0.014409
+        2 value: 5.21796, derivative: -0.129681
+      result: 0.999966
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.741137, derivative: -0.00166961
+        1 value: 0.579249, derivative: -0.00166924
+        2 value: 0.709641, derivative: -0.00166955
+      result: 0.883899
+
+
+170 error: 0.0159522
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.69304, derivative: -0.12322
+        1 value: 0.255704, derivative: -0.012322
+        2 value: 4.23391, derivative: -0.110898
+      result: 0.999802
+
+    Neuron 4
+      weights: 
+        0 value: 5.597, derivative: -0.14409
+        1 value: 0.447814, derivative: -0.014409
+        2 value: 5.2509, derivative: -0.129681
+      result: 0.999969
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.741625, derivative: -0.00165231
+        1 value: 0.57972, derivative: -0.00165196
+        2 value: 0.710125, derivative: -0.00165225
+      result: 0.884048
+
+
+171 error: 0.015805
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.72432, derivative: -0.12322
+        1 value: 0.25881, derivative: -0.012322
+        2 value: 4.26206, derivative: -0.110898
+      result: 0.999813
+
+    Neuron 4
+      weights: 
+        0 value: 5.63358, derivative: -0.14409
+        1 value: 0.451461, derivative: -0.014409
+        2 value: 5.28385, derivative: -0.129681
+      result: 0.999971
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.742108, derivative: -0.00163522
+        1 value: 0.580186, derivative: -0.0016349
+        2 value: 0.710605, derivative: -0.00163517
+      result: 0.884195
+
+
+172 error: 0.0156593
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.75559, derivative: -0.123221
+        1 value: 0.261916, derivative: -0.0123221
+        2 value: 4.29021, derivative: -0.110899
+      result: 0.999824
+
+    Neuron 4
+      weights: 
+        0 value: 5.67017, derivative: -0.14409
+        1 value: 0.455109, derivative: -0.014409
+        2 value: 5.31679, derivative: -0.129681
+      result: 0.999972
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.742586, derivative: -0.00161834
+        1 value: 0.580649, derivative: -0.00161804
+        2 value: 0.711081, derivative: -0.00161829
+      result: 0.884341
+
+
+173 error: 0.015515
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.78687, derivative: -0.123221
+        1 value: 0.265023, derivative: -0.0123221
+        2 value: 4.31836, derivative: -0.110899
+      result: 0.999833
+
+    Neuron 4
+      weights: 
+        0 value: 5.70676, derivative: -0.14409
+        1 value: 0.458756, derivative: -0.014409
+        2 value: 5.34975, derivative: -0.129681
+      result: 0.999974
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.743061, derivative: -0.00160166
+        1 value: 0.581107, derivative: -0.00160138
+        2 value: 0.711552, derivative: -0.00160162
+      result: 0.884485
+
+
+174 error: 0.0153721
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.81816, derivative: -0.123221
+        1 value: 0.26813, derivative: -0.0123221
+        2 value: 4.34652, derivative: -0.110899
+      result: 0.999843
+
+    Neuron 4
+      weights: 
+        0 value: 5.74335, derivative: -0.14409
+        1 value: 0.462404, derivative: -0.014409
+        2 value: 5.3827, derivative: -0.129681
+      result: 0.999976
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.743532, derivative: -0.00158518
+        1 value: 0.581562, derivative: -0.00158492
+        2 value: 0.71202, derivative: -0.00158514
+      result: 0.884628
+
+
+175 error: 0.0152307
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.84945, derivative: -0.123221
+        1 value: 0.271237, derivative: -0.0123221
+        2 value: 4.37468, derivative: -0.110899
+      result: 0.999851
+
+    Neuron 4
+      weights: 
+        0 value: 5.77995, derivative: -0.14409
+        1 value: 0.466053, derivative: -0.014409
+        2 value: 5.41566, derivative: -0.129681
+      result: 0.999977
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.743998, derivative: -0.0015689
+        1 value: 0.582012, derivative: -0.00156865
+        2 value: 0.712483, derivative: -0.00156886
+      result: 0.884769
+
+
+176 error: 0.0150907
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.88074, derivative: -0.123221
+        1 value: 0.274345, derivative: -0.0123221
+        2 value: 4.40284, derivative: -0.110899
+      result: 0.99986
+
+    Neuron 4
+      weights: 
+        0 value: 5.81655, derivative: -0.14409
+        1 value: 0.469702, derivative: -0.014409
+        2 value: 5.44862, derivative: -0.129681
+      result: 0.999979
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.744461, derivative: -0.00155281
+        1 value: 0.582458, derivative: -0.00155258
+        2 value: 0.712943, derivative: -0.00155277
+      result: 0.884909
+
+
+177 error: 0.014952
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.91203, derivative: -0.123221
+        1 value: 0.277453, derivative: -0.0123221
+        2 value: 4.431, derivative: -0.110899
+      result: 0.999867
+
+    Neuron 4
+      weights: 
+        0 value: 5.85315, derivative: -0.14409
+        1 value: 0.473351, derivative: -0.014409
+        2 value: 5.48159, derivative: -0.129681
+      result: 0.99998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.74492, derivative: -0.00153691
+        1 value: 0.582901, derivative: -0.00153669
+        2 value: 0.713398, derivative: -0.00153688
+      result: 0.885048
+
+
+178 error: 0.0148148
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.94333, derivative: -0.123222
+        1 value: 0.280561, derivative: -0.0123222
+        2 value: 4.45917, derivative: -0.110899
+      result: 0.999875
+
+    Neuron 4
+      weights: 
+        0 value: 5.88976, derivative: -0.14409
+        1 value: 0.477001, derivative: -0.014409
+        2 value: 5.51456, derivative: -0.129681
+      result: 0.999982
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.745374, derivative: -0.00152119
+        1 value: 0.583339, derivative: -0.00152099
+        2 value: 0.71385, derivative: -0.00152116
+      result: 0.885185
+
+
+179 error: 0.0146788
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 4.97463, derivative: -0.123222
+        1 value: 0.28367, derivative: -0.0123222
+        2 value: 4.48734, derivative: -0.110899
+      result: 0.999882
+
+    Neuron 4
+      weights: 
+        0 value: 5.92637, derivative: -0.14409
+        1 value: 0.480651, derivative: -0.014409
+        2 value: 5.54753, derivative: -0.129681
+      result: 0.999983
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.745825, derivative: -0.00150566
+        1 value: 0.583774, derivative: -0.00150547
+        2 value: 0.714297, derivative: -0.00150563
+      result: 0.885321
+
+
+180 error: 0.0145442
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.00593, derivative: -0.123222
+        1 value: 0.286779, derivative: -0.0123222
+        2 value: 4.51552, derivative: -0.1109
+      result: 0.999888
+
+    Neuron 4
+      weights: 
+        0 value: 5.96299, derivative: -0.14409
+        1 value: 0.484301, derivative: -0.014409
+        2 value: 5.5805, derivative: -0.129681
+      result: 0.999984
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.746272, derivative: -0.0014903
+        1 value: 0.584205, derivative: -0.00149013
+        2 value: 0.714741, derivative: -0.00149028
+      result: 0.885456
+
+
+181 error: 0.0144109
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.03723, derivative: -0.123222
+        1 value: 0.289888, derivative: -0.0123222
+        2 value: 4.54369, derivative: -0.1109
+      result: 0.999894
+
+    Neuron 4
+      weights: 
+        0 value: 5.99961, derivative: -0.14409
+        1 value: 0.487952, derivative: -0.014409
+        2 value: 5.61348, derivative: -0.129681
+      result: 0.999985
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.746716, derivative: -0.00147513
+        1 value: 0.584632, derivative: -0.00147496
+        2 value: 0.715182, derivative: -0.0014751
+      result: 0.885589
+
+
+182 error: 0.0142788
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.06854, derivative: -0.123222
+        1 value: 0.292998, derivative: -0.0123222
+        2 value: 4.57187, derivative: -0.1109
+      result: 0.9999
+
+    Neuron 4
+      weights: 
+        0 value: 6.03623, derivative: -0.14409
+        1 value: 0.491603, derivative: -0.014409
+        2 value: 5.64646, derivative: -0.129681
+      result: 0.999986
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.747156, derivative: -0.00146012
+        1 value: 0.585055, derivative: -0.00145997
+        2 value: 0.715618, derivative: -0.0014601
+      result: 0.885721
+
+
+183 error: 0.0141481
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.09986, derivative: -0.123222
+        1 value: 0.296107, derivative: -0.0123222
+        2 value: 4.60005, derivative: -0.1109
+      result: 0.999906
+
+    Neuron 4
+      weights: 
+        0 value: 6.07285, derivative: -0.14409
+        1 value: 0.495254, derivative: -0.014409
+        2 value: 5.67945, derivative: -0.129681
+      result: 0.999987
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.747592, derivative: -0.00144529
+        1 value: 0.585475, derivative: -0.00144515
+        2 value: 0.716051, derivative: -0.00144527
+      result: 0.885852
+
+
+184 error: 0.0140186
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.13117, derivative: -0.123222
+        1 value: 0.299218, derivative: -0.0123222
+        2 value: 4.62824, derivative: -0.1109
+      result: 0.999911
+
+    Neuron 4
+      weights: 
+        0 value: 6.10948, derivative: -0.14409
+        1 value: 0.498906, derivative: -0.014409
+        2 value: 5.71244, derivative: -0.129681
+      result: 0.999988
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.748024, derivative: -0.00143063
+        1 value: 0.585891, derivative: -0.00143049
+        2 value: 0.71648, derivative: -0.00143061
+      result: 0.885981
+
+
+185 error: 0.0138903
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.16249, derivative: -0.123222
+        1 value: 0.302328, derivative: -0.0123222
+        2 value: 4.65643, derivative: -0.1109
+      result: 0.999916
+
+    Neuron 4
+      weights: 
+        0 value: 6.14612, derivative: -0.14409
+        1 value: 0.502558, derivative: -0.014409
+        2 value: 5.74543, derivative: -0.129681
+      result: 0.999988
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.748453, derivative: -0.00141613
+        1 value: 0.586304, derivative: -0.00141601
+        2 value: 0.716906, derivative: -0.00141611
+      result: 0.88611
+
+
+186 error: 0.0137632
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.19381, derivative: -0.123222
+        1 value: 0.305439, derivative: -0.0123222
+        2 value: 4.68462, derivative: -0.1109
+      result: 0.999921
+
+    Neuron 4
+      weights: 
+        0 value: 6.18276, derivative: -0.14409
+        1 value: 0.506211, derivative: -0.014409
+        2 value: 5.77842, derivative: -0.129681
+      result: 0.999989
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.748878, derivative: -0.0014018
+        1 value: 0.586713, derivative: -0.00140168
+        2 value: 0.717328, derivative: -0.00140178
+      result: 0.886237
+
+
+187 error: 0.0136373
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.22514, derivative: -0.123222
+        1 value: 0.30855, derivative: -0.0123222
+        2 value: 4.71281, derivative: -0.1109
+      result: 0.999925
+
+    Neuron 4
+      weights: 
+        0 value: 6.2194, derivative: -0.14409
+        1 value: 0.509863, derivative: -0.014409
+        2 value: 5.81142, derivative: -0.129681
+      result: 0.99999
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.7493, derivative: -0.00138762
+        1 value: 0.587119, derivative: -0.00138751
+        2 value: 0.717747, derivative: -0.00138761
+      result: 0.886363
+
+
+188 error: 0.0135127
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.25646, derivative: -0.123222
+        1 value: 0.311661, derivative: -0.0123222
+        2 value: 4.74101, derivative: -0.1109
+      result: 0.999929
+
+    Neuron 4
+      weights: 
+        0 value: 6.25604, derivative: -0.14409
+        1 value: 0.513517, derivative: -0.014409
+        2 value: 5.84442, derivative: -0.129681
+      result: 0.999991
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.749718, derivative: -0.00137361
+        1 value: 0.587521, derivative: -0.0013735
+        2 value: 0.718162, derivative: -0.00137359
+      result: 0.886487
+
+
+189 error: 0.0133891
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.2878, derivative: -0.123222
+        1 value: 0.314773, derivative: -0.0123222
+        2 value: 4.76921, derivative: -0.1109
+      result: 0.999933
+
+    Neuron 4
+      weights: 
+        0 value: 6.29269, derivative: -0.144091
+        1 value: 0.51717, derivative: -0.0144091
+        2 value: 5.87743, derivative: -0.129681
+      result: 0.999991
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.750133, derivative: -0.00135975
+        1 value: 0.587919, derivative: -0.00135965
+        2 value: 0.718574, derivative: -0.00135973
+      result: 0.886611
+
+
+190 error: 0.0132668
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.31913, derivative: -0.123222
+        1 value: 0.317885, derivative: -0.0123222
+        2 value: 4.79741, derivative: -0.1109
+      result: 0.999937
+
+    Neuron 4
+      weights: 
+        0 value: 6.32934, derivative: -0.144091
+        1 value: 0.520824, derivative: -0.0144091
+        2 value: 5.91044, derivative: -0.129681
+      result: 0.999992
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.750545, derivative: -0.00134604
+        1 value: 0.588315, derivative: -0.00134595
+        2 value: 0.718982, derivative: -0.00134603
+      result: 0.886733
+
+
+191 error: 0.0131456
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.35047, derivative: -0.123222
+        1 value: 0.320997, derivative: -0.0123222
+        2 value: 4.82561, derivative: -0.1109
+      result: 0.99994
+
+    Neuron 4
+      weights: 
+        0 value: 6.366, derivative: -0.144091
+        1 value: 0.524479, derivative: -0.0144091
+        2 value: 5.94345, derivative: -0.129681
+      result: 0.999992
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.750953, derivative: -0.00133248
+        1 value: 0.588707, derivative: -0.0013324
+        2 value: 0.719387, derivative: -0.00133247
+      result: 0.886854
+
+
+192 error: 0.0130255
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.38181, derivative: -0.123223
+        1 value: 0.32411, derivative: -0.0123223
+        2 value: 4.85382, derivative: -0.1109
+      result: 0.999944
+
+    Neuron 4
+      weights: 
+        0 value: 6.40266, derivative: -0.144091
+        1 value: 0.528133, derivative: -0.0144091
+        2 value: 5.97646, derivative: -0.129681
+      result: 0.999993
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.751358, derivative: -0.00131907
+        1 value: 0.589095, derivative: -0.00131899
+        2 value: 0.719789, derivative: -0.00131906
+      result: 0.886975
+
+
+193 error: 0.0129065
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.41315, derivative: -0.123223
+        1 value: 0.327223, derivative: -0.0123223
+        2 value: 4.88203, derivative: -0.1109
+      result: 0.999947
+
+    Neuron 4
+      weights: 
+        0 value: 6.43932, derivative: -0.144091
+        1 value: 0.531788, derivative: -0.0144091
+        2 value: 6.00948, derivative: -0.129681
+      result: 0.999993
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.751759, derivative: -0.00130581
+        1 value: 0.58948, derivative: -0.00130574
+        2 value: 0.720187, derivative: -0.0013058
+      result: 0.887094
+
+
+194 error: 0.0127886
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.4445, derivative: -0.123223
+        1 value: 0.330336, derivative: -0.0123223
+        2 value: 4.91025, derivative: -0.1109
+      result: 0.99995
+
+    Neuron 4
+      weights: 
+        0 value: 6.47599, derivative: -0.144091
+        1 value: 0.535444, derivative: -0.0144091
+        2 value: 6.0425, derivative: -0.129681
+      result: 0.999994
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.752158, derivative: -0.00129269
+        1 value: 0.589863, derivative: -0.00129262
+        2 value: 0.720582, derivative: -0.00129268
+      result: 0.887211
+
+
+195 error: 0.0126717
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.47585, derivative: -0.123223
+        1 value: 0.33345, derivative: -0.0123223
+        2 value: 4.93846, derivative: -0.1109
+      result: 0.999952
+
+    Neuron 4
+      weights: 
+        0 value: 6.51266, derivative: -0.144091
+        1 value: 0.5391, derivative: -0.0144091
+        2 value: 6.07553, derivative: -0.129681
+      result: 0.999994
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.752553, derivative: -0.00127972
+        1 value: 0.590241, derivative: -0.00127965
+        2 value: 0.720974, derivative: -0.00127971
+      result: 0.887328
+
+
+196 error: 0.012556
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.5072, derivative: -0.123223
+        1 value: 0.336564, derivative: -0.0123223
+        2 value: 4.96668, derivative: -0.1109
+      result: 0.999955
+
+    Neuron 4
+      weights: 
+        0 value: 6.54933, derivative: -0.144091
+        1 value: 0.542756, derivative: -0.0144091
+        2 value: 6.10855, derivative: -0.129681
+      result: 0.999994
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.752945, derivative: -0.00126688
+        1 value: 0.590617, derivative: -0.00126682
+        2 value: 0.721363, derivative: -0.00126687
+      result: 0.887444
+
+
+197 error: 0.0124413
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.53856, derivative: -0.123223
+        1 value: 0.339678, derivative: -0.0123223
+        2 value: 4.9949, derivative: -0.1109
+      result: 0.999958
+
+    Neuron 4
+      weights: 
+        0 value: 6.58601, derivative: -0.144091
+        1 value: 0.546412, derivative: -0.0144091
+        2 value: 6.14158, derivative: -0.129682
+      result: 0.999995
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.753334, derivative: -0.00125418
+        1 value: 0.59099, derivative: -0.00125412
+        2 value: 0.721749, derivative: -0.00125417
+      result: 0.887559
+
+
+198 error: 0.0123276
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.56992, derivative: -0.123223
+        1 value: 0.342793, derivative: -0.0123223
+        2 value: 5.02313, derivative: -0.1109
+      result: 0.99996
+
+    Neuron 4
+      weights: 
+        0 value: 6.62269, derivative: -0.144091
+        1 value: 0.550069, derivative: -0.0144091
+        2 value: 6.17462, derivative: -0.129682
+      result: 0.999995
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.753719, derivative: -0.00124162
+        1 value: 0.591359, derivative: -0.00124156
+        2 value: 0.722132, derivative: -0.00124161
+      result: 0.887672
+
+
+199 error: 0.012215
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.60128, derivative: -0.123223
+        1 value: 0.345907, derivative: -0.0123223
+        2 value: 5.05135, derivative: -0.110901
+      result: 0.999962
+
+    Neuron 4
+      weights: 
+        0 value: 6.65937, derivative: -0.144091
+        1 value: 0.553727, derivative: -0.0144091
+        2 value: 6.20766, derivative: -0.129682
+      result: 0.999995
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.754102, derivative: -0.00122919
+        1 value: 0.591726, derivative: -0.00122914
+        2 value: 0.722511, derivative: -0.00122918
+      result: 0.887785
+
+
+200 error: 0.0121034
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.63265, derivative: -0.123223
+        1 value: 0.349023, derivative: -0.0123223
+        2 value: 5.07958, derivative: -0.110901
+      result: 0.999964
+
+    Neuron 4
+      weights: 
+        0 value: 6.69606, derivative: -0.144091
+        1 value: 0.557384, derivative: -0.0144091
+        2 value: 6.2407, derivative: -0.129682
+      result: 0.999996
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.754482, derivative: -0.00121689
+        1 value: 0.592089, derivative: -0.00121684
+        2 value: 0.722887, derivative: -0.00121688
+      result: 0.887897
+
+
+201 error: 0.0119927
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.66402, derivative: -0.123223
+        1 value: 0.352138, derivative: -0.0123223
+        2 value: 5.10782, derivative: -0.110901
+      result: 0.999966
+
+    Neuron 4
+      weights: 
+        0 value: 6.73275, derivative: -0.144091
+        1 value: 0.561042, derivative: -0.0144091
+        2 value: 6.27374, derivative: -0.129682
+      result: 0.999996
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.754858, derivative: -0.00120472
+        1 value: 0.592449, derivative: -0.00120468
+        2 value: 0.723261, derivative: -0.00120472
+      result: 0.888007
+
+
+202 error: 0.0118831
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.69539, derivative: -0.123223
+        1 value: 0.355254, derivative: -0.0123223
+        2 value: 5.13605, derivative: -0.110901
+      result: 0.999968
+
+    Neuron 4
+      weights: 
+        0 value: 6.76945, derivative: -0.144091
+        1 value: 0.564701, derivative: -0.0144091
+        2 value: 6.30679, derivative: -0.129682
+      result: 0.999996
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.755232, derivative: -0.00119268
+        1 value: 0.592807, derivative: -0.00119264
+        2 value: 0.723631, derivative: -0.00119268
+      result: 0.888117
+
+
+203 error: 0.0117745
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.72676, derivative: -0.123223
+        1 value: 0.35837, derivative: -0.0123223
+        2 value: 5.16429, derivative: -0.110901
+      result: 0.99997
+
+    Neuron 4
+      weights: 
+        0 value: 6.80615, derivative: -0.144091
+        1 value: 0.568359, derivative: -0.0144091
+        2 value: 6.33984, derivative: -0.129682
+      result: 0.999997
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.755603, derivative: -0.00118077
+        1 value: 0.593161, derivative: -0.00118073
+        2 value: 0.723999, derivative: -0.00118076
+      result: 0.888226
+
+
+204 error: 0.0116668
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.75814, derivative: -0.123223
+        1 value: 0.361486, derivative: -0.0123223
+        2 value: 5.19253, derivative: -0.110901
+      result: 0.999972
+
+    Neuron 4
+      weights: 
+        0 value: 6.84285, derivative: -0.144091
+        1 value: 0.572018, derivative: -0.0144091
+        2 value: 6.3729, derivative: -0.129682
+      result: 0.999997
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.755971, derivative: -0.00116898
+        1 value: 0.593513, derivative: -0.00116894
+        2 value: 0.724364, derivative: -0.00116897
+      result: 0.888333
+
+
+205 error: 0.01156
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.78952, derivative: -0.123223
+        1 value: 0.364603, derivative: -0.0123223
+        2 value: 5.22078, derivative: -0.110901
+      result: 0.999973
+
+    Neuron 4
+      weights: 
+        0 value: 6.87956, derivative: -0.144091
+        1 value: 0.575678, derivative: -0.0144091
+        2 value: 6.40595, derivative: -0.129682
+      result: 0.999997
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.756335, derivative: -0.00115731
+        1 value: 0.593862, derivative: -0.00115728
+        2 value: 0.724725, derivative: -0.00115731
+      result: 0.88844
+
+
+206 error: 0.0114542
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.82091, derivative: -0.123223
+        1 value: 0.36772, derivative: -0.0123223
+        2 value: 5.24903, derivative: -0.110901
+      result: 0.999975
+
+    Neuron 4
+      weights: 
+        0 value: 6.91627, derivative: -0.144091
+        1 value: 0.579338, derivative: -0.0144091
+        2 value: 6.43901, derivative: -0.129682
+      result: 0.999997
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.756698, derivative: -0.00114577
+        1 value: 0.594207, derivative: -0.00114573
+        2 value: 0.725084, derivative: -0.00114576
+      result: 0.888546
+
+
+207 error: 0.0113494
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.8523, derivative: -0.123223
+        1 value: 0.370838, derivative: -0.0123223
+        2 value: 5.27728, derivative: -0.110901
+      result: 0.999976
+
+    Neuron 4
+      weights: 
+        0 value: 6.95298, derivative: -0.144091
+        1 value: 0.582998, derivative: -0.0144091
+        2 value: 6.47208, derivative: -0.129682
+      result: 0.999997
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.757057, derivative: -0.00113434
+        1 value: 0.59455, derivative: -0.00113431
+        2 value: 0.72544, derivative: -0.00113433
+      result: 0.888651
+
+
+208 error: 0.0112454
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.88369, derivative: -0.123223
+        1 value: 0.373955, derivative: -0.0123223
+        2 value: 5.30553, derivative: -0.110901
+      result: 0.999977
+
+    Neuron 4
+      weights: 
+        0 value: 6.9897, derivative: -0.144091
+        1 value: 0.586658, derivative: -0.0144091
+        2 value: 6.50515, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.757413, derivative: -0.00112303
+        1 value: 0.594891, derivative: -0.001123
+        2 value: 0.725794, derivative: -0.00112303
+      result: 0.888755
+
+
+209 error: 0.0111424
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.91508, derivative: -0.123223
+        1 value: 0.377073, derivative: -0.0123223
+        2 value: 5.33378, derivative: -0.110901
+      result: 0.999979
+
+    Neuron 4
+      weights: 
+        0 value: 7.02642, derivative: -0.144091
+        1 value: 0.590319, derivative: -0.0144091
+        2 value: 6.53822, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.757767, derivative: -0.00111183
+        1 value: 0.595228, derivative: -0.00111181
+        2 value: 0.726144, derivative: -0.00111183
+      result: 0.888858
+
+
+210 error: 0.0110403
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.94648, derivative: -0.123223
+        1 value: 0.380191, derivative: -0.0123223
+        2 value: 5.36204, derivative: -0.110901
+      result: 0.99998
+
+    Neuron 4
+      weights: 
+        0 value: 7.06315, derivative: -0.144091
+        1 value: 0.593981, derivative: -0.0144091
+        2 value: 6.57129, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.758118, derivative: -0.00110075
+        1 value: 0.595563, derivative: -0.00110073
+        2 value: 0.726492, derivative: -0.00110075
+      result: 0.88896
+
+
+211 error: 0.010939
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 5.97788, derivative: -0.123223
+        1 value: 0.38331, derivative: -0.0123223
+        2 value: 5.3903, derivative: -0.110901
+      result: 0.999981
+
+    Neuron 4
+      weights: 
+        0 value: 7.09988, derivative: -0.144091
+        1 value: 0.597642, derivative: -0.0144091
+        2 value: 6.60437, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.758466, derivative: -0.00108979
+        1 value: 0.595895, derivative: -0.00108977
+        2 value: 0.726837, derivative: -0.00108979
+      result: 0.889061
+
+
+212 error: 0.0108386
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.00928, derivative: -0.123223
+        1 value: 0.386429, derivative: -0.0123223
+        2 value: 5.41857, derivative: -0.110901
+      result: 0.999982
+
+    Neuron 4
+      weights: 
+        0 value: 7.13661, derivative: -0.144091
+        1 value: 0.601304, derivative: -0.0144091
+        2 value: 6.63745, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.758812, derivative: -0.00107893
+        1 value: 0.596224, derivative: -0.00107891
+        2 value: 0.72718, derivative: -0.00107893
+      result: 0.889161
+
+
+213 error: 0.0107391
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.04069, derivative: -0.123223
+        1 value: 0.389548, derivative: -0.0123223
+        2 value: 5.44684, derivative: -0.110901
+      result: 0.999983
+
+    Neuron 4
+      weights: 
+        0 value: 7.17335, derivative: -0.144091
+        1 value: 0.604967, derivative: -0.0144091
+        2 value: 6.67053, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.759155, derivative: -0.00106819
+        1 value: 0.596551, derivative: -0.00106817
+        2 value: 0.727519, derivative: -0.00106818
+      result: 0.889261
+
+
+214 error: 0.0106405
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.0721, derivative: -0.123223
+        1 value: 0.392668, derivative: -0.0123223
+        2 value: 5.47511, derivative: -0.110901
+      result: 0.999984
+
+    Neuron 4
+      weights: 
+        0 value: 7.21009, derivative: -0.144091
+        1 value: 0.60863, derivative: -0.0144091
+        2 value: 6.70362, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.759495, derivative: -0.00105755
+        1 value: 0.596875, derivative: -0.00105753
+        2 value: 0.727856, derivative: -0.00105755
+      result: 0.88936
+
+
+215 error: 0.0105427
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.10351, derivative: -0.123223
+        1 value: 0.395788, derivative: -0.0123223
+        2 value: 5.50338, derivative: -0.110901
+      result: 0.999985
+
+    Neuron 4
+      weights: 
+        0 value: 7.24683, derivative: -0.144091
+        1 value: 0.612293, derivative: -0.0144091
+        2 value: 6.73671, derivative: -0.129682
+      result: 0.999998
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.759833, derivative: -0.00104702
+        1 value: 0.597196, derivative: -0.001047
+        2 value: 0.728191, derivative: -0.00104701
+      result: 0.889457
+
+
+216 error: 0.0104457
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.13493, derivative: -0.123223
+        1 value: 0.398908, derivative: -0.0123223
+        2 value: 5.53165, derivative: -0.110901
+      result: 0.999986
+
+    Neuron 4
+      weights: 
+        0 value: 7.28358, derivative: -0.144091
+        1 value: 0.615956, derivative: -0.0144091
+        2 value: 6.76981, derivative: -0.129682
+      result: 0.999999
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.760168, derivative: -0.00103659
+        1 value: 0.597515, derivative: -0.00103657
+        2 value: 0.728523, derivative: -0.00103659
+      result: 0.889554
+
+
+217 error: 0.0103496
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.16635, derivative: -0.123223
+        1 value: 0.402028, derivative: -0.0123223
+        2 value: 5.55993, derivative: -0.110901
+      result: 0.999986
+
+    Neuron 4
+      weights: 
+        0 value: 7.32033, derivative: -0.144091
+        1 value: 0.61962, derivative: -0.0144091
+        2 value: 6.8029, derivative: -0.129682
+      result: 0.999999
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.7605, derivative: -0.00102627
+        1 value: 0.597831, derivative: -0.00102625
+        2 value: 0.728852, derivative: -0.00102627
+      result: 0.88965
+
+
+218 error: 0.0102543
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.19777, derivative: -0.123223
+        1 value: 0.405149, derivative: -0.0123223
+        2 value: 5.58821, derivative: -0.110901
+      result: 0.999987
+
+    Neuron 4
+      weights: 
+        0 value: 7.35708, derivative: -0.144091
+        1 value: 0.623284, derivative: -0.0144091
+        2 value: 6.836, derivative: -0.129682
+      result: 0.999999
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.76083, derivative: -0.00101605
+        1 value: 0.598145, derivative: -0.00101603
+        2 value: 0.729179, derivative: -0.00101605
+      result: 0.889746
+
+
+219 error: 0.0101598
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.2292, derivative: -0.123223
+        1 value: 0.40827, derivative: -0.0123223
+        2 value: 5.6165, derivative: -0.110901
+      result: 0.999988
+
+    Neuron 4
+      weights: 
+        0 value: 7.39384, derivative: -0.144091
+        1 value: 0.626949, derivative: -0.0144091
+        2 value: 6.86911, derivative: -0.129682
+      result: 0.999999
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.761158, derivative: -0.00100593
+        1 value: 0.598456, derivative: -0.00100592
+        2 value: 0.729504, derivative: -0.00100593
+      result: 0.88984
+
+
+220 error: 0.0100661
+Neural Network
+  Input Layer (3):
+    Neuron 1
+      weights: 
+      result: 1
+
+    Neuron 1
+      weights: 
+      result: 0.1
+
+    Neuron 1
+      weights: 
+      result: 0.9
+
+  Hidden Layer [0]:
+    Neuron 3
+      weights: 
+        0 value: 6.26062, derivative: -0.123223
+        1 value: 0.411391, derivative: -0.0123223
+        2 value: 5.64478, derivative: -0.110901
+      result: 0.999989
+
+    Neuron 4
+      weights: 
+        0 value: 7.4306, derivative: -0.144091
+        1 value: 0.630614, derivative: -0.0144091
+        2 value: 6.90222, derivative: -0.129682
+      result: 0.999999
+
+  Output Layer (1):
+    Neuron 2
+      weights: 
+        0 value: 0.761483, derivative: -0.000995908
+        1 value: 0.598765, derivative: -0.000995896
+        2 value: 0.729826, derivative: -0.000995907
+      result: 0.889934
+
+
+221 error: 0.00997316
+build/test/backpropagation_test (PASSED)

@@ -44,10 +44,10 @@ BUILD_DIR=build
 # Executables
 # ------------------------------
 
-_DEPS = bootstrapper.hpp neuron_trainer.hpp neural_network.hpp perceptron_trainer.hpp backpropagation_trainer.hpp ioc_container.hpp 
+_DEPS = bootstrapper.hpp neural_network.hpp ioc_container.hpp 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = perceptron_trainer.o backpropagation_trainer.o neural_net.o
+_OBJ = neural_net.o
 OBJ = $(patsubst %,$(BUILD_DIR)/%,$(_OBJ))
 
 $(BUILD_DIR)/%.o: src/%.cpp $(DEPS)

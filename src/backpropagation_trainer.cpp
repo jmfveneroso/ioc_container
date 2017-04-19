@@ -34,11 +34,6 @@ void BackpropagationTrainer::Init() {
   }
 }
 
-double BackpropagationTrainer::GetResult(std::vector<double> inputs) {
-  // return (neural_net_->Calculate(inputs) > 0.5) ? 1 : 0;
-  return neural_net_->Calculate(inputs);
-}
-
 void BackpropagationTrainer::Backpropagate(TrainingCase& training_case) {
   GetResult(training_case.inputs);
 
@@ -71,6 +66,7 @@ void BackpropagationTrainer::Backpropagate(TrainingCase& training_case) {
       double total_input_derivative = neuron.result * (1 - neuron.result) * output_derivatives[i];
 
       neuron.weight_derivatives[0] += 1 * total_input_derivative;
+ 
       for (size_t j = 0; j < prev_layer_size; ++j) {
         size_t index = (is_input) ? j + 1 : j;
         Neuron& hidden_neuron = (*prev_layer)[index];
@@ -90,7 +86,7 @@ void BackpropagationTrainer::UpdateWeights() {
   for (size_t i = 0; i < output_layer.size(); ++i) {
     Neuron& neuron = output_layer[i];
     for (size_t j = 0; j < neuron.weights.size(); ++j) {
-      neuron.weights[j] += learning_rate_ * (-neuron.weight_derivatives[j]) + momentum_ * neuron.weights[j];
+      neuron.weights[j] += learning_rate_ * -neuron.weight_derivatives[j] + momentum_ * neuron.weights[j];
     }
   }
   for (size_t i = 0; i < neural_net_->GetNumHiddenLayers(); ++i) {
@@ -117,12 +113,17 @@ void BackpropagationTrainer::Train() {
       Backpropagate(training_cases_[i]);
     }
     UpdateWeights();
+    std::cout << neural_net_->ToString() << std::endl;
     for (size_t i = 0; i < training_cases_.size(); ++i) {
       error += fabs(training_cases_[i].result - GetResult(training_cases_[i].inputs));
     }
     error /= training_cases_.size();
     std::cout << ++counter << " error: " << error << std::endl;
   }
+}
+
+double BackpropagationTrainer::GetResult(std::vector<double> inputs) {
+  return neural_net_->Calculate(inputs);
 }
 
 } // End of namespace.
