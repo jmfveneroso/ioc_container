@@ -1,6 +1,15 @@
 #include <iostream>
 #include <fstream>
+#include <math.h>
+#include <algorithm>
+#include <chrono>
 #include "bootstrapper.hpp"
+
+// Google profiler.
+// #define PROFILE
+#ifdef PROFILE
+#include <gperftools/profiler.h>
+#endif
 
 class Mnist {
   TrainingCase training_cases_[5000];
@@ -59,7 +68,12 @@ double GetSquaredError(const std::vector<double>& results, TrainingCase& trainin
   return 0.5 * squared_error;
 }
 
-int main () {
+int main (int argc, char** argv) {
+  if (argc != 2) {
+    std::cout << "Usage: main FILENAME" << std::endl;
+    return 1;
+  }
+
   Bootstrapper::Bootstrap();
   static IoC::Container& container = IoC::Container::Get();
   std::shared_ptr<NeuralNet> neural_net = container.Resolve<NeuralNet>();
@@ -69,11 +83,11 @@ int main () {
   Mnist mnist("data_tp1");
 
   neural_net->set_learning_rate(0.5);
-
   size_t num_hidden_neurons = 100;
   size_t num_classes = 10;
   size_t num_features = 784;
-  size_t num_training_cases = 200;
+  size_t num_training_cases = 5000;
+  size_t num_epochs = 1000000;
 
   // Output Layer.
   Layer output_layer;
@@ -92,7 +106,13 @@ int main () {
   }
   neural_net->AddHiddenLayer(hidden_layer);
 
-  for (size_t i = 0; i < 10000; ++i) {
+#ifdef PROFILE
+  ProfilerStart("neural_net.prof");
+#endif
+
+  auto start_time = std::chrono::high_resolution_clock::now();
+
+  for (size_t i = 0; i < num_epochs; ++i) {
     double total_mse = 0;
     double error = 0;
     for (size_t j = 0; j < num_training_cases; ++j) {
@@ -108,12 +128,22 @@ int main () {
       if (digit != GetDigit(training_case.results)) error += 1;
     }
     neural_net->UpdateWeights();
-    // std::cout << neural_net->ToString() << std::endl;
-    std::cout << "mse: " << total_mse / num_training_cases << ", prediction error: " 
-              << error / num_training_cases << std::endl; 
+
+    auto now = std::chrono::high_resolution_clock::now();
+ 
+    // integral duration: requires duration_cast
+    auto int_ms = std::chrono::duration_cast<std::chrono::milliseconds>(now - start_time);
+    std::cout << "epoch : " << i + 1 << ", "
+              << "squared error: " << total_mse / num_training_cases << ", "
+              << "prediction error: " << error / num_training_cases << ", "
+              << "time: " << int_ms.count() << std::endl; 
   }
+  neural_net->SaveToFile(argv[1]);
 
   // std::cout << neural_net->ToString();
+#ifdef PROFILE
+  ProfilerStop();
+#endif
 
   return 0;
 }

@@ -40,9 +40,13 @@ BUILD_DIR=build
 
 # LDLIBS += -lprofiler
 
+# INC = -I$(LIB_DIR)/eigen
+
 # ------------------------------
 # Executables
 # ------------------------------
+
+# GOOGLE_PROFILER = -lprofiler
 
 _DEPS = bootstrapper.hpp neural_network.hpp ioc_container.hpp 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
@@ -54,7 +58,7 @@ $(BUILD_DIR)/%.o: src/%.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CPP_FLAGS) -I$(IDIR) $(INC)
 
 $(BUILD_DIR)/main: $(BUILD_DIR)/main.o $(OBJ)
-	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS)
+	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS) $(GOOGLE_PROFILER)
 
 # Tests.
 

@@ -31,6 +31,7 @@ double NeuralNet::CalculateNeuron(Neuron& neuron, const std::vector<double>& inp
   if (inputs.size() != neuron.weights.size()) throw new std::runtime_error("Invalid input size.");
 
   neuron.result = neuron.bias;
+  std::vector<double>::const_iterator it_1 = neuron.weights.begin(), it_2 = inputs.begin();
   for (size_t i = 0; i < inputs.size(); ++i) 
     neuron.result += neuron.weights[i] * inputs[i];
 

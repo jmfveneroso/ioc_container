@@ -2,6 +2,7 @@
 #define _NEURAL_NETWORK_HPP_
 
 #include <vector>
+#include <string>
 
 namespace NeuralNetwork {
 
@@ -40,8 +41,8 @@ using Layer = std::vector<Neuron>;
 class NeuralNet {
   std::vector<Layer> hidden_layers_;
   Layer output_layer_;
-  double learning_rate_ = 0.25;
-  double momentum_ = 0.0001;
+  double learning_rate_ = 0.3;
+  double momentum_ = 0.01;
 
   void UpdateNeuron(Neuron&);
   double ActivationFunction(const double&);

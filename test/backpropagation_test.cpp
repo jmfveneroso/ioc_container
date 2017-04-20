@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cassert>
-#include <math.h>
+#include <cmath>
 #include "bootstrapper.hpp"
 
 using namespace NeuralNetwork;
