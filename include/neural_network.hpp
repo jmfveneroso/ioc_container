@@ -9,6 +9,7 @@ struct TrainingCase {
   std::vector<double> inputs;
   std::vector<double> results;
 
+  TrainingCase() {}
   TrainingCase(std::vector<double> inputs, std::vector<double> results) 
     : inputs(inputs), results(results) {}
 };
@@ -16,6 +17,7 @@ struct TrainingCase {
 struct Neuron { 
   size_t id;
   double bias;
+  double bias_derivative;
   std::vector<double> weights;
   std::vector<double> weight_derivatives;
   double result;
@@ -43,7 +45,9 @@ class NeuralNet {
 
   void UpdateNeuron(Neuron&);
   double ActivationFunction(const double&);
-  double CalculateNeuron(Neuron&, std::vector<double>);
+  double CalculateNeuron(Neuron&, const std::vector<double>&);
+  double CalculateNeuron(Neuron&, const Layer&);
+  void ClearDerivatives();
   std::string NeuronToString(Neuron&);
 
  public:
@@ -53,9 +57,10 @@ class NeuralNet {
   void SaveToFile(const std::string&);
   void SetOutputLayer(Layer);
   void AddHiddenLayer(Layer);
-  std::vector<double> Predict(std::vector<double>);
+  std::vector<double> Predict(const std::vector<double>&);
   void Train(const TrainingCase&);
   void UpdateWeights();
+  double ClampOutput(double);
   std::string ToString();
 };
 

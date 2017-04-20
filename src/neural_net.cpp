@@ -16,48 +16,88 @@ void NeuralNet::AddHiddenLayer(Layer hidden_layer) {
   hidden_layers_.push_back(hidden_layer);
 }
 
+double NeuralNet::ClampOutput(double x) {
+  if ( x < 0.1 ) return 0;
+  else if ( x > 0.9 ) return 1;
+  else return -1;
+}
+
 double NeuralNet::ActivationFunction(const double& x) {
   // Sigmoid.
   return (double) 1 / (1 + exp(-x));
 }
 
-double NeuralNet::CalculateNeuron(Neuron& neuron, std::vector<double> inputs) {
+double NeuralNet::CalculateNeuron(Neuron& neuron, const std::vector<double>& inputs) {
+  if (inputs.size() != neuron.weights.size()) throw new std::runtime_error("Invalid input size.");
+
   neuron.result = neuron.bias;
   for (size_t i = 0; i < inputs.size(); ++i) 
     neuron.result += neuron.weights[i] * inputs[i];
-  return neuron.result = ActivationFunction(neuron.result);
+
+  neuron.result = ActivationFunction(neuron.result);
+  if (neuron.result > 0.999) neuron.result -= 0.001;
+  if (neuron.result < 0.001) neuron.result += 0.001;
+  return neuron.result;
 }
 
-std::vector<double> NeuralNet::Predict(std::vector<double> inputs) {
+double NeuralNet::CalculateNeuron(Neuron& neuron, const Layer& prev_layer) {
+  if (prev_layer.size() != neuron.weights.size()) throw new std::runtime_error("Invalid input size.");
+
+  neuron.result = neuron.bias;
+  for (size_t i = 0; i < prev_layer.size(); ++i) 
+    neuron.result += neuron.weights[i] * prev_layer[i].result;
+
+  neuron.result = ActivationFunction(neuron.result);
+  if (neuron.result > 0.999) neuron.result -= 0.001;
+  if (neuron.result < 0.001) neuron.result += 0.001;
+  return neuron.result;
+}
+
+std::vector<double> NeuralNet::Predict(const std::vector<double>& inputs) {
+  Layer* prev_layer = nullptr;
+  
   // Feed the hidden layers.
-  std::vector<double> results;
   for (size_t i = 0; i < hidden_layers_.size(); ++i) {
-    results = std::vector<double>(hidden_layers_[i].size());
-    for (size_t j = 0; j < hidden_layers_[i].size(); ++j)
-      results[j] = CalculateNeuron(hidden_layers_[i][j], inputs);
-    inputs = results; 
+    for (size_t j = 0; j < hidden_layers_[i].size(); ++j) {
+      if (prev_layer == nullptr)
+        CalculateNeuron(hidden_layers_[i][j], inputs);
+      else 
+        CalculateNeuron(hidden_layers_[i][j], *prev_layer);
+    }
+    prev_layer = &hidden_layers_[i];
   }
 
   // Feed the output layer.
-  results = std::vector<double>(output_layer_.size());
+  std::vector<double> results = std::vector<double>(output_layer_.size());
   for (size_t i = 0; i < output_layer_.size(); ++i)
-    results[i] = CalculateNeuron(output_layer_[i], inputs);
+    results[i] = CalculateNeuron(output_layer_[i], *prev_layer);
      
   return results;
 }
 
-void NeuralNet::Train(const TrainingCase& training_case) {
-  // First we must run the model to get the results in order to
-  //  calculate the errors.
-  Predict(training_case.inputs);
+void NeuralNet::ClearDerivatives() {
+  for (size_t i = 0; i < output_layer_.size(); ++i) {
+    output_layer_[i].bias_derivative = 0;
+    std::fill(output_layer_[i].weight_derivatives.begin(), output_layer_[i].weight_derivatives.end(), 0);
+  }
+  for (int i = hidden_layers_.size() - 1; i >= 0; --i) {
+    for (size_t j = 0; j < hidden_layers_[i].size(); ++j) {
+      hidden_layers_[i][j].bias_derivative = 0;
+      std::fill(hidden_layers_[i][j].weight_derivatives.begin(), hidden_layers_[i][j].weight_derivatives.end(), 0);
+    }
+  }
+}
 
+void NeuralNet::Train(const TrainingCase& training_case) {
   for (size_t i = 0; i < output_layer_.size(); ++i) {
     Neuron& neuron = output_layer_[i];
 
     // We are computing the inverse of the gradient, so no need for the minus 
     // sign here. Consequently, it will also be omitted when updating weights.
     double error = training_case.results[i] - neuron.result;
+
     neuron.delta = neuron.result * (1 - neuron.result) * error;
+    neuron.bias_derivative += neuron.delta;
   }
 
   Layer* prev_layer = &output_layer_;
@@ -71,9 +111,10 @@ void NeuralNet::Train(const TrainingCase& training_case) {
       for (size_t k = 0; k < prev_layer->size(); ++k) {
         Neuron& prev_neuron = (*prev_layer)[k];
         output_derivative += prev_neuron.delta * prev_neuron.weights[j];
-        prev_neuron.weight_derivatives[j] = prev_neuron.delta * neuron.result;
+        prev_neuron.weight_derivatives[j] += prev_neuron.delta * neuron.result;
       }
       neuron.delta = neuron.result * (1 - neuron.result) * output_derivative;
+      neuron.bias_derivative += neuron.delta;
     }
     prev_layer = &hidden_layers_[i];
   }
@@ -81,13 +122,13 @@ void NeuralNet::Train(const TrainingCase& training_case) {
   for (size_t i = 0; i < prev_layer->size(); ++i) {
     Neuron& neuron = (*prev_layer)[i];
     for (size_t j = 0; j < training_case.inputs.size(); ++j) {
-      neuron.weight_derivatives[j] = neuron.delta * training_case.inputs[j];
+      neuron.weight_derivatives[j] += neuron.delta * training_case.inputs[j];
     }
   }
 }
 
 void NeuralNet::UpdateNeuron(Neuron& neuron) {
-  neuron.bias += learning_rate_ * neuron.delta + momentum_ * neuron.bias;
+  neuron.bias += learning_rate_ * neuron.bias_derivative + momentum_ * neuron.bias;
   for (size_t k = 0; k < neuron.weights.size(); ++k)
     neuron.weights[k] += learning_rate_ * neuron.weight_derivatives[k] + 
                          momentum_ * neuron.weights[k];
@@ -100,18 +141,20 @@ void NeuralNet::UpdateWeights() {
 
   for (size_t i = 0; i < output_layer_.size(); ++i)
     UpdateNeuron(output_layer_[i]);
+  ClearDerivatives();
 }
 
 std::string NeuralNet::NeuronToString(Neuron& neuron) {
   std::stringstream ss;
   ss << "    Neuron " << neuron.id << std::endl
      << "      bias: " << neuron.bias << std::endl
+     << "      result: " << neuron.result << std::endl
+     << "      delta: " << neuron.delta << std::endl
      << "      weights: " << std::endl;
   for (size_t i = 0; i < neuron.weight_derivatives.size(); ++i) {
     ss << "        " << i << " value: " << neuron.weights[i];
     ss << ", derivative: " << neuron.weight_derivatives[i] << std::endl;
   }
-  ss << "      result: " << neuron.result << std::endl;
   return ss.str();
 }
 

@@ -1,88 +1,119 @@
 #include <iostream>
-#include "ioc_container.hpp"
+#include <fstream>
+#include "bootstrapper.hpp"
 
-class A {
-  int x = 0;
+class Mnist {
+  TrainingCase training_cases_[5000];
+
+  void Load(const std::string& filename) {
+    std::ifstream in_file(filename);
+    if (!in_file.is_open()) 
+      throw new std::runtime_error("File \"" + filename + "\" not found.");
+
+    for (size_t i = 0; i < 5000; ++i) {
+      training_cases_[i].results = std::vector<double>(10, 0);
+      training_cases_[i].inputs = std::vector<double>(784, 0);
+
+      size_t digit;
+      in_file >> digit;
+      training_cases_[i].results[digit] = 1;
+
+      for (size_t j = 0; j < 784; ++j) { 
+        char c;
+        in_file >> c;
+        in_file >> training_cases_[i].inputs[j]; 
+      }
+    }
+  }
+
  public:
-  void HelloWorld() {
-    ++x;
-    std::cout << "Hello World! " << x << std::endl;
+  Mnist(const std::string& filename) {
+    Load(filename);
+  }
+
+  TrainingCase& GetTrainingCase(size_t i) { return training_cases_[i]; }
+};
+
+struct GenerateRandom { 
+  double operator()() { 
+    return (rand() / (double) RAND_MAX) * 8 - 4;
   }
 };
 
-class C {
- public:
-  virtual void CallA() = 0;
-};
-
-class B : public C {
-  std::shared_ptr<A> a_;
-
- public:
-  B(std::shared_ptr<A> a) : a_(a) {}
-
-  void CallA() override {
-    a_->HelloWorld();
+int GetDigit(std::vector<double> results) {
+  double max = results[0];
+  int pos = 0;
+  for (size_t i = 1; i < 10; ++i) {
+    if (results[i] > max) {
+      max = results[i];
+      pos = i;
+    }
   }
+  return pos;
+}
 
-};
-
-class D : public C {
- public:
-  D() {}
-
-  void CallA() override {
-    std::cout << "This implementation overrides the previous one." << std::endl;
-  }
-
-};
-
-class E {
-  int x_ = 0;
-
- public:
-  E() {}
-
-  void Call() {
-    std::cout << "x: " << x_++ << std::endl;
-  }
-
-};
-
-class ContainerBootstrapper {
- public:
-  static void Bootstrap() {
-    static IoC::Container& container = IoC::Container::Get();
-    container.RegisterInstance<E, E>();
-    container.RegisterInstance<B, C, A>();
-    container.RegisterType<A, A>();
-  }
-};
+double GetSquaredError(const std::vector<double>& results, TrainingCase& training_case) {
+  double squared_error = 0;
+  for (int i = 0; i < 10; ++i)
+    squared_error += pow(results[i] - training_case.results[i], 2);
+  return 0.5 * squared_error;
+}
 
 int main () {
-  ContainerBootstrapper::Bootstrap();
-
+  Bootstrapper::Bootstrap();
   static IoC::Container& container = IoC::Container::Get();
-  std::shared_ptr<C> b = container.Resolve<C>();
-  b->CallA();
-  b->CallA();
+  std::shared_ptr<NeuralNet> neural_net = container.Resolve<NeuralNet>();
 
-  std::shared_ptr<C> c = container.Resolve<C>();
-  c->CallA();
-  c->CallA();
-  c->CallA();
-  b->CallA();
+  srand((unsigned int) time(0));
 
-  container.RegisterInstance<D, C>();
-  std::shared_ptr<C> d = container.Resolve<C>();
-  d->CallA();
-  b->CallA();
-  c->CallA();
+  Mnist mnist("data_tp1");
 
-  std::shared_ptr<E> e = container.Resolve<E>();
-  e->Call();
-  e->Call();
-  e->Call();
+  neural_net->set_learning_rate(0.5);
+
+  size_t num_hidden_neurons = 100;
+  size_t num_classes = 10;
+  size_t num_features = 784;
+  size_t num_training_cases = 200;
+
+  // Output Layer.
+  Layer output_layer;
+  for (size_t i = 0; i < num_classes; ++i) {
+    std::vector<double> weights(num_hidden_neurons);
+    std::generate_n(weights.begin(), num_hidden_neurons, GenerateRandom());
+    output_layer.push_back(Neuron(GenerateRandom()(), weights));
+  }
+  neural_net->SetOutputLayer(output_layer);
+
+  Layer hidden_layer;
+  for (size_t i = 0; i < num_hidden_neurons; ++i) {
+    std::vector<double> weights(num_features);
+    std::generate_n(weights.begin(), num_features, GenerateRandom());
+    hidden_layer.push_back(Neuron(GenerateRandom()(), weights));
+  }
+  neural_net->AddHiddenLayer(hidden_layer);
+
+  for (size_t i = 0; i < 10000; ++i) {
+    double total_mse = 0;
+    double error = 0;
+    for (size_t j = 0; j < num_training_cases; ++j) {
+      TrainingCase& training_case = mnist.GetTrainingCase(j);
+      // First we must run the model to get the results in order to
+      // calculate the errors.
+      std::vector<double> results = neural_net->Predict(training_case.inputs);
+      neural_net->Train(training_case);
+
+      total_mse += GetSquaredError(results, training_case);
+
+      int digit = GetDigit(results);
+      if (digit != GetDigit(training_case.results)) error += 1;
+    }
+    neural_net->UpdateWeights();
+    // std::cout << neural_net->ToString() << std::endl;
+    std::cout << "mse: " << total_mse / num_training_cases << ", prediction error: " 
+              << error / num_training_cases << std::endl; 
+  }
+
+  // std::cout << neural_net->ToString();
 
   return 0;
 }

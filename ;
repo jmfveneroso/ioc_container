@@ -1,0 +1,110 @@
+#include <iostream>
+#include <fstream>
+#include "bootstrapper.hpp"
+
+class Mnist {
+  TrainingCase training_cases_[5000];
+
+  void Load(const std::string& filename) {
+    std::ifstream in_file(filename);
+    if (!in_file.is_open()) 
+      throw new std::runtime_error("File \"" + filename + "\" not found.");
+
+    for (size_t i = 0; i < 5000; ++i) {
+      training_cases_[i].results = std::vector<double>(10, 0);
+      training_cases_[i].inputs = std::vector<double>(784, 0);
+
+      size_t digit;
+      in_file >> digit;
+      training_cases_[i].results[digit] = 1;
+
+      for (size_t j = 0; j < 784; ++j) { 
+        char c;
+        in_file >> c;
+        in_file >> training_cases_[i].inputs[j]; 
+      }
+    }
+  }
+
+ public:
+  Mnist(const std::string& filename) {
+    Load(filename);
+  }
+
+  GetTrainingCase(size_t i) { return training_cases_[i]; }
+};
+
+struct GenerateRandom { 
+  double operator()() { 
+    return (rand() / (double) RAND_MAX) * 8 - 4;
+  }
+};
+
+int GetDigit(std::vector<double> results) {
+  double max = results[0];
+  int pos = 0;
+  for (size_t i = 1; i < 10; ++i) {
+    if (results[i] > max) {
+      max = results[i];
+      pos = i;
+    }
+  }
+  return pos;
+}
+
+int main (int argc, char** argv) {
+  Bootstrapper::Bootstrap();
+  static IoC::Container& container = IoC::Container::Get();
+  std::shared_ptr<NeuralNet> neural_net = container.Resolve<NeuralNet>();
+
+  Mnist mnist("data_tp1");
+
+  neural_net->set_learning_rate(0.25);
+
+  // Output Layer.
+  Layer output_layer;
+  for (size_t i = 0; i < 10; ++i) {
+    std::vector<double> weights(10);
+    std::generate_n(weights.begin(), 10, GenerateRandom());
+    output_layer.push_back(Neuron(GenerateRandom()(), weights));
+  }
+  neural_net->SetOutputLayer(output_layer);
+
+  for (size_t i = 0; i < 10; ++i) {
+    Layer hidden_layer;
+    std::vector<double> weights(784);
+    std::generate_n(weights.begin(), 784, GenerateRandom());
+    hidden_layer.push_back(Neuron(GenerateRandom()(), weights));
+    neural_net->AddHiddenLayer(hidden_layer);
+  }
+
+  for (size_t i = 0; i < 10; ++i) {
+    double error = 0;
+    for (size_t j = 0; j < 5000; ++j) {
+      TrainingCase& training_case = mnist.GetTrainingCase(i);
+      neural_net->Train(training_case);
+      neural_net->UpdateWeights();
+
+      std::vector<double> results = neural_net->Predict({ 0.1, 0.9 });
+      int digit = GetDigit(results);
+      if (digit != GetDigit(training_case.results))
+        ++error;
+      
+    }
+    std::cout << "Error (" << i << "): " << 0.9 - value << std::endl; 
+  }
+
+  std::cout << neural_net->ToString();
+
+  // // // Example found in class slides.
+  // int i = 0;
+  // for (; i < 200; ++i) {
+  //   std::cout << neural_net->ToString() << std::endl;
+  //   double value = neural_net->Predict({ 0.1, 0.9 })[0];
+  //   std::cout << "Error (" << i << "): " << 0.9 - value << std::endl; 
+  //   neural_net->Train(TrainingCase({ 0.1, 0.9 }, { 0.9 }));
+  //   neural_net->UpdateWeights();
+  // }
+
+  return 0;
+}

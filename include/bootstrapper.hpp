@@ -12,7 +12,7 @@ class Bootstrapper {
  public:
   static void Bootstrap() {
     static IoC::Container& container = IoC::Container::Get();
-    container.RegisterInstance<NeuralNet, NeuralNet>();
+    container.RegisterType<NeuralNet, NeuralNet>();
   }
 };
 
