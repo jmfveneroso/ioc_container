@@ -19,8 +19,10 @@ struct Neuron {
   size_t id;
   double bias;
   double bias_derivative;
+  double prev_bias_delta;
   std::vector<double> weights;
   std::vector<double> weight_derivatives;
+  std::vector<double> prev_deltas;
   double result;
   double delta;
 
@@ -33,6 +35,7 @@ struct Neuron {
     this->bias = bias;
     this->weights = weights;
     weight_derivatives = std::vector<double>(weights.size(), 0);
+    prev_deltas = std::vector<double>(weights.size(), 0);
   }
 };
 
@@ -42,8 +45,10 @@ class NeuralNet {
   std::vector<Layer> hidden_layers_;
   Layer output_layer_;
   double learning_rate_ = 0.3;
-  double momentum_ = 0.01;
+  double momentum_ = 0.9;
+  size_t num_training_cases_ = 0;
 
+  double GetOutputDerivative(Neuron&, double);
   void UpdateNeuron(Neuron&);
   double ActivationFunction(const double&);
   double CalculateNeuron(Neuron&, const std::vector<double>&);
@@ -61,7 +66,6 @@ class NeuralNet {
   std::vector<double> Predict(const std::vector<double>&);
   void Train(const TrainingCase&);
   void UpdateWeights();
-  double ClampOutput(double);
   std::string ToString();
 };
 

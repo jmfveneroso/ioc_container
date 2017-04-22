@@ -16,12 +16,6 @@ void NeuralNet::AddHiddenLayer(Layer hidden_layer) {
   hidden_layers_.push_back(hidden_layer);
 }
 
-double NeuralNet::ClampOutput(double x) {
-  if ( x < 0.1 ) return 0;
-  else if ( x > 0.9 ) return 1;
-  else return -1;
-}
-
 double NeuralNet::ActivationFunction(const double& x) {
   // Sigmoid.
   return (double) 1 / (1 + exp(-x));
@@ -79,25 +73,38 @@ std::vector<double> NeuralNet::Predict(const std::vector<double>& inputs) {
 void NeuralNet::ClearDerivatives() {
   for (size_t i = 0; i < output_layer_.size(); ++i) {
     output_layer_[i].bias_derivative = 0;
+    output_layer_[i].prev_bias_delta = 0;
     std::fill(output_layer_[i].weight_derivatives.begin(), output_layer_[i].weight_derivatives.end(), 0);
+    std::fill(output_layer_[i].prev_deltas.begin(), output_layer_[i].prev_deltas.end(), 0);
   }
   for (int i = hidden_layers_.size() - 1; i >= 0; --i) {
     for (size_t j = 0; j < hidden_layers_[i].size(); ++j) {
       hidden_layers_[i][j].bias_derivative = 0;
+      hidden_layers_[i][j].prev_bias_delta = 0;
       std::fill(hidden_layers_[i][j].weight_derivatives.begin(), hidden_layers_[i][j].weight_derivatives.end(), 0);
+      std::fill(hidden_layers_[i][j].prev_deltas.begin(), hidden_layers_[i][j].prev_deltas.end(), 0);
     }
   }
+  num_training_cases_ = 0;
+}
+
+double NeuralNet::GetOutputDerivative(Neuron& neuron, double expected_result) {
+  // Loss function: Mean squared error.
+  // double error = expected_result - neuron.result;
+  // return neuron.result * (1 - neuron.result) * error;
+
+  // Loss function: Cross Entropy.
+  // We are computing the inverse of the gradient, so the parameters were inverted
+  // here. The derivative of the cross entropy function is: neuron.result - expected_result.
+  return expected_result - neuron.result;
 }
 
 void NeuralNet::Train(const TrainingCase& training_case) {
+  ++num_training_cases_;
   for (size_t i = 0; i < output_layer_.size(); ++i) {
     Neuron& neuron = output_layer_[i];
 
-    // We are computing the inverse of the gradient, so no need for the minus 
-    // sign here. Consequently, it will also be omitted when updating weights.
-    double error = training_case.results[i] - neuron.result;
-
-    neuron.delta = neuron.result * (1 - neuron.result) * error;
+    neuron.delta = GetOutputDerivative(neuron, training_case.results[i]);
     neuron.bias_derivative += neuron.delta;
   }
 
@@ -129,10 +136,19 @@ void NeuralNet::Train(const TrainingCase& training_case) {
 }
 
 void NeuralNet::UpdateNeuron(Neuron& neuron) {
-  neuron.bias += learning_rate_ * neuron.bias_derivative + momentum_ * neuron.bias;
-  for (size_t k = 0; k < neuron.weights.size(); ++k)
-    neuron.weights[k] += learning_rate_ * neuron.weight_derivatives[k] + 
-                         momentum_ * neuron.weights[k];
+  // The division by num_training_cases is required by the cross entropy
+  // loss derivative.
+  double delta = learning_rate_ * neuron.bias_derivative 
+                 + momentum_ * neuron.prev_bias_delta;
+  neuron.bias += delta / num_training_cases_;
+  neuron.prev_bias_delta = delta / num_training_cases_;
+
+  for (size_t k = 0; k < neuron.weights.size(); ++k) {
+    double delta = learning_rate_ * neuron.weight_derivatives[k]
+                   + momentum_ * neuron.prev_deltas[k];
+    neuron.weights[k] += delta / num_training_cases_;
+    neuron.prev_deltas[k] = delta / num_training_cases_;
+  }
 }
 
 void NeuralNet::UpdateWeights() {

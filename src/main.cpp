@@ -3,6 +3,7 @@
 #include <math.h>
 #include <algorithm>
 #include <chrono>
+#include <sstream>
 #include "bootstrapper.hpp"
 
 // Google profiler.
@@ -10,6 +11,8 @@
 #ifdef PROFILE
 #include <gperftools/profiler.h>
 #endif
+
+// #define LEARNING_RATE_DECAY
 
 class Mnist {
   TrainingCase training_cases_[5000];
@@ -68,26 +71,25 @@ double GetSquaredError(const std::vector<double>& results, TrainingCase& trainin
   return 0.5 * squared_error;
 }
 
-int main (int argc, char** argv) {
-  if (argc != 2) {
-    std::cout << "Usage: main FILENAME" << std::endl;
-    return 1;
+double GetCrossEntropy(const std::vector<double>& results, TrainingCase& training_case) {
+  double cross_entropy = 0;
+  for (int i = 0; i < 10; ++i) {
+    cross_entropy += training_case.results[i] * log(results[i]) +
+                   (1 - training_case.results[i]) * log(1 - results[i]);
   }
+  return -cross_entropy;
+}
 
-  Bootstrapper::Bootstrap();
-  static IoC::Container& container = IoC::Container::Get();
-  std::shared_ptr<NeuralNet> neural_net = container.Resolve<NeuralNet>();
+enum Mode {
+  GD = 0,
+  SGD,
+  MINI_BATCH_10,
+  MINI_BATCH_50
+};
 
-  srand((unsigned int) time(0));
-
-  Mnist mnist("data_tp1");
-
-  neural_net->set_learning_rate(0.5);
-  size_t num_hidden_neurons = 100;
+void CreateNeuralNetwork(std::shared_ptr<NeuralNet> neural_net, size_t num_hidden_neurons) {
   size_t num_classes = 10;
   size_t num_features = 784;
-  size_t num_training_cases = 5000;
-  size_t num_epochs = 1000000;
 
   // Output Layer.
   Layer output_layer;
@@ -105,45 +107,111 @@ int main (int argc, char** argv) {
     hidden_layer.push_back(Neuron(GenerateRandom()(), weights));
   }
   neural_net->AddHiddenLayer(hidden_layer);
+}
 
-#ifdef PROFILE
-  ProfilerStart("neural_net.prof");
-#endif
+void Run(
+  std::shared_ptr<NeuralNet> neural_net, 
+  Mnist* mnist,
+  Mode mode, 
+  double learning_rate, 
+  size_t num_hidden_neurons
+) {
+  size_t num_training_cases = 5000;
+  size_t num_epochs = 500;
+  CreateNeuralNetwork(neural_net, num_hidden_neurons);
+  neural_net->set_learning_rate(learning_rate);
 
   auto start_time = std::chrono::high_resolution_clock::now();
-
   for (size_t i = 0; i < num_epochs; ++i) {
-    double total_mse = 0;
+    double total_ce = 0;
     double error = 0;
     for (size_t j = 0; j < num_training_cases; ++j) {
-      TrainingCase& training_case = mnist.GetTrainingCase(j);
+      TrainingCase& training_case = mnist->GetTrainingCase(j);
+
       // First we must run the model to get the results in order to
       // calculate the errors.
       std::vector<double> results = neural_net->Predict(training_case.inputs);
       neural_net->Train(training_case);
 
-      total_mse += GetSquaredError(results, training_case);
+      // total_mse += GetSquaredError(results, training_case);
+      total_ce += GetCrossEntropy(results, training_case);
 
       int digit = GetDigit(results);
       if (digit != GetDigit(training_case.results)) error += 1;
+
+      if (i == 0) continue; 
+      if (j == num_training_cases - 1) { // Gradient Descent.
+        neural_net->UpdateWeights();
+        continue;
+      }
+
+      if (mode == SGD) neural_net->UpdateWeights();
+      if (mode == MINI_BATCH_10 && j % 10 == 0) neural_net->UpdateWeights();
+      if (mode == MINI_BATCH_50 && j % 50 == 0) neural_net->UpdateWeights();
     }
-    neural_net->UpdateWeights();
 
     auto now = std::chrono::high_resolution_clock::now();
- 
-    // integral duration: requires duration_cast
     auto int_ms = std::chrono::duration_cast<std::chrono::milliseconds>(now - start_time);
     std::cout << "epoch : " << i + 1 << ", "
-              << "squared error: " << total_mse / num_training_cases << ", "
+              << "cross entropy: " << total_ce / num_training_cases << ", "
               << "prediction error: " << error / num_training_cases << ", "
               << "time: " << int_ms.count() << std::endl; 
   }
-  neural_net->SaveToFile(argv[1]);
+}
 
-  // std::cout << neural_net->ToString();
+std::string ModeToStr(Mode mode) {
+  switch (mode) {
+    case GD: return "GD";
+    case SGD: return "SGD";
+    case MINI_BATCH_10: return "MINI_BATCH_10";
+    case MINI_BATCH_50: return "MINI_BATCH_50";
+    default: return "";
+  }
+}
+
+int main(int argc, char** argv) {
+#ifdef PROFILE
+  ProfilerStart("neural_net.prof");
+#endif
+
+  if (argc != 2) {
+    std::cout << "Usage: main [directory]" << std::endl;
+    return 1;
+  }
+
+  Bootstrapper::Bootstrap();
+  srand((unsigned int) time(0));
+
+  static IoC::Container& container = IoC::Container::Get();
+  Mnist mnist("data_tp1");
+
+  for (int i = 0; i < 4; ++i) {
+    double num_hidden_nodes[3] = { 25, 50, 100 };
+    for (int j = 0; j < 3; ++j) {
+
+      double learning_rates[3] = { 0.5, 1, 10 };
+      for (int k = 0; k < 3; ++k) {
+        std::cout << "Mode: " << ModeToStr(static_cast<Mode>(i)) << std::endl;
+        std::cout << "Num hidden nodes: " << num_hidden_nodes[j] << std::endl;
+        std::cout << "Learning rate: " << learning_rates[k] << std::endl;
+        std::cout << "====================" << std::endl;
+
+        std::shared_ptr<NeuralNet> neural_net = container.Resolve<NeuralNet>();
+        Run(neural_net, &mnist, static_cast<Mode>(i), learning_rates[k], num_hidden_nodes[j]);
+
+        std::stringstream ss;
+        ss << argv[1] << "/mode_" << ModeToStr(static_cast<Mode>(i));
+        ss << "_hn_" << num_hidden_nodes[j];
+        ss << "_lr_" << learning_rates[k];
+        ss << "_weights";
+        neural_net->SaveToFile(ss.str());
+        std::cout << "Wrote to " << ss.str() << std::endl;
+      }
+    }
+  }
+
 #ifdef PROFILE
   ProfilerStop();
 #endif
-
   return 0;
 }
