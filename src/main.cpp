@@ -172,16 +172,15 @@ std::string ModeToStr(Mode mode) {
   }
 }
 
-int main(int argc, char** argv) {
-  (void) argv;
+int main() {
 #ifdef PROFILE
   ProfilerStart("neural_net.prof");
 #endif
 
-  if (argc != 2) {
-    std::cout << "Usage: main [directory]" << std::endl;
-    return 1;
-  }
+  // if (argc != 2) {
+  //   std::cout << "Usage: main [directory]" << std::endl;
+  //   return 1;
+  // }
 
   Bootstrapper::Bootstrap();
   srand((unsigned int) time(0));
