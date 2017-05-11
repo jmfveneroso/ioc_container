@@ -16,12 +16,6 @@ void NeuralNet::AddHiddenLayer(Layer hidden_layer) {
   hidden_layers_.push_back(hidden_layer);
 }
 
-double NeuralNet::ClampOutput(double x) {
-  if ( x < 0.1 ) return 0;
-  else if ( x > 0.9 ) return 1;
-  else return -1;
-}
-
 double NeuralNet::ActivationFunction(const double& x) {
   // Sigmoid.
   return (double) 1 / (1 + exp(-x));
@@ -31,12 +25,13 @@ double NeuralNet::CalculateNeuron(Neuron& neuron, const std::vector<double>& inp
   if (inputs.size() != neuron.weights.size()) throw new std::runtime_error("Invalid input size.");
 
   neuron.result = neuron.bias;
+  std::vector<double>::const_iterator it_1 = neuron.weights.begin(), it_2 = inputs.begin();
   for (size_t i = 0; i < inputs.size(); ++i) 
     neuron.result += neuron.weights[i] * inputs[i];
 
   neuron.result = ActivationFunction(neuron.result);
-  if (neuron.result > 0.999) neuron.result -= 0.001;
-  if (neuron.result < 0.001) neuron.result += 0.001;
+  if (neuron.result > 0.9999) neuron.result -= 0.0001;
+  if (neuron.result < 0.0001) neuron.result += 0.0001;
   return neuron.result;
 }
 
@@ -48,8 +43,8 @@ double NeuralNet::CalculateNeuron(Neuron& neuron, const Layer& prev_layer) {
     neuron.result += neuron.weights[i] * prev_layer[i].result;
 
   neuron.result = ActivationFunction(neuron.result);
-  if (neuron.result > 0.999) neuron.result -= 0.001;
-  if (neuron.result < 0.001) neuron.result += 0.001;
+  if (neuron.result > 0.9999) neuron.result -= 0.0001;
+  if (neuron.result < 0.0001) neuron.result += 0.0001;
   return neuron.result;
 }
 
@@ -78,25 +73,38 @@ std::vector<double> NeuralNet::Predict(const std::vector<double>& inputs) {
 void NeuralNet::ClearDerivatives() {
   for (size_t i = 0; i < output_layer_.size(); ++i) {
     output_layer_[i].bias_derivative = 0;
+    output_layer_[i].prev_bias_delta = 0;
     std::fill(output_layer_[i].weight_derivatives.begin(), output_layer_[i].weight_derivatives.end(), 0);
+    std::fill(output_layer_[i].prev_deltas.begin(), output_layer_[i].prev_deltas.end(), 0);
   }
   for (int i = hidden_layers_.size() - 1; i >= 0; --i) {
     for (size_t j = 0; j < hidden_layers_[i].size(); ++j) {
       hidden_layers_[i][j].bias_derivative = 0;
+      hidden_layers_[i][j].prev_bias_delta = 0;
       std::fill(hidden_layers_[i][j].weight_derivatives.begin(), hidden_layers_[i][j].weight_derivatives.end(), 0);
+      std::fill(hidden_layers_[i][j].prev_deltas.begin(), hidden_layers_[i][j].prev_deltas.end(), 0);
     }
   }
+  num_training_cases_ = 0;
+}
+
+double NeuralNet::GetOutputDerivative(Neuron& neuron, double expected_result) {
+  // Loss function: Mean squared error.
+  // double error = expected_result - neuron.result;
+  // return neuron.result * (1 - neuron.result) * error;
+
+  // Loss function: Cross Entropy.
+  // We are computing the inverse of the gradient, so the parameters were inverted
+  // here. The derivative of the cross entropy function is: neuron.result - expected_result.
+  return expected_result - neuron.result;
 }
 
 void NeuralNet::Train(const TrainingCase& training_case) {
+  ++num_training_cases_;
   for (size_t i = 0; i < output_layer_.size(); ++i) {
     Neuron& neuron = output_layer_[i];
 
-    // We are computing the inverse of the gradient, so no need for the minus 
-    // sign here. Consequently, it will also be omitted when updating weights.
-    double error = training_case.results[i] - neuron.result;
-
-    neuron.delta = neuron.result * (1 - neuron.result) * error;
+    neuron.delta = GetOutputDerivative(neuron, training_case.results[i]);
     neuron.bias_derivative += neuron.delta;
   }
 
@@ -127,20 +135,44 @@ void NeuralNet::Train(const TrainingCase& training_case) {
   }
 }
 
-void NeuralNet::UpdateNeuron(Neuron& neuron) {
-  neuron.bias += learning_rate_ * neuron.bias_derivative + momentum_ * neuron.bias;
-  for (size_t k = 0; k < neuron.weights.size(); ++k)
-    neuron.weights[k] += learning_rate_ * neuron.weight_derivatives[k] + 
-                         momentum_ * neuron.weights[k];
+void NeuralNet::UpdateNeuron(Neuron& neuron, bool is_output_neuron) {
+  double delta = learning_rate_ * neuron.bias_derivative;
+#ifdef MOMENTUM
+  delta += momentum_ * neuron.prev_bias_delta;
+#endif
+
+  neuron.bias += delta / num_training_cases_;
+  neuron.prev_bias_delta = delta / num_training_cases_;
+
+  for (size_t k = 0; k < neuron.weights.size(); ++k) {
+    double delta = learning_rate_ * neuron.weight_derivatives[k];
+
+#ifdef MOMENTUM
+    delta += momentum_ * neuron.prev_deltas[k];
+#endif
+
+#ifdef WEIGHT_DECAY
+#endif
+
+    // The division by num_training_cases is required by the cross entropy
+    // loss derivative.
+    // if (is_output_neuron) {
+      neuron.weights[k] += delta / num_training_cases_;
+      neuron.prev_deltas[k] = delta / num_training_cases_;
+    // } else {
+    //   neuron.weights[k] += delta;
+    //   neuron.prev_deltas[k] = delta;
+    // }
+  }
 }
 
 void NeuralNet::UpdateWeights() {
   for (size_t i = 0; i < hidden_layers_.size(); ++i)
     for (size_t j = 0; j < hidden_layers_[i].size(); ++j)
-      UpdateNeuron(hidden_layers_[i][j]);
+      UpdateNeuron(hidden_layers_[i][j], false);
 
   for (size_t i = 0; i < output_layer_.size(); ++i)
-    UpdateNeuron(output_layer_[i]);
+    UpdateNeuron(output_layer_[i], true);
   ClearDerivatives();
 }
 

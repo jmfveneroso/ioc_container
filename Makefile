@@ -9,8 +9,8 @@ LIB_DIR=lib
 IDIR=include
 CC=g++
 
-CPP_FLAGS=-I. -W -Wall -Werror -pedantic -std=c++11 -O3 -D_FILE_OFFSET_BITS=64
-# CPP_FLAGS=-g -I. -W -Wall -pedantic -std=c++11 -D_FILE_OFFSET_BITS=64 -O0
+# CPP_FLAGS=-I. -W -Wall -Werror -pedantic -std=c++11 -O3 -D_FILE_OFFSET_BITS=64
+CPP_FLAGS=-g -I. -W -Wall -pedantic -std=c++11 -D_FILE_OFFSET_BITS=64 -O0
 
 CPP_FLAGS_32 := -Dx86 -m32
 CPP_FLAGS_64 := -Dx64 -m64
@@ -40,9 +40,13 @@ BUILD_DIR=build
 
 # LDLIBS += -lprofiler
 
+# INC = -I$(LIB_DIR)/eigen
+
 # ------------------------------
 # Executables
 # ------------------------------
+
+# GOOGLE_PROFILER = -lprofiler
 
 _DEPS = bootstrapper.hpp neural_network.hpp ioc_container.hpp 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
@@ -54,7 +58,7 @@ $(BUILD_DIR)/%.o: src/%.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CPP_FLAGS) -I$(IDIR) $(INC)
 
 $(BUILD_DIR)/main: $(BUILD_DIR)/main.o $(OBJ)
-	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS)
+	$(CC) -o $@ $^ $(LDLIBS) $(CPP_FLAGS) $(GOOGLE_PROFILER)
 
 # Tests.
 

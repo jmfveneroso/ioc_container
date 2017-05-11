@@ -2,6 +2,7 @@
 #define _NEURAL_NETWORK_HPP_
 
 #include <vector>
+#include <string>
 
 namespace NeuralNetwork {
 
@@ -18,8 +19,10 @@ struct Neuron {
   size_t id;
   double bias;
   double bias_derivative;
+  double prev_bias_delta;
   std::vector<double> weights;
   std::vector<double> weight_derivatives;
+  std::vector<double> prev_deltas;
   double result;
   double delta;
 
@@ -32,6 +35,7 @@ struct Neuron {
     this->bias = bias;
     this->weights = weights;
     weight_derivatives = std::vector<double>(weights.size(), 0);
+    prev_deltas = std::vector<double>(weights.size(), 0);
   }
 };
 
@@ -40,10 +44,12 @@ using Layer = std::vector<Neuron>;
 class NeuralNet {
   std::vector<Layer> hidden_layers_;
   Layer output_layer_;
-  double learning_rate_ = 0.25;
-  double momentum_ = 0.0001;
+  double learning_rate_ = 0.3;
+  double momentum_ = 0.9;
+  size_t num_training_cases_ = 0;
 
-  void UpdateNeuron(Neuron&);
+  double GetOutputDerivative(Neuron&, double);
+  void UpdateNeuron(Neuron&, bool);
   double ActivationFunction(const double&);
   double CalculateNeuron(Neuron&, const std::vector<double>&);
   double CalculateNeuron(Neuron&, const Layer&);
@@ -60,7 +66,6 @@ class NeuralNet {
   std::vector<double> Predict(const std::vector<double>&);
   void Train(const TrainingCase&);
   void UpdateWeights();
-  double ClampOutput(double);
   std::string ToString();
 };
 

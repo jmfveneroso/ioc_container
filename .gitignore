@@ -3,3 +3,4 @@ tex/report.pdf
 tex/report.aux
 tex/report.log
 tex/report.toc
+reports/*
