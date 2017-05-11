@@ -45,7 +45,7 @@ class NeuralNet {
   std::vector<Layer> hidden_layers_;
   Layer output_layer_;
   double learning_rate_ = 0.3;
-  double momentum_ = 0.9;
+  // double momentum_ = 0.9;
   size_t num_training_cases_ = 0;
 
   double GetOutputDerivative(Neuron&, double);
