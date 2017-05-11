@@ -49,7 +49,7 @@ class NeuralNet {
   size_t num_training_cases_ = 0;
 
   double GetOutputDerivative(Neuron&, double);
-  void UpdateNeuron(Neuron&);
+  void UpdateNeuron(Neuron&, bool);
   double ActivationFunction(const double&);
   double CalculateNeuron(Neuron&, const std::vector<double>&);
   double CalculateNeuron(Neuron&, const Layer&);

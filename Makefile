@@ -9,8 +9,8 @@ LIB_DIR=lib
 IDIR=include
 CC=g++
 
-CPP_FLAGS=-I. -W -Wall -Werror -pedantic -std=c++11 -O3 -D_FILE_OFFSET_BITS=64
-# CPP_FLAGS=-g -I. -W -Wall -pedantic -std=c++11 -D_FILE_OFFSET_BITS=64 -O0
+# CPP_FLAGS=-I. -W -Wall -Werror -pedantic -std=c++11 -O3 -D_FILE_OFFSET_BITS=64
+CPP_FLAGS=-g -I. -W -Wall -pedantic -std=c++11 -D_FILE_OFFSET_BITS=64 -O0
 
 CPP_FLAGS_32 := -Dx86 -m32
 CPP_FLAGS_64 := -Dx64 -m64

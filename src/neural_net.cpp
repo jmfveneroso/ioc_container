@@ -30,8 +30,8 @@ double NeuralNet::CalculateNeuron(Neuron& neuron, const std::vector<double>& inp
     neuron.result += neuron.weights[i] * inputs[i];
 
   neuron.result = ActivationFunction(neuron.result);
-  if (neuron.result > 0.999) neuron.result -= 0.001;
-  if (neuron.result < 0.001) neuron.result += 0.001;
+  if (neuron.result > 0.9999) neuron.result -= 0.0001;
+  if (neuron.result < 0.0001) neuron.result += 0.0001;
   return neuron.result;
 }
 
@@ -43,8 +43,8 @@ double NeuralNet::CalculateNeuron(Neuron& neuron, const Layer& prev_layer) {
     neuron.result += neuron.weights[i] * prev_layer[i].result;
 
   neuron.result = ActivationFunction(neuron.result);
-  if (neuron.result > 0.999) neuron.result -= 0.001;
-  if (neuron.result < 0.001) neuron.result += 0.001;
+  if (neuron.result > 0.9999) neuron.result -= 0.0001;
+  if (neuron.result < 0.0001) neuron.result += 0.0001;
   return neuron.result;
 }
 
@@ -135,29 +135,44 @@ void NeuralNet::Train(const TrainingCase& training_case) {
   }
 }
 
-void NeuralNet::UpdateNeuron(Neuron& neuron) {
-  // The division by num_training_cases is required by the cross entropy
-  // loss derivative.
-  double delta = learning_rate_ * neuron.bias_derivative 
-                 + momentum_ * neuron.prev_bias_delta;
+void NeuralNet::UpdateNeuron(Neuron& neuron, bool is_output_neuron) {
+  double delta = learning_rate_ * neuron.bias_derivative;
+#ifdef MOMENTUM
+  delta += momentum_ * neuron.prev_bias_delta;
+#endif
+
   neuron.bias += delta / num_training_cases_;
   neuron.prev_bias_delta = delta / num_training_cases_;
 
   for (size_t k = 0; k < neuron.weights.size(); ++k) {
-    double delta = learning_rate_ * neuron.weight_derivatives[k]
-                   + momentum_ * neuron.prev_deltas[k];
-    neuron.weights[k] += delta / num_training_cases_;
-    neuron.prev_deltas[k] = delta / num_training_cases_;
+    double delta = learning_rate_ * neuron.weight_derivatives[k];
+
+#ifdef MOMENTUM
+    delta += momentum_ * neuron.prev_deltas[k];
+#endif
+
+#ifdef WEIGHT_DECAY
+#endif
+
+    // The division by num_training_cases is required by the cross entropy
+    // loss derivative.
+    // if (is_output_neuron) {
+      neuron.weights[k] += delta / num_training_cases_;
+      neuron.prev_deltas[k] = delta / num_training_cases_;
+    // } else {
+    //   neuron.weights[k] += delta;
+    //   neuron.prev_deltas[k] = delta;
+    // }
   }
 }
 
 void NeuralNet::UpdateWeights() {
   for (size_t i = 0; i < hidden_layers_.size(); ++i)
     for (size_t j = 0; j < hidden_layers_[i].size(); ++j)
-      UpdateNeuron(hidden_layers_[i][j]);
+      UpdateNeuron(hidden_layers_[i][j], false);
 
   for (size_t i = 0; i < output_layer_.size(); ++i)
-    UpdateNeuron(output_layer_[i]);
+    UpdateNeuron(output_layer_[i], true);
   ClearDerivatives();
 }
 

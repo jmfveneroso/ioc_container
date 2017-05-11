@@ -13,6 +13,8 @@
 #endif
 
 // #define LEARNING_RATE_DECAY
+// #define MOMENTUM
+// #define WEIGHT_DECAY
 
 class Mnist {
   TrainingCase training_cases_[5000];
@@ -116,8 +118,9 @@ void Run(
   double learning_rate, 
   size_t num_hidden_neurons
 ) {
-  size_t num_training_cases = 5000;
-  size_t num_epochs = 500;
+  // size_t num_training_cases = 5000;
+  size_t num_training_cases = 1000;
+  size_t num_epochs = 1000;
   CreateNeuralNetwork(neural_net, num_hidden_neurons);
   neural_net->set_learning_rate(learning_rate);
 
@@ -170,6 +173,7 @@ std::string ModeToStr(Mode mode) {
 }
 
 int main(int argc, char** argv) {
+  (void) argv;
 #ifdef PROFILE
   ProfilerStart("neural_net.prof");
 #endif
@@ -199,13 +203,13 @@ int main(int argc, char** argv) {
         std::shared_ptr<NeuralNet> neural_net = container.Resolve<NeuralNet>();
         Run(neural_net, &mnist, static_cast<Mode>(i), learning_rates[k], num_hidden_nodes[j]);
 
-        std::stringstream ss;
-        ss << argv[1] << "/mode_" << ModeToStr(static_cast<Mode>(i));
-        ss << "_hn_" << num_hidden_nodes[j];
-        ss << "_lr_" << learning_rates[k];
-        ss << "_weights";
-        neural_net->SaveToFile(ss.str());
-        std::cout << "Wrote to " << ss.str() << std::endl;
+        // std::stringstream ss;
+        // ss << argv[1] << "/mode_" << ModeToStr(static_cast<Mode>(i));
+        // ss << "_hn_" << num_hidden_nodes[j];
+        // ss << "_lr_" << learning_rates[k];
+        // ss << "_weights";
+        // neural_net->SaveToFile(ss.str());
+        // std::cout << "Wrote to " << ss.str() << std::endl;
       }
     }
   }
